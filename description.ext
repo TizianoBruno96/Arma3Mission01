@@ -1,0 +1,40 @@
+author			= "Red Cobra";
+onLoadName		= "Tra 343RedCobra v1.0.3";
+onLoadMission	= "Always follow the orders of your superiors!";
+loadScreen = "images\training.jpg";
+onLoadMissionTime = 1;
+onLoadIntroTime = 1;
+briefingName = "Inferno Bianco";
+//respawnTemplates[] = {"MenuInventory", "MenuPosition", "Spectator"};
+corpseManagerMode = 1;
+corpseLimit = 15;
+corpseRemovalMinTime = 10;
+corpseRemovalMaxTime = 1200;
+wreckManagerMode = 1;
+wreckLimit = 10;
+minPlayerDistance = 50;
+
+class Header
+{
+	gameType =  Zeus Coop;	// Game type
+	minPlayers =  1;	// minimum number of players the mission supports
+	maxPlayers = 86;	// maximum number of players the mission supports
+};
+
+class params {
+	#include "scripts\params.hpp"
+}
+
+class CfgDebriefing
+{
+
+	class NOT_ALLOWED
+	{
+		title = "This is a reserved slot.";
+		description = "This is a reserved slot. Please, select another slots.";
+		picture = "images\girlsup.jpg";
+	};
+};
+
+
+#include "loadouts\respawnInventory.hpp"
