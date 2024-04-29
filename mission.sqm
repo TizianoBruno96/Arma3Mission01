@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=37;
+		nextID=38;
 	};
 	class Camera
 	{
-		pos[]={4459.7114,137.7307,7253.2266};
-		dir[]={0.21544041,-0.53505975,-0.81692195};
-		up[]={0.13644832,0.8447991,-0.51739174};
-		aside[]={-0.96697468,3.115274e-007,-0.25501493};
+		pos[]={4487.2319,173.69798,7207.3208};
+		dir[]={-0.69731528,-0.49534127,0.51808333};
+		up[]={-0.39761695,0.868689,0.29541788};
+		aside[]={0.59638864,-1.5203841e-007,0.8027097};
 	};
 };
 binarizationWanted=0;
@@ -15447,7 +15447,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this addAction [""<t color='#FF0000'>------Aerei Da Trasporto------</t>"", {}, [], 1.5, true, false, """", ""spawned"", 5, false, """", """"];" \n "" \n "" \n "this addAction [""<t color='#FFFFFF'>Aereo da trasporto Antonov AN2</t>"", {[""UK3CB_TKA_B_Antonov_AN2"", ""jetspawn1"", 206] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Aereo da trasporto Cessna T41</t>"", {[""UK3CB_TKA_B_Cessna_T41"", ""jetspawn1"", 206] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Cancella il veicolo</t>"", {[""jetspawn1"", 10] execVM ""scripts\deleteVeh.sqf"";}, nil, 1.5, true, true, """", """", 5, false, """", """"]; ";
+						init="this execVM ""scripts\vehicles\spawnTransportAirplanes.sqf"";";
 					};
 					id=202;
 					type="Land_Laptop_02_unfolded_F";
@@ -15515,7 +15515,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this addAction [""<t color='#FF0000'>------Helicopters------</t>"", {}, [], 1.5, true, false, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Spawn a Mi8 transport</t>"", {[""UK3CB_TKA_B_Mi8"", ""helispawn"", 27] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Spawn a UH1H Medevac</t>"", {[""UK3CB_TKA_B_UH1H_MED"", ""helispawn"", 27] execVM ""scripts\spawnVeh.sqf"";}, nil, 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n " " \n "this addAction [""<t color='#FFFFFF'>Spawn a Mi8 with rockets</t>"", {[""UK3CB_TKA_B_Mi8AMTSh"", ""helispawn"", 27] execVM ""scripts\spawnVeh.sqf"";}, nil, 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n " " \n "this addAction [""<t color='#FFFFFF'>Spawn a Mi-24</t>"", {[""UK3CB_TKA_B_Mi_24V"", ""helispawn"", 27] execVM ""scripts\spawnVeh.sqf"";}, nil, 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Spawna un Griffin con radar</t>"", {[""UK3CB_TKA_B_Bell412_Radar"", ""helispawn"", 27] execVM ""scripts\spawnVeh.sqf"";}, nil, 1.5, true, true, """", ""spawned"", 5, false, """", """"]; " \n " " \n "this addAction [""<t color='#FFFFFF'>Spawn an armed Griffin transport</t>"", {[""UK3CB_TKA_B_Bell412_Armed"", ""helispawn"", 27] execVM ""scripts\spawnVeh.sqf"";}, nil, 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Delete the vehicle</t>"", {[""helispawn"", 10] execVM ""scripts\deleteVeh.sqf"";}, nil, 1.5, true, true, """", """", 5, false, """", """"];";
+						init="this execVM ""scripts\vehicles\spawnHelicopters.sqf"";";
 					};
 					id=206;
 					type="Land_Laptop_02_unfolded_F";
@@ -15584,7 +15584,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this addAction [""<t color='#FF0000'>------Jet Da Combattimento------</t>"", {}, [], 1.5, true, false, """", ""spawned"", 5, false, """", """"];" \n "" \n "" \n "this addAction [""<t color='#FFFFFF'>Mig-21 Antiaereo</t>"", {[""UK3CB_TKA_B_MIG21_AA"", ""jetspawn2"", 206] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Mig-21 Anticarro</t>"", {[""UK3CB_TKA_B_MIG21_AT"", ""jetspawn2"", 206] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFF'>Aero L-39 Albatross Anticarro</t>"", {[""UK3CB_TKA_B_L39_CAS"", ""jetspawn2"", 206] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Su-25SM anticarro</t>"", {[""UK3CB_TKA_B_Su25SM"", ""jetspawn2"", 206] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Cancella il veicolo</t>"", {[""jetspawn2"", 10] execVM ""scripts\deleteVeh.sqf"";}, nil, 1.5, true, true, """", """", 5, false, """", """"]; ";
+						init="this execVM ""scripts\vehicles\spawnCombatJets.sqf"";";
 					};
 					id=210;
 					type="Land_Laptop_02_unfolded_F";
@@ -15653,7 +15653,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this addAction [""<t color='#FF0000'>------Aerei Pesanti------</t>"", {}, [], 1.5, true, false, """", ""spawned"", 5, false, """", """"];" \n "" \n "" \n "this addAction [""<t color='#FFFFFF'>C130J da trasporto</t>"", {[""UK3CB_TKA_B_C130J"", ""jetspawn3"", 118] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>C130J da cargo</t>"", {[""UK3CB_TKA_B_C130J_CARGO"", ""jetspawn3"", 118] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Douglas C-47 da trasporto</t>"", {[""UK3CB_TKA_B_C47_Late"", ""jetspawn3"", 118] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Cancella il veicolo</t>"", {[""jetspawn3"", 10] execVM ""scripts\deleteVeh.sqf"";}, nil, 1.5, true, true, """", """", 5, false, """", """"]; ";
+						init="this execVM ""scripts\vehicles\spawnHeavyAirplanes.sqf"";";
 					};
 					id=226;
 					type="Land_Laptop_02_unfolded_F";
@@ -15721,7 +15721,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this addAction [""<t color='#FF0000'>------Camion------</t>"", {}, [], 1.5, true, false, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Kamaz da trasporto</t>"", {[""UK3CB_TKA_B_Kamaz_Closed"", ""vehspawn1"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Kamaz da munizioni</t>"", {[""UK3CB_TKA_B_Kamaz_Ammo"", ""vehspawn1"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Kamaz da carburante</t>"", {[""UK3CB_TKA_B_Kamaz_Fuel"", ""vehspawn1"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Kamaz da riparazione</t>"", {[""UK3CB_TKA_B_Kamaz_Repair"", ""vehspawn1"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Ural di artiglieria</t>"", {[""UK3CB_TKA_B_BM21"", ""vehspawn1"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Ural contraereo</t>"", {[""UK3CB_TKA_B_Ural_Zu23"", ""vehspawn1"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Cancella il veicolo</t>"", {[""vehspawn1"", 10] execVM ""scripts\deleteVeh.sqf"";}, nil, 1.5, true, true, """", """", 5, false, """", """"];";
+						init="this execVM ""scripts\vehicles\spawnTrucks.sqf"";";
 					};
 					id=231;
 					type="Land_Laptop_02_unfolded_F";
@@ -15755,7 +15755,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this addAction [""<t color='#FF0000'>------Mezzi Leggeri------</t>"", {}, [], 1.5, true, false, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Motocicletta Yava</t>"", {[""UK3CB_TKA_B_YAVA"", ""vehspawn2"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Hilux aperto da trasporto</t>"", {[""UK3CB_TKA_B_Hilux_Open"", ""vehspawn2"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Hilux coperto da trasporto</t>"", {[""UK3CB_TKA_B_Hilux_Closed"", ""vehspawn2"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Hilux con mitragliatrice</t>"", {[""UK3CB_TKA_B_Hilux_Dshkm"", ""vehspawn2"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Hilux con lanciamissili</t>"", {[""UK3CB_TKA_B_Hilux_Spg9"", ""vehspawn2"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Hilux con lanciagranate</t>"", {[""UK3CB_TKA_B_Hilux_GMG"", ""vehspawn2"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Cancella il veicolo</t>"", {[""vehspawn2"", 10] execVM ""scripts\deleteVeh.sqf"";}, nil, 1.5, true, true, """", """", 5, false, """", """"];";
+						init="this execVM ""scripts\vehicles\spawnLightVehicles.sqf"";";
 					};
 					id=248;
 					type="Land_Laptop_02_unfolded_F";
@@ -15789,7 +15789,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this addAction [""<t color='#FF0000'>------Corazzati Leggeri------</t>"", {}, [], 1.5, true, false, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>BRDM2</t>"", {[""UK3CB_TKA_B_BRDM2"", ""vehspawn3"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>BRDM2 con konkurs</t>"", {[""UK3CB_TKA_B_BRDM2_ATGM"", ""vehspawn3"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>BTR60</t>"", {[""UK3CB_TKA_B_BTR60"", ""vehspawn3"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>M113 medevac</t>"", {[""UK3CB_TKA_B_M113_AMB"", ""vehspawn3"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>M113 con mitragliatrice</t>"", {[""UK3CB_TKA_B_M113_M2"", ""vehspawn3"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>M113 con lanciagranate</t>"", {[""UK3CB_TKA_B_M113_MK19"", ""vehspawn3"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>BMP1</t>"", {[""UK3CB_TKA_B_BMP1"", ""vehspawn3"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>BMP2</t>"", {[""UK3CB_TKA_B_BMP2"", ""vehspawn3"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Cancella il veicolo</t>"", {[""vehspawn3"", 10] execVM ""scripts\deleteVeh.sqf"";}, nil, 1.5, true, true, """", """", 5, false, """", """"];";
+						init="this execVM ""scripts\vehicles\spawnLightCombatVehicles.sqf"";";
 					};
 					id=257;
 					type="Land_Laptop_02_unfolded_F";
@@ -15823,7 +15823,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this addAction [""<t color='#FF0000'>------Corazzati pesanti------</t>"", {}, [], 1.5, true, false, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Carro armato T34-85M</t>"", {[""UK3CB_TKA_B_T34"", ""vehspawn4"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Carro armato T55A</t>"", {[""UK3CB_TKA_B_T55"", ""vehspawn4"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Carro armato T72-AV</t>"", {[""UK3CB_TKA_B_T72B"", ""vehspawn4"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Carro armato T72-B</t>"", {[""UK3CB_TKA_B_T72BM"", ""vehspawn4"", 26] execVM ""scripts\spawnVeh.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Cancella il veicolo</t>"", {[""vehspawn4"", 10] execVM ""scripts\deleteVeh.sqf"";}, nil, 1.5, true, true, """", """", 5, false, """", """"];";
+						init="this execVM ""scripts\vehicles\spawnTanks.sqf"";";
 					};
 					id=258;
 					type="Land_Laptop_02_unfolded_F";
@@ -15925,7 +15925,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this execVM ""scripts\vehicles\spawnDrones.sqf"";" \n "";
+						init="this execVM ""scripts\vehicles\spawnDrones.sqf"";";
 					};
 					id=1066;
 					type="Land_Laptop_02_unfolded_F";

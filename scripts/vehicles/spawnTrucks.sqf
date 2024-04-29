@@ -12,4 +12,4 @@ _this addAction ["<t color='#FFFFFF'>Artillery Ural</t>", {["UK3CB_TKA_B_BM21", 
 
 _this addAction ["<t color='#FFFFFF'>Anti-Aircraft Ural</t>", {["UK3CB_TKA_B_Ural_Zu23", "vehspawn1", 26] execVM "scripts\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
 
-_this addAction ["<t color='#FFFFFF'>Delete Vehicle</t>", {["vehspawn1", 10] execVM "scripts\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];
+_this addAction ["<t color='#FF6666'>Delete Vehicle</t>", {["vehspawn1", 10] execVM "scripts\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];

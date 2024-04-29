@@ -12,4 +12,4 @@ _this addAction ["<t color='#FFFFFF'>Hilux with Rocket Launcher</t>", {["UK3CB_T
 
 _this addAction ["<t color='#FFFFFF'>Hilux with Grenade Launcher</t>", {["UK3CB_TKA_B_Hilux_GMG", "vehspawn2", 26] execVM "scripts\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
 
-_this addAction ["<t color='#FFFFFF'>Delete Vehicle</t>", {["vehspawn2", 10] execVM "scripts\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];
+_this addAction ["<t color='#FF6666'>Delete Vehicle</t>", {["vehspawn2", 10] execVM "scripts\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];

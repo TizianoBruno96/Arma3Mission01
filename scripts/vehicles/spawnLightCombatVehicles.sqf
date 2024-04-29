@@ -16,4 +16,4 @@ _this addAction ["<t color='#FFFFFF'>BMP1</t>", {["UK3CB_TKA_B_BMP1", "vehspawn3
 
 _this addAction ["<t color='#FFFFFF'>BMP2</t>", {["UK3CB_TKA_B_BMP2", "vehspawn3", 26] execVM "scripts\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
 
-_this addAction ["<t color='#FFFFFF'>Delete the vehicle</t>", {["vehspawn3", 10] execVM "scripts\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];
+_this addAction ["<t color='#FF6666'>Delete the vehicle</t>", {["vehspawn3", 10] execVM "scripts\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];
