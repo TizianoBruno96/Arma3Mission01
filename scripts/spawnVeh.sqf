@@ -5,10 +5,10 @@ _spawnPos = getMarkerPos (_this select 1); // Selects the marker position passed
 _radius = 10; // Modify the radius in meters as you prefer
 _direction = _this select 2; // Selects the direction passed as input
 
-// Find all objects in the specified radius
+// Find every object in the selected area
 _oldVeh = nearestObjects [_spawnPos, [], _radius];
 
-// Deletes the found objects
+// Delete the found objects
 {
     if (not (_x isKindOf "logic")) then {
         deleteVehicle _x;

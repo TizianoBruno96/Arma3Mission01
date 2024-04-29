@@ -14,10 +14,10 @@ _this addAction["<t color='#0000FF'>Radio Operator</t>",{player execVM "loadouts
 _this addAction["<t color='#0000FF'>Drone Operator</t>",{player execVM "loadouts\usArmy\OperatoreDroni.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
 _this addAction["<t color='#0000FF'>Sniper</t>",{player execVM "loadouts\usArmy\Cecchino.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
 
-//rendo l'arsenal indistruttibile
+// make the arsenal indestructible
 _this allowDamage false;
 
-//Aggiungo l'arsenale dei takistani
+// Add the ACE arsenal of the US
 [_this, ["rhs_weap_ak74m",
 		"rhs_weap_ak74m_npz",
 		"rhs_weap_ak74m_desert",
