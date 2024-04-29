@@ -1,4 +1,6 @@
-_this addAction ["<t color='#FF0000'>------Trucks------</t>", {}, [], 1.5, true, false, "", "spawned", 5, false, "", ""];
+//_this addAction ["<t color='#FF0000'>------Trucks------</t>", {}, [], 1.5, true, false, "", "spawned", 5, false, "", ""];
+
+_this setVariable ["tagName", "Trucks"];
 
 _this addAction ["<t color='#FFFFFF'>Transport Kamaz</t>", {["UK3CB_TKA_B_Kamaz_Closed", "vehspawn1", 26] execVM "scripts\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
 

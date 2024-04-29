@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4487.2319,173.69798,7207.3208};
-		dir[]={-0.69731528,-0.49534127,0.51808333};
-		up[]={-0.39761695,0.868689,0.29541788};
-		aside[]={0.59638864,-1.5203841e-007,0.8027097};
+		pos[]={4474.0566,138.99997,7251.665};
+		dir[]={-0.73175579,-0.53208971,0.42592722};
+		up[]={-0.45986211,0.84668797,0.26766825};
+		aside[]={0.50305098,0,0.86425674};
 	};
 };
 binarizationWanted=0;
@@ -15448,6 +15448,7 @@ class Mission
 					class Attributes
 					{
 						init="this execVM ""scripts\vehicles\spawnTransportAirplanes.sqf"";";
+						name="t_3";
 					};
 					id=202;
 					type="Land_Laptop_02_unfolded_F";
@@ -15516,6 +15517,7 @@ class Mission
 					class Attributes
 					{
 						init="this execVM ""scripts\vehicles\spawnHelicopters.sqf"";";
+						name="t_1";
 					};
 					id=206;
 					type="Land_Laptop_02_unfolded_F";
@@ -15585,6 +15587,7 @@ class Mission
 					class Attributes
 					{
 						init="this execVM ""scripts\vehicles\spawnCombatJets.sqf"";";
+						name="t_4";
 					};
 					id=210;
 					type="Land_Laptop_02_unfolded_F";
@@ -15654,6 +15657,7 @@ class Mission
 					class Attributes
 					{
 						init="this execVM ""scripts\vehicles\spawnHeavyAirplanes.sqf"";";
+						name="t_5";
 					};
 					id=226;
 					type="Land_Laptop_02_unfolded_F";
@@ -15722,6 +15726,7 @@ class Mission
 					class Attributes
 					{
 						init="this execVM ""scripts\vehicles\spawnTrucks.sqf"";";
+						name="t_6";
 					};
 					id=231;
 					type="Land_Laptop_02_unfolded_F";
@@ -15756,6 +15761,7 @@ class Mission
 					class Attributes
 					{
 						init="this execVM ""scripts\vehicles\spawnLightVehicles.sqf"";";
+						name="t_7";
 					};
 					id=248;
 					type="Land_Laptop_02_unfolded_F";
@@ -15790,6 +15796,7 @@ class Mission
 					class Attributes
 					{
 						init="this execVM ""scripts\vehicles\spawnLightCombatVehicles.sqf"";";
+						name="t_8";
 					};
 					id=257;
 					type="Land_Laptop_02_unfolded_F";
@@ -15824,6 +15831,7 @@ class Mission
 					class Attributes
 					{
 						init="this execVM ""scripts\vehicles\spawnTanks.sqf"";";
+						name="t_9";
 					};
 					id=258;
 					type="Land_Laptop_02_unfolded_F";
@@ -15926,6 +15934,7 @@ class Mission
 					class Attributes
 					{
 						init="this execVM ""scripts\vehicles\spawnDrones.sqf"";";
+						name="t_2";
 					};
 					id=1066;
 					type="Land_Laptop_02_unfolded_F";
@@ -16748,7 +16757,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false;" \n "this addAction [""<t color='#FF0000'>Teletrasporto alla Base</t>"", {player setPos (getPos B_1)}, [], 1.5, true, true, """", """", 5, false, """", """"];";
+				init="this execVM ""scripts\vehicles\mhqInit.sqf"";";
 				name="MHQ_1";
 			};
 			id=327;
@@ -16783,7 +16792,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this allowDamage false;" \n "this addAction [""<t color='#FF0000'>Teletrasporto alla Base</t>"", {player setPos (getPos B_1)}, [], 1.5, true, true, """", """", 5, false, """", """"];";
+				init="this execVM ""scripts\vehicles\mhqInit.sqf"";";
 				name="MHQ_2";
 			};
 			id=331;

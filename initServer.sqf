@@ -30,8 +30,3 @@ notAllowed = [/* Pino */"76561198074765921",
 [east, "EAST15"] call BIS_fnc_addRespawnInventory;
 
 [civilian, "CIV1"] call BIS_fnc_addRespawnInventory;
-
-
-/*mhqAlive = false;
-actionAdded = 0;
-action2Added = 0;*/

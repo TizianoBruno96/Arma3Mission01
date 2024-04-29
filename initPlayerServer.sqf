@@ -5,6 +5,7 @@ _uid = getPlayerUID _player;
 // start the function to kick him out
 if (_uid in notAllowed) then {
 	[[], _player] remoteExec ["fnc_kickPinonic", 0];
+	
 	// make the player explode every time he shoots
 	//_player addEventHandler["FiredMan", {_bomb = ("Bo_GBU12_LGB" createVehicle (position (_this select 0))); _bomb setDamage 1;}]
 };
