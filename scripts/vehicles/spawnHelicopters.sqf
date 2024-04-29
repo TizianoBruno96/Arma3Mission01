@@ -2,7 +2,7 @@
 
 _this setVariable ["tagName", "Helicopters"];
 _this setVariable ["iconTexture", "\a3\ui_f\data\igui\cfg\simpletasks\types\Heli_ca.paa"];
-_this setVariable ["iconColor", [0.9,0.6,0,6]];
+_this setVariable ["iconColor", [0.9,0.4,0,4]];
 
 _this addAction ["<t color='#FFFFFF'>Mi8 transport</t>", {["UK3CB_TKA_B_Mi8", "helispawn", 27] execVM "scripts\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
 

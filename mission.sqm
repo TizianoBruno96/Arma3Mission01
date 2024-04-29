@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4474.0566,138.99997,7251.665};
-		dir[]={-0.73175579,-0.53208971,0.42592722};
-		up[]={-0.45986211,0.84668797,0.26766825};
-		aside[]={0.50305098,0,0.86425674};
+		pos[]={4364.2119,151.73083,7195.7163};
+		dir[]={0.90185136,-0.41863266,0.10682186};
+		up[]={0.41572654,0.90815562,0.049241692};
+		aside[]={0.11762506,3.7252903e-009,-0.99305809};
 	};
 };
 binarizationWanted=0;
@@ -16117,7 +16117,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4457.5708,132.0631,7251.6431};
+				position[]={4457.5239,132.0631,7251.9951};
 				angles[]={0,5.2167888,0};
 			};
 			side="Empty";
@@ -16159,7 +16159,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this addAction [""<t color='#FF0000'>Teletrasporto alla base</t>"", {player setPos (getPos B_1)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FF0000'>Teletrasporto all'hangar 2</t>"", {player setPos (getPos B_3)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FF0000'>Teletrasporto all'aeroporto</t>"", {player setPos (getPos B_4)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FF0000'>Teletrasporto alla zona veicoli</t>"", {player setPos (getPos B_5)}, [], 1.5, true, true, """", """", 5, false, """", """"];";
+				init="this addAction [""<t color='#FF0000'>Teleport to base</t>"", {player setPos (getPos B_1)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FF0000'>Teleport to hangar 2</t>"", {player setPos (getPos B_3)}, [], 1.5, true, true, """", """", 5, false, """", """"]; " \n " " \n "this addAction [""<t color='#FF0000'>Teleport to the airport</t>"", {player setPos (getPos B_4)}, [], 1.5, true, true, """", """", 5, false, """", """"]; " \n " " \n "this addAction [""<t color='#FF0000'>Teleport to the vehicle zone</t>"", {player setPos (getPos B_5)}, [], 1.5, true, true, """", """", 5, false, """", """"]; " \n "";
 				name="B_2";
 			};
 			id=279;
@@ -16194,7 +16194,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this addAction [""<t color='#FF0000'>Teletrasporto alla base</t>"", {player setPos (getPos B_1)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FF0000'>Teletrasporto all'hangar 1</t>"", {player setPos (getPos B_2)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FF0000'>Teletrasporto all'aeroporto</t>"", {player setPos (getPos B_4)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FF0000'>Teletrasporto alla zona veicoli</t>"", {player setPos (getPos B_5)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n "";
+				init="this addAction [""<t color='#FF0000'>Teleport to base</t>"", {player setPos (getPos B_1)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FF0000'>Teleport to hangar 1</t>"", {player setPos (getPos B_2)}, [], 1.5, true, true, """", """", 5, false, """", """"]; " \n " " \n "this addAction [""<t color='#FF0000'>Teleport to the airport</t>"", {player setPos (getPos B_4)}, [], 1.5, true, true, """", """", 5, false, """", """"]; " \n " " \n "this addAction [""<t color='#FF0000'>Teleport to the vehicle zone</t>"", {player setPos (getPos B_5)}, [], 1.5, true, true, """", """", 5, false, """", """"]; " \n "";
 				name="B_3";
 			};
 			id=280;
@@ -16229,7 +16229,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this addAction [""<t color='#FF0000'>Teletrasporto alla base</t>"", {player setPos (getPos B_1)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FF0000'>Teletrasporto all'hangar 1</t>"", {player setPos (getPos B_2)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FF0000'>Teletrasporto all'hangar 2</t>"", {player setPos (getPos B_3)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FF0000'>Teletrasporto alla zona veicoli</t>"", {player setPos (getPos B_5)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n "";
+				init="this addAction [""<t color='#FF0000'>Teleport to base</t>"", {player setPos (getPos B_1)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FF0000'>Teleport to hangar 1</t>"", {player setPos (getPos B_2)}, [], 1.5, true, true, """", """", 5, false, """", """"]; " \n " " \n "this addAction [""<t color='#FF0000'>Teleport to hangar 2</t>"", {player setPos (getPos B_3)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n " " \n "this addAction [""<t color='#FF0000'>Teleport to the vehicle zone</t>"", {player setPos (getPos B_5)}, [], 1.5, true, true, """", """", 5, false, """", """"]; " \n "";
 				name="B_4";
 			};
 			id=281;
@@ -16264,7 +16264,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this addAction [""<t color='#FF0000'>Teletrasporto alla base</t>"", {player setPos (getPos B_1)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FF0000'>Teletrasporto all'hangar 1</t>"", {player setPos (getPos B_2)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FF0000'>Teletrasporto all'hangar 2</t>"", {player setPos (getPos B_3)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FF0000'>Teletrasporto all'aeroporto</t>"", {player setPos (getPos B_4)}, [], 1.5, true, true, """", """", 5, false, """", """"];";
+				init="this addAction [""<t color='#FF0000'>Teleport to base</t>"", {player setPos (getPos B_1)}, [], 1.5, true, true, """", """", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FF0000'>Teleport to hangar 1</t>"", {player setPos (getPos B_2)}, [], 1.5, true, true, """", """", 5, false, """", """"]; " \n " " \n "this addAction [""<t color='#FF0000'>Teleport to hangar 2</t>"", {player setPos (getPos B_3)}, [], 1.5, true, true, """", """", 5, false, """", """"]; " \n " " \n "this addAction [""<t color='#FF0000'>Teleport to the airport</t>"", {player setPos (getPos B_4)}, [], 1.5, true, true, """", """", 5, false, """", """"];";
 				name="B_5";
 			};
 			id=282;

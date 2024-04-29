@@ -2,7 +2,7 @@
 
 _this setVariable ["tagName", "Heavy Tanks"];
 _this setVariable ["iconTexture", "\a3\ui_f\data\igui\cfg\simpletasks\types\car_ca.paa"];
-_this setVariable ["iconColor", [0.9,0.6,0,6]];
+_this setVariable ["iconColor", [0.9,0.4,0,4]];
 
 _this addAction ["<t color='#FFFFFF'>T34-85M Tank</t>", {["UK3CB_TKA_B_T34", "vehspawn4", 26] execVM "scripts\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
 
