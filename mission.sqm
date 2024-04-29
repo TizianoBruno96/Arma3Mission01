@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4459.0107,132.60495,7264.1323};
-		dir[]={-0.82218075,-0.40417549,-0.40092722};
-		up[]={-0.36330378,0.91466594,-0.1771611};
-		aside[]={-0.43831891,5.5640703e-007,0.89885616};
+		pos[]={4459.7114,137.7307,7253.2266};
+		dir[]={0.21544041,-0.53505975,-0.81692195};
+		up[]={0.13644832,0.8447991,-0.51739174};
+		aside[]={-0.96697468,3.115274e-007,-0.25501493};
 	};
 };
 binarizationWanted=0;
@@ -15925,7 +15925,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this addAction [""<t color='#FF0000'>------Crocus Drones------</t>"", {}, [], 1.5, true, false, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Spawn Crocus Drone AT</t>"", {[""O_Crocus_AT"", ""dronespawn"", 200] execVM ""scripts\spawnDrones.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>SpawnCrocus Drone AP</t>"", {[""O_Crocus_AP"", ""dronespawn"", 200] execVM ""scripts\spawnDrones.sqf"";}, nil, 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n " " \n "this addAction [""<t color='#FFFFFF'>Delete the drone</t>"", {[""dronespawn"", 10] execVM ""scripts\deleteVeh.sqf"";}, nil, 1.5, true, true, """", """", 5, false, """", """"];";
+						init="this execVM ""scripts\vehicles\spawnDrones.sqf"";" \n "";
 					};
 					id=1066;
 					type="Land_Laptop_02_unfolded_F";
