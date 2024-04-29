@@ -1,6 +1,8 @@
 //_this addAction ["<t color='#FF0000'>------Heavy Airplanes------</t>", {}, [], 1.5, true, false, "", "spawned", 5, false, "", ""];
 
 _this setVariable ["tagName", "Heavy Airplanes"];
+_this setVariable ["iconTexture", "\a3\ui_f\data\igui\cfg\simpletasks\types\Plane_ca.paa"];
+_this setVariable ["iconColor", [0.9,0.6,0,6]];
 
 _this addAction ["<t color='#FFFFFF'>C130J transport</t>", {["UK3CB_TKA_B_C130J", "jetspawn3", 118] execVM "scripts\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
 

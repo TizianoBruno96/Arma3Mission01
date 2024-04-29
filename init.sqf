@@ -7,24 +7,15 @@ onEachFrame {
 	{
 		_y = _x;
 		{
-			_iconTexture = "\a3\ui_f\data\igui\cfg\simpletasks\types\car_ca.paa";
-			_iconColor = [0.9,0.6,0,6];
-			//_varName = _x vehicleVarName;
-			//hintSilent str position player;
-
-			//if (_varName isEqualTo MHQ_1 || _varName isEqualTo MHQ_2) then {
-			//	_iconTexture = "\a3\ui_f\data\igui\cfg\simpletasks\types\truck_ca.paa";
-			//	_iconColor = [0.3,0.9,0,3];
-			//}
-		
-			_screenPosition = worldToScreen (_x modelToWorldVisual _offset);
+			_screenPosition = worldToScreen (_y modelToWorldVisual _offset);
 			if (_screenPosition isEqualTo []) then { continue };
 
 			if (_x distance _y < 150) then {
 				_pos = getPos _x;
+
 				drawIcon3D [
-					_iconTexture, // texture
-					_iconColor, // color
+					(_x getVariable "iconTexture"), // texture
+					(_x getVariable "iconColor"), // color
 					[(_pos select 0), (_pos select 1), 2], // position
 					1, // width
 					1, // height
@@ -37,4 +28,4 @@ onEachFrame {
 			}
 		} forEach terminals;
 	} forEach allUnits;
-}
+};

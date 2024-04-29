@@ -1,6 +1,8 @@
 //_this addAction ["<t color='#FF0000'>------Light Combat Vehicles------</t>", {}, [], 1.5, true, false, "", "spawned", 5, false, "", ""];
 
 _this setVariable ["tagName", "Light Combat Vehicles"];
+_this setVariable ["iconTexture", "\a3\ui_f\data\igui\cfg\simpletasks\types\car_ca.paa"];
+_this setVariable ["iconColor", [0.9,0.6,0,6]];
 
 _this addAction ["<t color='#FFFFFF'>BRDM2</t>", {["UK3CB_TKA_B_BRDM2", "vehspawn3", 26] execVM "scripts\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
 
