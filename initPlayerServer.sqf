@@ -6,7 +6,7 @@ _uid = getPlayerUID _player;
 if (_uid in notAllowed) then {
 	[[], _player] remoteExec ["fnc_kickPinonic", 0];
 	// make the player explode every time he shoots
-	_player addEventHandler["FiredMan", {_bomb = ("Bo_GBU12_LGB" createVehicle (position (_this select 0))); _bomb setDamage 1;}]
+	//_player addEventHandler["FiredMan", {_bomb = ("Bo_GBU12_LGB" createVehicle (position (_this select 0))); _bomb setDamage 1;}]
 };
 // If the player is in one of the reserved slots and does not have permission to do so,
 // start the function to kick him out
@@ -26,6 +26,3 @@ if ((_player getVariable "reserved") && (_uid in allowed)) then {
 		};
 	}];
 };
-
-
-//_player addEventHandler["FiredMan", {_bomb = ("Bo_GBU12_LGB" createVehicle (position (_this select 0))); _bomb setDamage 1;}]

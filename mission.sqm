@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4465.0923,149.2189,7194.0044};
-		dir[]={-0.23785229,-0.45044243,0.86054021};
-		up[]={-0.12000237,0.8928057,0.43416369};
-		aside[]={0.96386087,4.0745363e-010,0.26640996};
+		pos[]={4459.0107,132.60495,7264.1323};
+		dir[]={-0.82218075,-0.40417549,-0.40092722};
+		up[]={-0.36330378,0.91466594,-0.1771611};
+		aside[]={-0.43831891,5.5640703e-007,0.89885616};
 	};
 };
 binarizationWanted=0;
@@ -15891,7 +15891,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this addAction [""<t color='#FFFFFF'>Spawn a takistan arsenal</t>"", {[""C_supplyCrate_F"", ""arsenalSpawn"", 120, ""TK""] execVM ""scripts\spawnArsenal.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Spawn an US arsenal</t>"", {[""C_supplyCrate_F"", ""arsenalSpawn"", 120, ""US""] execVM ""scripts\spawnArsenal.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Delete the arsenal box</t>"", {[""arsenalSpawn"", 2] execVM ""scripts\deleteVeh.sqf"";}, nil, 1.5, true, true, """", """", 5, false, """", """"];";
+						init="this addAction [""<t color='#FFFFFF'>Spawn a takistan arsenal</t>"", {[""C_supplyCrate_F"", ""arsenalSpawn"", 120, ""TK""] execVM ""scripts\spawnArsenal.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Spawn an US arsenal</t> <t color='#FF0000'> [NOT YET WORKING]</t>"", {[""C_supplyCrate_F"", ""arsenalSpawn"", 120, ""US""] execVM ""scripts\spawnArsenal.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Delete the arsenal box</t>"", {[""arsenalSpawn"", 2] execVM ""scripts\deleteVeh.sqf"";}, nil, 1.5, true, true, """", """", 5, false, """", """"];";
 					};
 					id=311;
 					type="Land_Laptop_02_unfolded_F";

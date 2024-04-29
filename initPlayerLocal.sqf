@@ -1,4 +1,4 @@
-//per gli slot riservati
+// for the reserved slot
 fnc_reservedSlot = {
 	player enableSimulationGlobal false;
 	("This is a reserved slot." call BIS_fnc_rscLayer) cutText [
@@ -12,7 +12,7 @@ fnc_reservedSlot = {
 	endMission "NOT_ALLOWED";
 };
 
-//Per bionic e pino
+// for Bionic and Pino
 fnc_kickPinonic = {
 	player enableSimulationGlobal false;
 	("You retarded fuck" call BIS_fnc_rscLayer) cutText [
