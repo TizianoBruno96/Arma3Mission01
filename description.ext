@@ -1,5 +1,5 @@
 author			= "Red Cobra";
-onLoadName		= "Tra 343RedCobra v1.0.3";
+onLoadName		= "Tra 343RedCobra v1.0.4";
 onLoadMission	= "Always follow the orders of your superiors!";
 loadScreen = "images\training.jpg";
 onLoadMissionTime = 1;
