@@ -16,7 +16,7 @@
 
 _this allowDamage false;
 
-_this addAction ["<t color='#FF0000' size='+1.5'>Teleport to base</t>", {player setPos (getPos B_1)}, [], 1.5, true, true, "", "", 5, false, "", ""];
+_this addAction ["<t color='#FF0000' size='+1.5'>Teleport to base</t>", {cutText ["Teleporting to base...", "BLACK OUT"]; sleep 2; player setPos (getPos B_1); sleep 2; cutText ["Teleporting to base...", "BLACK IN"];}, [], 1.5, true, true, "", "", 5, false, "", ""];
 
 _this setVariable ["tagName", "MHQ " + ([vehicleVarName _this, 4] call BIS_fnc_trimString)];
 _this setVariable ["iconTexture", "\a3\ui_f\data\igui\cfg\simpletasks\types\truck_ca.paa"];
