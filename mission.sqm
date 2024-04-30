@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=39;
+		nextID=40;
 	};
 	class Camera
 	{
-		pos[]={4364.2119,151.73083,7195.7163};
-		dir[]={0.90185136,-0.4186326,0.10682186};
-		up[]={0.41572648,0.90815562,0.049241681};
-		aside[]={0.11762504,-3.7252903e-009,-0.99305809};
+		pos[]={4346.2104,133.31978,7218.3027};
+		dir[]={-0.32526818,-0.51279742,-0.79450911};
+		up[]={-0.19428626,0.85850751,-0.47456965};
+		aside[]={-0.92545134,-1.6170088e-007,0.37887526};
 	};
 };
 binarizationWanted=0;
@@ -15447,7 +15447,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this execVM ""scripts\vehicles\spawnTransportAirplanes.sqf"";";
+						init="this execVM ""scripts\vehicles\addactions\spawnTransportAirplanes.sqf"";";
 						name="t_3";
 					};
 					id=202;
@@ -15516,7 +15516,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this execVM ""scripts\vehicles\spawnHelicopters.sqf"";";
+						init="this execVM ""scripts\vehicles\addactions\spawnHelicopters.sqf"";";
 						name="t_1";
 					};
 					id=206;
@@ -15586,7 +15586,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this execVM ""scripts\vehicles\spawnCombatJets.sqf"";";
+						init="this execVM ""scripts\vehicles\addactions\spawnCombatJets.sqf"";";
 						name="t_4";
 					};
 					id=210;
@@ -15656,7 +15656,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this execVM ""scripts\vehicles\spawnHeavyAirplanes.sqf"";";
+						init="this execVM ""scripts\vehicles\addactions\spawnHeavyAirplanes.sqf"";";
 						name="t_5";
 					};
 					id=226;
@@ -15725,7 +15725,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this execVM ""scripts\vehicles\spawnTrucks.sqf"";";
+						init="this execVM ""scripts\vehicles\addactions\spawnTrucks.sqf"";";
 						name="t_6";
 					};
 					id=231;
@@ -15760,7 +15760,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this execVM ""scripts\vehicles\spawnLightVehicles.sqf"";";
+						init="this execVM ""scripts\vehicles\addactions\spawnLightVehicles.sqf"";";
 						name="t_7";
 					};
 					id=248;
@@ -15795,7 +15795,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this execVM ""scripts\vehicles\spawnLightCombatVehicles.sqf"";";
+						init="this execVM ""scripts\vehicles\addactions\spawnLightCombatVehicles.sqf"";";
 						name="t_8";
 					};
 					id=257;
@@ -15830,7 +15830,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this execVM ""scripts\vehicles\spawnTanks.sqf"";";
+						init="this execVM ""scripts\vehicles\addactions\spawnTanks.sqf"";";
 						name="t_9";
 					};
 					id=258;
@@ -15899,7 +15899,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this addAction [""<t color='#FFFFFF'>Spawn a takistan arsenal</t>"", {[""C_supplyCrate_F"", ""arsenalSpawn"", 120, ""TK""] execVM ""scripts\spawnArsenal.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Spawn an US arsenal</t> <t color='#FF0000'> [NOT YET WORKING]</t>"", {[""C_supplyCrate_F"", ""arsenalSpawn"", 120, ""US""] execVM ""scripts\spawnArsenal.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Delete the arsenal box</t>"", {[""arsenalSpawn"", 2] execVM ""scripts\deleteVeh.sqf"";}, nil, 1.5, true, true, """", """", 5, false, """", """"];";
+						init="this addAction [""<t color='#FFFFFF'>Spawn a takistan arsenal</t>"", {[""C_supplyCrate_F"", ""arsenalSpawn"", 120, ""TK""] execVM ""scripts\spawnArsenal.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Spawn an US arsenal</t> <t color='#FF0000'> [NOT YET WORKING]</t>"", {[""C_supplyCrate_F"", ""arsenalSpawn"", 120, ""US""] execVM ""scripts\spawnArsenal.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Delete the arsenal box</t>"", {[""arsenalSpawn"", 2] execVM ""scripts\vehicles\deleteVeh.sqf"";}, nil, 1.5, true, true, """", """", 5, false, """", """"];";
 					};
 					id=311;
 					type="Land_Laptop_02_unfolded_F";
@@ -15933,7 +15933,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this execVM ""scripts\vehicles\spawnDrones.sqf"";";
+						init="this execVM ""scripts\vehicles\addactions\spawnDrones.sqf"";";
 						name="t_2";
 					};
 					id=1066;
