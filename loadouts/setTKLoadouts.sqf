@@ -1,25 +1,31 @@
 /**
- * This script adds actions to the current selection that allow the player to execute different loadout scripts based on their role.
- * The loadout scripts are located in the "loadouts\takistanArmy" directory.
+ * This script adds action menu options to the player's selection. Each action executes a specific script when activated.
+ * The scripts are located in the "loadouts\takistanArmy" directory.
  * 
- * Actions:
- * - SquadLeader: Executes the "Caposquadra.sqf" script.
- * - TeamLeader: Executes the "Capogruppo.sqf" script.
- * - Rifleman: Executes the "Fuciliere.sqf" script.
- * - Grenadier: Executes the "Granatiere.sqf" script.
- * - Rifleman AC: Executes the "FuciliereAC.sqf" script.
- * - Medic: Executes the "Medico.sqf" script.
- * - Machine Gunner: Executes the "Mitragliere.sqf" script.
- * - Sharpshooter: Executes the "Tiratore.sqf" script.
- * - Explosives Specialist: Executes the "SpecialistaExp.sqf" script.
- * - Anti-tank Specialist: Executes the "SpecialistaAC.sqf" script.
- * - Anti-aircraft Specialist: Executes the "SpecialistaAA.sqf" script.
- * - Repair Specialist: Executes the "SpecialistaRep.sqf" script.
- * - Radio Operator: Executes the "OperatoreRad.sqf" script.
- * - Drone Operator: Executes the "OperatoreDroni.sqf" script.
- * - Sniper: Executes the "Cecchino.sqf" script.
+ * The actions added are:
+ * - SquadLeader: Executes "Caposquadra.sqf"
+ * - TeamLeader: Executes "Capogruppo.sqf"
+ * - Rifleman: Executes "Fuciliere.sqf"
+ * - Grenadier: Executes "Granatiere.sqf"
+ * - Rifleman AC: Executes "FuciliereAC.sqf"
+ * - Medic: Executes "Medico.sqf"
+ * - Machine Gunner: Executes "Mitragliere.sqf"
+ * - Sharpshooter: Executes "Tiratore.sqf"
+ * - Explosives Specialist: Executes "SpecialistaExp.sqf"
+ * - Anti-tank Specialist: Executes "SpecialistaAC.sqf"
+ * - Anti-aircraft Specialist: Executes "SpecialistaAA.sqf"
+ * - Repair Specialist: Executes "SpecialistaRep.sqf"
+ * - Radio Operator: Executes "OperatoreRad.sqf"
+ * - Drone Operator: Executes "OperatoreDroni.sqf"
+ * - Sniper: Executes "Cecchino.sqf"
  * 
- * The script also makes the arsenal indestructible and adds the ACE arsenal of the Takistanis.
+ * The script also sets the "allowDamage" property of the selection to false, making it indestructible.
+ * 
+ * Additionally, it adds the ACE arsenal to the selection, providing various weapons and equipment.
+ *
+ * @file setTKLoadouts.sqf
+ * @author 343RedCobra
+ * @version 1.0
  */
 
 _this addAction["<t color='#FF0000' size='+1.5'>SquadLeader</t>",{player execVM "loadouts\takistanArmy\Caposquadra.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
