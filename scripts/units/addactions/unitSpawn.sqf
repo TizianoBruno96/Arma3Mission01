@@ -50,6 +50,20 @@ if((paramsArray select 5) == 1 && (paramsArray select 4) > 0) then {
 	_this addAction ["<t color='#4040FF' size='+1.5'>Repair Specialist</t>", {["rhsusf_usmc_marpat_d_rifleman_light", "unitSpawn", 315, player, "loadouts\usArmy\SpecialistaRep.sqf"] execVM "scripts\units\USUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
 };
 
+if((paramsArray select 6) == 1 && (paramsArray select 4) > 0) then {
+	_this addAction ["<t color='#4040FF' size='+1.5'>---------Rebel Army---------</t>", {}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
+	_this addAction ["<t color='#4040FF' size='+1.5'>Rifleman</t>", {["UK3CB_TKM_I_RIF_1", "unitSpawn", 315, player, "loadouts\usArmy\Fuciliere.sqf"] execVM "scripts\units\USUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
+	_this addAction ["<t color='#4040FF' size='+1.5'>Grenadier</t>", {["UK3CB_TKM_I_RIF_1", "unitSpawn", 315, player, "loadouts\usArmy\Granatiere.sqf"] execVM "scripts\units\USUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
+	_this addAction ["<t color='#4040FF' size='+1.5'>AC Rifleman</t>", {["UK3CB_TKM_I_RIF_1", "unitSpawn", 315, player, "loadouts\usArmy\FuciliereAC.sqf"] execVM "scripts\units\USUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
+	_this addAction ["<t color='#4040FF' size='+1.5'>Medic</t>", {["UK3CB_TKM_I_RIF_1", "unitSpawn", 315, player, "loadouts\usArmy\Medico.sqf"] execVM "scripts\units\USUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
+	_this addAction ["<t color='#4040FF' size='+1.5'>Machine Gunner</t>", {["UK3CB_TKM_I_RIF_1", "unitSpawn", 315, player, "loadouts\usArmy\Mitragliere.sqf"] execVM "scripts\units\USUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
+	_this addAction ["<t color='#4040FF' size='+1.5'>Marksman</t>", {["UK3CB_TKM_I_RIF_1", "unitSpawn", 315, player, "loadouts\usArmy\Tiratore.sqf"] execVM "scripts\units\USUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
+	_this addAction ["<t color='#4040FF' size='+1.5'>Explosive Specialist</t>", {["UK3CB_TKM_I_RIF_1", "unitSpawn", 315, player, "loadouts\usArmy\SpecialistaExp.sqf"] execVM "scripts\units\USUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
+	_this addAction ["<t color='#4040FF' size='+1.5'>AC Specialist</t>", {["UK3CB_TKM_I_RIF_1", "unitSpawn", 315, player, "loadouts\usArmy\SpecialistaAC.sqf"] execVM "scripts\units\USUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
+	_this addAction ["<t color='#4040FF' size='+1.5'>AA Specialist</t>", {["UK3CB_TKM_I_RIF_1", "unitSpawn", 315, player, "loadouts\usArmy\SpecialistaAA.sqf"] execVM "scripts\units\USUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
+	_this addAction ["<t color='#4040FF' size='+1.5'>Repair Specialist</t>", {["UK3CB_TKM_I_RIF_1", "unitSpawn", 315, player, "loadouts\usArmy\SpecialistaRep.sqf"] execVM "scripts\units\USUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
+};
+
 if ((paramsArray select 4) > 0) then {
 	_this addAction ["<t color='#FFFFFF' size='+1.5'>Delete AI Units</t>", {player execVM "scripts\units\AIUnitDel.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];
 };

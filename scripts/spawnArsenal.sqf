@@ -47,11 +47,16 @@ if (_faction == "US") then {
         hint "The US arsenal is deactivated";
         deleteVehicle _ars;
     };
-}; 
+};
 
 if (_faction == "RE") then {
-    _ars execVM "loadouts\setRELoadouts.sqf";
-};
+    if ((paramsArray select 5) == 1) then {
+        _ars execVM "loadouts\setRELoadouts.sqf";
+    } else {
+        hint "The Rebel arsenal is deactivated";
+        deleteVehicle _ars;
+    };
+}; 
 
 // Clear the content of the box
 clearWeaponCargoglobal _ars;
