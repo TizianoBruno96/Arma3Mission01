@@ -6,6 +6,10 @@
  * @param {Number} _direction - The direction the unit should face upon spawning.
  * @param {Object} _player - The player object, used to determine if the player has too many AI units in their group.
  * @param {String} _loadout - The file path to the loadout script for the unit.
+ *
+ * @file TKUnitSpawn.sqf
+ * @author 343RedCobra
+ * @version 1.0
  */
 
 params ["_unitName", "_spawnPos", "_direction", "_player", "_loadout"];

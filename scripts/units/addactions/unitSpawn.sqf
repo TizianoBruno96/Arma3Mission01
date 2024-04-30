@@ -1,3 +1,23 @@
+/**
+ * This script adds actions to the player's unit that allow them to spawn different types of units and perform other actions.
+ * 
+ * Actions:
+ * - Rifleman: Spawns a rifleman unit with a specific loadout.
+ * - Grenadier: Spawns a grenadier unit with a specific loadout.
+ * - AC Rifleman: Spawns an anti-aircraft rifleman unit with a specific loadout.
+ * - Medic: Spawns a medic unit with a specific loadout.
+ * - Machine Gunner: Spawns a machine gunner unit with a specific loadout.
+ * - Marksman: Spawns a marksman unit with a specific loadout.
+ * - Explosive Specialist: Spawns an explosive specialist unit with a specific loadout.
+ * - AC Specialist: Spawns an anti-aircraft specialist unit with a specific loadout.
+ * - AA Specialist: Spawns an anti-aircraft specialist unit with a specific loadout.
+ * - Repair Specialist: Spawns a repair specialist unit with a specific loadout.
+ * - Delete AI Units: Executes a script to delete all AI units.
+ * 
+ * @file unitSpawn.sqf
+ * @author 343RedCobra
+ * @version 1.0
+ */
 _this setVariable ["tagName", "Units Recruitment"];
 _this setVariable ["iconTexture", "\a3\ui_f\data\igui\cfg\simpletasks\types\meet_ca.paa"];
 _this setVariable ["iconColor", [0.0,0.1,0.6,1]];
