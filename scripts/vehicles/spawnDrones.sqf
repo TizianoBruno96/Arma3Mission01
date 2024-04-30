@@ -1,11 +1,25 @@
-//_this addAction ["<t color='#FF0000'>------Crocus Drones------</t>", {}, [], 1.5, true, false, "", "spawned", 5, false, "", ""];
+spawned = false;
 
-_this setVariable ["tagName", "Crocus Drones"];
-_this setVariable ["iconTexture", "\a3\ui_f\data\igui\cfg\simpletasks\types\destroy_ca.paa"];
-_this setVariable ["iconColor", [0.9,0.4,0,4]];
+_vehicle = _this select 0; // Select the input vehicle
+_spawnPos = getMarkerPos (_this select 1); // Select the input marker position
+_radius = 10; // Modify the radius in meters as desired
+_direction = _this select 2; // Select the input direction
 
-_this addAction ["<t color='#FFFFFF'>Crocus Drone AT</t>", {["O_Crocus_AT", "dronespawn", 200] execVM "scripts\spawnDrones.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
+// Find every object in the selected area
+_oldVeh = nearestObjects [_spawnPos, [], _radius];
 
-_this addAction ["<t color='#FFFFFF'>Crocus Drone AP</t>", {["O_Crocus_AP", "dronespawn", 200] execVM "scripts\spawnDrones.sqf";}, nil, 1.5, true, true, "", "spawned", 5, false, "", ""];
- 
-_this addAction ["<t color='#FF6666'>Delete the drone</t>", {["dronespawn", 10] execVM "scripts\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];
+// Delete the found objects
+{
+    if (not (_x isKindOf "logic")) then {
+        deleteVehicle _x;
+    }
+} forEach _oldVeh;
+
+sleep 0.1;
+
+// Create the new empty drone. It won't have any AI
+_uav = createVehicle [_vehicle, _spawnPos, [], 0, "NONE"];
+_uav setDir _direction; // Change the direction of the drone
+createVehicleCrew _uav; // Create the AI for the drone
+
+spawned = true;
