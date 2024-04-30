@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=641;
+	toggles=513;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=1077;
+		nextID=1090;
 	};
 	class MarkerIDProvider
 	{
@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4397.0933,140.89388,7200.9541};
-		dir[]={0.65034163,-0.57174248,0.50017244};
-		up[]={0.45321032,0.82042986,0.34856001};
-		aside[]={0.60964274,-2.1373853e-007,-0.79267985};
+		pos[]={4468.6177,132.2235,7249.4082};
+		dir[]={-0.37613299,-0.62835318,-0.6809544};
+		up[]={-0.30381191,0.77792811,-0.55002385};
+		aside[]={-0.87534171,-2.7634087e-008,0.48350489};
 	};
 };
 binarizationWanted=0;
@@ -15401,7 +15401,7 @@ class Mission
 			name="Vehicle Spawn Script";
 			class Entities
 			{
-				items=16;
+				items=18;
 				class Item0
 				{
 					dataType="Object";
@@ -15957,9 +15957,78 @@ class Mission
 						nAttributes=1;
 					};
 				};
+				class Item16
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4466.8198,128.48639,7246.1504};
+						angles[]={-0,0.4157615,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=1077;
+					type="FoldTable";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item17
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4466.7808,129.01585,7246.1538};
+						angles[]={0,3.2367828,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+						init="this execVM ""scripts\units\addactions\unitSpawn.sqf"";";
+						name="t_10";
+					};
+					id=1078;
+					type="Land_Laptop_02_unfolded_F";
+					atlOffset=0.80000305;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
 			};
 			id=17;
-			atlOffset=0.69581604;
+			atlOffset=0.57395935;
 		};
 		class Item2
 		{
@@ -17386,7 +17455,7 @@ class Mission
 					class Attributes
 					{
 						name="c_1";
-						description="Caposquadra@Alpha";
+						description="SquadLeader@Alpha";
 						isPlayable=1;
 						class Inventory
 						{
@@ -17607,7 +17676,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="TL";
+						description="TeamLeader";
 						isPlayable=1;
 						class Inventory
 						{
@@ -17846,7 +17915,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="TL";
+						description="TeamLeader";
 						isPlayable=1;
 						class Inventory
 						{
@@ -18085,7 +18154,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Medico";
+						description="Medic";
 						isPlayable=1;
 						class Inventory
 						{
@@ -18337,7 +18406,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Medico";
+						description="Medic";
 						isPlayable=1;
 						class Inventory
 						{
@@ -18589,7 +18658,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Granatiere";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -18824,7 +18893,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Granatiere";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -19059,7 +19128,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Mitragliere";
+						description="Machine Gunner";
 						isPlayable=1;
 						class Inventory
 						{
@@ -19272,7 +19341,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Mitragliere";
+						description="Machine Gunner";
 						isPlayable=1;
 						class Inventory
 						{
@@ -19485,7 +19554,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Tiratore Scelto";
+						description="Marksman";
 						isPlayable=1;
 						class Inventory
 						{
@@ -19709,7 +19778,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Fuciliere Anticarro";
+						description="AC Rifleman";
 						isPlayable=1;
 						class Inventory
 						{
@@ -19931,7 +20000,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Fuciliere Anticarro";
+						description="AC Rifleman";
 						isPlayable=1;
 						class Inventory
 						{
@@ -20153,7 +20222,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Specialista Anticarro";
+						description="AC Specialist";
 						isPlayable=1;
 						class Inventory
 						{
@@ -20393,7 +20462,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Specialista Esplosivi";
+						description="Explosives Specialist";
 						isPlayable=1;
 						class Inventory
 						{
@@ -20653,7 +20722,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Operatore Droni";
+						description="Drone Operator";
 						isPlayable=1;
 						class Inventory
 						{
@@ -20853,7 +20922,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Specialista Riparazioni";
+						description="Repair Specialist";
 						isPlayable=1;
 						class Inventory
 						{
@@ -21107,7 +21176,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Specialista AntiAereo";
+						description="AA Specialist";
 						isPlayable=1;
 						class Inventory
 						{
@@ -21340,7 +21409,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Operatore Radio";
+						description="Radio Operator";
 						isPlayable=1;
 						class Inventory
 						{
@@ -21563,7 +21632,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Operatore Radio";
+						description="Radio Operator";
 						isPlayable=1;
 						class Inventory
 						{
@@ -21817,7 +21886,7 @@ class Mission
 					class Attributes
 					{
 						name="c_2";
-						description="Caposquadra@Bravo";
+						description="SquadLeader@Bravo";
 						isPlayable=1;
 						class Inventory
 						{
@@ -22038,7 +22107,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="TL";
+						description="TeamLeader";
 						isPlayable=1;
 						class Inventory
 						{
@@ -22277,7 +22346,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="TL";
+						description="TeamLeader";
 						isPlayable=1;
 						class Inventory
 						{
@@ -22516,7 +22585,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Medico";
+						description="Medic";
 						isPlayable=1;
 						class Inventory
 						{
@@ -22768,7 +22837,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Medico";
+						description="Medic";
 						isPlayable=1;
 						class Inventory
 						{
@@ -23020,7 +23089,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Granatiere";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -23255,7 +23324,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Granatiere";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -23490,7 +23559,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Mitragliere";
+						description="Machine Gunner";
 						isPlayable=1;
 						class Inventory
 						{
@@ -23703,7 +23772,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Mitragliere";
+						description="Machine Gunner";
 						isPlayable=1;
 						class Inventory
 						{
@@ -23916,7 +23985,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Tiratore Scelto";
+						description="Marksman";
 						isPlayable=1;
 						class Inventory
 						{
@@ -24140,7 +24209,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Fuciliere Anticarro";
+						description="AC Rifleman";
 						isPlayable=1;
 						class Inventory
 						{
@@ -24362,7 +24431,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Fuciliere Anticarro";
+						description="AC Rifleman";
 						isPlayable=1;
 						class Inventory
 						{
@@ -24584,7 +24653,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Specialista Anticarro";
+						description="AC Specialist";
 						isPlayable=1;
 						class Inventory
 						{
@@ -24824,7 +24893,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Specialista Esplosivi";
+						description="Explosives Specialist";
 						isPlayable=1;
 						class Inventory
 						{
@@ -25084,7 +25153,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Operatore Droni";
+						description="Drone Operator";
 						isPlayable=1;
 						class Inventory
 						{
@@ -25284,7 +25353,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Specialista Riparazioni";
+						description="Repair Specialist";
 						isPlayable=1;
 						class Inventory
 						{
@@ -25538,7 +25607,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Specialista AntiAereo";
+						description="AA Specialist";
 						isPlayable=1;
 						class Inventory
 						{
@@ -25771,7 +25840,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Operatore Radio";
+						description="Radio Operator";
 						isPlayable=1;
 						class Inventory
 						{
@@ -25994,7 +26063,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Operatore Radio";
+						description="Radio Operator";
 						isPlayable=1;
 						class Inventory
 						{
@@ -26248,7 +26317,7 @@ class Mission
 					class Attributes
 					{
 						name="c_3";
-						description="Caposquadra@Charlie";
+						description="SquadLeader@Charlie";
 						isPlayable=1;
 						class Inventory
 						{
@@ -26469,7 +26538,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="TL";
+						description="TeamLeader";
 						isPlayable=1;
 						class Inventory
 						{
@@ -26708,7 +26777,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="TL";
+						description="TeamLeader";
 						isPlayable=1;
 						class Inventory
 						{
@@ -26947,7 +27016,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Medico";
+						description="Medic";
 						isPlayable=1;
 						class Inventory
 						{
@@ -27199,7 +27268,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Medico";
+						description="Medic";
 						isPlayable=1;
 						class Inventory
 						{
@@ -27451,7 +27520,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Granatiere";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -27686,7 +27755,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Granatiere";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -27921,7 +27990,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Mitragliere";
+						description="Machine Gunner";
 						isPlayable=1;
 						class Inventory
 						{
@@ -28134,7 +28203,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Mitragliere";
+						description="Machine Gunner";
 						isPlayable=1;
 						class Inventory
 						{
@@ -28347,7 +28416,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Tiratore Scelto";
+						description="Marksman";
 						isPlayable=1;
 						class Inventory
 						{
@@ -28793,7 +28862,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Fuciliere Anticarro";
+						description="AC Rifleman";
 						isPlayable=1;
 						class Inventory
 						{
@@ -29015,7 +29084,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Specialista Anticarro";
+						description="AC Specialist";
 						isPlayable=1;
 						class Inventory
 						{
@@ -29255,7 +29324,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Specialista Esplosivi";
+						description="Explosives Specialist";
 						isPlayable=1;
 						class Inventory
 						{
@@ -29515,7 +29584,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Operatore Droni";
+						description="Drone Operator";
 						isPlayable=1;
 						class Inventory
 						{
@@ -29715,7 +29784,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Specialista Riparazioni";
+						description="Repair Specialist";
 						isPlayable=1;
 						class Inventory
 						{
@@ -29969,7 +30038,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Specialista AntiAereo";
+						description="AA Specialist";
 						isPlayable=1;
 						class Inventory
 						{
@@ -30202,7 +30271,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Operatore Radio";
+						description="Radio Operator";
 						isPlayable=1;
 						class Inventory
 						{
@@ -30425,7 +30494,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Operatore Radio";
+						description="Radio Operator";
 						isPlayable=1;
 						class Inventory
 						{
@@ -30679,7 +30748,7 @@ class Mission
 					class Attributes
 					{
 						name="c_4";
-						description="Caposquadra@Delta";
+						description="SquadLeader@Delta";
 						isPlayable=1;
 						class Inventory
 						{
@@ -30900,7 +30969,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="TL";
+						description="TeamLeader";
 						isPlayable=1;
 						class Inventory
 						{
@@ -31139,7 +31208,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="TL";
+						description="TeamLeader";
 						isPlayable=1;
 						class Inventory
 						{
@@ -31378,7 +31447,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Medico";
+						description="Medic";
 						isPlayable=1;
 						class Inventory
 						{
@@ -31630,7 +31699,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Medico";
+						description="Medic";
 						isPlayable=1;
 						class Inventory
 						{
@@ -31882,7 +31951,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Granatiere";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -32117,7 +32186,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Granatiere";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -32352,7 +32421,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Mitragliere";
+						description="Machine Gunner";
 						isPlayable=1;
 						class Inventory
 						{
@@ -32565,7 +32634,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Mitragliere";
+						description="Machine Gunner";
 						isPlayable=1;
 						class Inventory
 						{
@@ -32778,7 +32847,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Tiratore Scelto";
+						description="Marksman";
 						isPlayable=1;
 						class Inventory
 						{
@@ -33002,7 +33071,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Fuciliere Anticarro";
+						description="AC Rifleman";
 						isPlayable=1;
 						class Inventory
 						{
@@ -33224,7 +33293,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Fuciliere Anticarro";
+						description="AC Rifleman";
 						isPlayable=1;
 						class Inventory
 						{
@@ -33446,7 +33515,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Specialista Anticarro";
+						description="AC Specialist";
 						isPlayable=1;
 						class Inventory
 						{
@@ -33686,7 +33755,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Specialista Esplosivi";
+						description="Explosives Specialist";
 						isPlayable=1;
 						class Inventory
 						{
@@ -33946,7 +34015,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Operatore Droni";
+						description="Drone Operator";
 						isPlayable=1;
 						class Inventory
 						{
@@ -34146,7 +34215,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Specialista Riparazioni";
+						description="Repair Specialist";
 						isPlayable=1;
 						class Inventory
 						{
@@ -34400,7 +34469,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Specialista AntiAereo";
+						description="AA Specialist";
 						isPlayable=1;
 						class Inventory
 						{
@@ -34633,7 +34702,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Operatore Radio";
+						description="Radio Operator";
 						isPlayable=1;
 						class Inventory
 						{
@@ -34856,7 +34925,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Operatore Radio";
+						description="Radio Operator";
 						isPlayable=1;
 						class Inventory
 						{
@@ -35110,7 +35179,7 @@ class Mission
 					class Attributes
 					{
 						name="s_1";
-						description="Cecchino@Sniper1";
+						description="Sniper@Sniper1";
 						isPlayable=1;
 						class Inventory
 						{
@@ -35353,7 +35422,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Cecchino";
+						description="Sniper";
 						isPlayable=1;
 						class Inventory
 						{
@@ -35627,7 +35696,7 @@ class Mission
 					class Attributes
 					{
 						name="s_2";
-						description="Cecchino@Sniper2";
+						description="Sniper@Sniper2";
 						isPlayable=1;
 						class Inventory
 						{
@@ -35870,7 +35939,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Cecchino";
+						description="Sniper";
 						isPlayable=1;
 						class Inventory
 						{
@@ -36143,7 +36212,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						description="Pilota@Eagle";
+						description="Pilot@Eagle";
 						isPlayable=1;
 						class Inventory
 						{
@@ -36318,7 +36387,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Pilota";
+						description="Pilot";
 						isPlayable=1;
 						class Inventory
 						{
@@ -36427,7 +36496,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Pilota";
+						description="Pilot";
 						isPlayable=1;
 						class Inventory
 						{
@@ -36536,7 +36605,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Pilota";
+						description="Pilot";
 						isPlayable=1;
 						class Inventory
 						{
@@ -52775,238 +52844,13 @@ class Mission
 		};
 		class Item69
 		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4461.6089,128.08772,7250.6514};
-						angles[]={0,3.4983203,0};
-					};
-					side="East";
-					flags=7;
-					class Attributes
-					{
-						name="c_5";
-						description="Caposquadra@Delta";
-						isPlayable=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_ak74m";
-								firemode="rhs_weap_ak74m:Single";
-								class primaryMuzzleMag
-								{
-									name="rhs_30Rnd_545x39_7N22_AK";
-									ammoLeft=30;
-								};
-							};
-							class handgun
-							{
-								name="rhs_weap_6p53";
-								class primaryMuzzleMag
-								{
-									name="rhs_18rnd_9x21mm_7N28";
-									ammoLeft=18;
-								};
-							};
-							class uniform
-							{
-								typeName="UK3CB_TKA_B_U_CombatUniform_01_DES_MARPAT";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=9;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_EntrenchingTool";
-										count=1;
-									};
-									class Item3
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=4;
-									};
-									class Item5
-									{
-										name="ACE_splint";
-										count=4;
-									};
-									class Item6
-									{
-										name="ACE_morphine";
-										count=4;
-									};
-									class Item7
-									{
-										name="ACE_epinephrine";
-										count=4;
-									};
-									class Item8
-									{
-										name="ACE_packingBandage";
-										count=5;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="UK3CB_TKA_B_V_GA_LITE_TAN";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=6;
-									class Item0
-									{
-										name="rhs_30Rnd_545x39_7N22_plum_AK";
-										count=11;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="rhssaf_mag_brd_m83_white";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="rhssaf_mag_brd_m83_green";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhssaf_mag_brd_m83_red";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item4
-									{
-										name="rhssaf_mag_brd_m83_blue";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item5
-									{
-										name="rhs_grenade_m1939e_f_mag";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="UK3CB_TKA_B_B_RIF";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_18rnd_9x21mm_7N29";
-										count=3;
-										ammoLeft=18;
-									};
-								};
-								class ItemCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="ACE_bloodIV";
-										count=2;
-									};
-									class Item1
-									{
-										name="ACE_microDAGR";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_packingBandage";
-										count=20;
-									};
-									class Item3
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							headgear="UK3CB_TKA_B_H_DES_MARPAT";
-						};
-					};
-					id=1076;
-					type="UK3CB_TKA_B_RIF_1";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male03PER";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.95999998;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1075;
+			dataType="Marker";
+			position[]={4473.0112,128.086,7246.4629};
+			name="unitSpawn";
+			type="Empty";
+			angle=314.99988;
+			id=1079;
+			atlOffset=-0.00028991699;
 		};
 	};
 	class Connections
