@@ -15,7 +15,7 @@ if (_flagVarName == "B_1") then {
     // Add actions to teleport to MHQ1 and MHQ2
     _this addAction ["<t color='#0000FF'>Teleport to MHQ1</t>", {player setPos (getPos r_1)}, [], 1.5, true, true, "", "", 5, false, "", ""];
     _this addAction ["<t color='#0000FF'>Teleport to MHQ2</t>", {player setPos (getPos r_2)}, [], 1.5, true, true, "", "", 5, false, "", ""];
-}
+};
 
 private _locations = [
     ["B_1", 1],
