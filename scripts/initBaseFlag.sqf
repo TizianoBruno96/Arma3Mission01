@@ -25,14 +25,14 @@
 _this setFlagTexture "images\girlsup.jpg";
 
 _this execVM "loadouts\setZEUSLoadouts.sqf";
-_this addAction ["<t color='#FF4040'>Switch to OPFOR</t>", {[player, east] execVM "scripts\unitSide.sqf";  player execVM "loadouts\takistanArmy\Fuciliere.sqf";}, nil, 1.5, true, true, "", "!((side player) isEqualTo EAST)", 5, false, "", ""];
+_this addAction ["<t color='#FF4040'>Switch to OPFOR</t>", {cutText ["Switching to OPFOR...", "BLACK OUT"]; sleep 1; [player, east] execVM "scripts\unitSide.sqf";  player execVM "loadouts\takistanArmy\Fuciliere.sqf"; sleep 1; cutText ["Switching to OPFOR...", "BLACK IN"];}, nil, 1.5, true, true, "", "!((side player) isEqualTo EAST)", 5, false, "", ""];
 
 if ((paramsArray select 5) == 1) then {
-    _this addAction ["<t color='#4040FF'>Switch to BLUFOR</t>", {[player, west] execVM "scripts\unitSide.sqf"; player execVM "loadouts\usArmy\Fuciliere.sqf";}, nil, 1.5, true, true, "", "!((side player) isEqualTo WEST)", 5, false, "", ""];
+    _this addAction ["<t color='#4040FF'>Switch to BLUFOR</t>", {cutText ["Switching to BLUFOR...", "BLACK OUT"]; sleep 1; [player, west] execVM "scripts\unitSide.sqf"; player execVM "loadouts\usArmy\Fuciliere.sqf"; sleep 1; cutText ["Switching to BLUFOR...", "BLACK IN"];}, nil, 1.5, true, true, "", "!((side player) isEqualTo WEST)", 5, false, "", ""];
 };
 
 if ((paramsArray select 6) == 1) then {
-    _this addAction ["<t color='#40FF40'>Switch to INDFOR</t>", {[player, independent] execVM "scripts\unitSide.sqf"; player execVM "loadouts\rebelArmy\Fuciliere.sqf";}, nil, 1.5, true, true, "", "!((side player) isEqualTo INDEPENDENT)", 5, false, "", ""];
+    _this addAction ["<t color='#40FF40'>Switch to INDFOR</t>", {cutText ["Switching to INDFOR...", "BLACK OUT"]; sleep 1; [player, independent] execVM "scripts\unitSide.sqf"; player execVM "loadouts\rebelArmy\Fuciliere.sqf"; sleep 1; cutText ["Switching to INDFOR...", "BLACK IN"];}, nil, 1.5, true, true, "", "!((side player) isEqualTo INDEPENDENT)", 5, false, "", ""];
 };
 
 if ((paramsArray select 7) == 1) then {

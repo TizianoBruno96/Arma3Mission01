@@ -14,8 +14,8 @@
  * @version 1.0
  */
 
-_this addAction ["<t color='#FF40FF'>Switch to Civilians</t>", {[player, civilian] execVM "scripts\unitSide.sqf";}, [], 0, false, true, "", "(side player != civilian) && ((getPlayerUID player) in allowed)", 5, false, "", ""];
-_this addAction["<t color='#FF4040'>ZEUS</t>",{player execVM "loadouts\zeus\Zeus.sqf";}, nil, 1.5, true, true, "", "(getPlayerUID _this) in allowed", 5, false, "", ""];
+_this addAction ["<t color='#FF40FF'>Switch to Civilians</t>", {cutText ["Switching to Civilian...", "BLACK OUT"]; sleep 1; [player, civilian] execVM "scripts\unitSide.sqf"; sleep 1; cutText ["Switching to Civilian...", "BLACK IN"];}, [], 0, false, true, "", "(side player != civilian) && ((getPlayerUID player) in allowed)", 5, false, "", ""];
+_this addAction["<t color='#FF40FF'>ZEUS</t>",{cutText ["Switching to ZEUS...", "BLACK OUT"]; sleep 1; player execVM "loadouts\zeus\Zeus.sqf"; sleep 1; cutText ["Switching to ZEUS...", "BLACK IN"];}, nil, 1.5, true, true, "", "(getPlayerUID _this) in allowed", 5, false, "", ""];
 
 // Sets the current object to be indestructible, meaning it cannot be damaged.
 _this allowDamage false;
