@@ -56,7 +56,7 @@ class unlockBLUFOR
 
 class unlockINDFOR
 {//6
-	title = "Unlock INDFOR (Few functionality for now):";
+	title = "Unlock INDFOR (Limited):";
 	values[] = {0,1};
 	texts[] = {"No","Yes"};
 	default = 0;
