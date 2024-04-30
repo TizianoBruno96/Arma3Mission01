@@ -19,21 +19,21 @@
  * @version 1.0
  */
  
-_this addAction["<t color='#4040FF' size='+1.5'>SquadLeader</t>",{player execVM "loadouts\usArmy\Caposquadra.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
-_this addAction["<t color='#4040FF' size='+1.5'>TeamLeader</t>",{player execVM "loadouts\usArmy\Capogruppo.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
-_this addAction["<t color='#4040FF' size='+1.5'>Rifleman</t>",{player execVM "loadouts\usArmy\Fuciliere.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
-_this addAction["<t color='#4040FF' size='+1.5'>Grenadier</t>",{player execVM "loadouts\usArmy\Granatiere.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
-_this addAction["<t color='#4040FF' size='+1.5'>Rifleman AC</t>",{player execVM "loadouts\usArmy\FuciliereAC.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
-_this addAction["<t color='#4040FF' size='+1.5'>Medic</t>",{player execVM "loadouts\usArmy\Medico.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
-_this addAction["<t color='#4040FF' size='+1.5'>Machine Gunner</t>",{player execVM "loadouts\usArmy\Mitragliere.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
-_this addAction["<t color='#4040FF' size='+1.5'>Sharpshooter</t>",{player execVM "loadouts\usArmy\Tiratore.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
-_this addAction["<t color='#4040FF' size='+1.5'>Explosives Specialist</t>",{player execVM "loadouts\usArmy\SpecialistaExp.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
-_this addAction["<t color='#4040FF' size='+1.5'>Anti-tank Specialist</t>",{player execVM "loadouts\usArmy\SpecialistaAC.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
-_this addAction["<t color='#4040FF' size='+1.5'>Anti-aircraft Specialist</t>",{player execVM "loadouts\usArmy\SpecialistaAA.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
-_this addAction["<t color='#4040FF' size='+1.5'>Repair Specialist</t>",{player execVM "loadouts\usArmy\SpecialistaRep.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
-_this addAction["<t color='#4040FF' size='+1.5'>Radio Operator</t>",{player execVM "loadouts\usArmy\OperatoreRad.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
-_this addAction["<t color='#4040FF' size='+1.5'>Drone Operator</t>",{player execVM "loadouts\usArmy\OperatoreDroni.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
-_this addAction["<t color='#4040FF' size='+1.5'>Sniper</t>",{player execVM "loadouts\usArmy\Cecchino.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
+_this addAction["<t color='#40FF40' size='+1.5'>SquadLeader</t>",{player execVM "loadouts\usArmy\Caposquadra.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
+_this addAction["<t color='#40FF40' size='+1.5'>TeamLeader</t>",{player execVM "loadouts\usArmy\Capogruppo.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
+_this addAction["<t color='#40FF40' size='+1.5'>Rifleman</t>",{player execVM "loadouts\usArmy\Fuciliere.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
+_this addAction["<t color='#40FF40' size='+1.5'>Grenadier</t>",{player execVM "loadouts\usArmy\Granatiere.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
+_this addAction["<t color='#40FF40' size='+1.5'>Rifleman AC</t>",{player execVM "loadouts\usArmy\FuciliereAC.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
+_this addAction["<t color='#40FF40' size='+1.5'>Medic</t>",{player execVM "loadouts\usArmy\Medico.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
+_this addAction["<t color='#40FF40' size='+1.5'>Machine Gunner</t>",{player execVM "loadouts\usArmy\Mitragliere.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
+_this addAction["<t color='#40FF40' size='+1.5'>Sharpshooter</t>",{player execVM "loadouts\usArmy\Tiratore.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
+_this addAction["<t color='#40FF40' size='+1.5'>Explosives Specialist</t>",{player execVM "loadouts\usArmy\SpecialistaExp.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
+_this addAction["<t color='#40FF40' size='+1.5'>Anti-tank Specialist</t>",{player execVM "loadouts\usArmy\SpecialistaAC.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
+_this addAction["<t color='#40FF40' size='+1.5'>Anti-aircraft Specialist</t>",{player execVM "loadouts\usArmy\SpecialistaAA.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
+_this addAction["<t color='#40FF40' size='+1.5'>Repair Specialist</t>",{player execVM "loadouts\usArmy\SpecialistaRep.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
+_this addAction["<t color='#40FF40' size='+1.5'>Radio Operator</t>",{player execVM "loadouts\usArmy\OperatoreRad.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
+_this addAction["<t color='#40FF40' size='+1.5'>Drone Operator</t>",{player execVM "loadouts\usArmy\OperatoreDroni.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
+_this addAction["<t color='#40FF40' size='+1.5'>Sniper</t>",{player execVM "loadouts\usArmy\Cecchino.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
 
 // make the arsenal indestructible
 _this allowDamage false;
