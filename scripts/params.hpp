@@ -54,8 +54,16 @@ class unlockBLUFOR
 	default = 0;
 };
 
-class enableSpectators 
+class unlockINDFOR
 {//6
+	title = "Unlock INDFOR:";
+	values[] = {0,1};
+	texts[] = {"No","Yes"};
+	default = 0;
+};
+
+class enableSpectators 
+{//7
 	title = "Enable Spectators:";
 	values[] = {0,1};
 	texts[] = {"No","Yes"};

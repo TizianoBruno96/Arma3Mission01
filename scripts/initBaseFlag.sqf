@@ -25,12 +25,16 @@
 _this setFlagTexture "images\girlsup.jpg";
 
 _this execVM "loadouts\setZEUSLoadouts.sqf";
-
-if ((paramsArray select 6) == 1) then {
-    _this addAction ["<t color='#FFFFFF'>Spectator Mode</t>", {player execVM "scripts\spectatorMode.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
-};
+_this addAction ["<t color='#FF4040'>Switch to OPFOR</t>", {[player, east] execVM "scripts\unitSide.sqf";}, nil, 1.5, true, true, "", "!((side player) isEqualTo EAST)", 5, false, "", ""];
 
 if ((paramsArray select 5) == 1) then {
-    _this addAction ["<t color='#4040FF'>Switch to BLUFOR</t>", {[player, west] execVM "scripts\unitSide.sqf";}, nil, 1.5, true, true, "", "(side player) isEqualTo EAST", 5, false, "", ""];
-    _this addAction ["<t color='#FF4040'>Switch to OPFOR</t>", {[player, east] execVM "scripts\unitSide.sqf";}, nil, 1.5, true, true, "", "(side player) isEqualTo WEST", 5, false, "", ""];
+    _this addAction ["<t color='#4040FF'>Switch to BLUFOR</t>", {[player, west] execVM "scripts\unitSide.sqf";}, nil, 1.5, true, true, "", "!((side player) isEqualTo WEST)", 5, false, "", ""];
+};
+
+if ((paramsArray select 6) == 1) then {
+    _this addAction ["<t color='#40FF40'>Switch to INDFOR</t>", {[player, independent] execVM "scripts\unitSide.sqf";}, nil, 1.5, true, true, "", "!((side player) isEqualTo INDEPENDENT)", 5, false, "", ""];
+};
+
+if ((paramsArray select 7) == 1) then {
+    _this addAction ["<t color='#FFFFFF'>Spectator Mode</t>", {player execVM "scripts\spectatorMode.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
 };
