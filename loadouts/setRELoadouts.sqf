@@ -33,7 +33,6 @@ _this addAction["<t color='#40FF40' size='+1.5'>Anti-aircraft Specialist</t>",{p
 _this addAction["<t color='#40FF40' size='+1.5'>Repair Specialist</t>",{player execVM "loadouts\rebelArmy\SpecialistaRep.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
 _this addAction["<t color='#40FF40' size='+1.5'>Radio Operator</t>",{player execVM "loadouts\rebelArmy\OperatoreRad.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
 _this addAction["<t color='#40FF40' size='+1.5'>Drone Operator</t>",{player execVM "loadouts\rebelArmy\OperatoreDroni.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
-_this addAction["<t color='#40FF40' size='+1.5'>Sniper</t>",{player execVM "loadouts\rebelArmy\Cecchino.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
 
 // make the arsenal indestructible
 _this allowDamage false;
