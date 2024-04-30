@@ -25,16 +25,16 @@ _this setVariable ["tagName", "Helicopters"];
 _this setVariable ["iconTexture", "\a3\ui_f\data\igui\cfg\simpletasks\types\Heli_ca.paa"];
 _this setVariable ["iconColor", [0.9,0.4,0,4]];
 
-_this addAction ["<t color='#FFFFFF'>Mi8 transport</t>", {["UK3CB_TKA_B_Mi8", "helispawn", 27] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
+_this addAction ["<t color='#FF4040'>Mi8 transport</t>", {["UK3CB_TKA_B_Mi8", "helispawn", 27] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
 
-_this addAction ["<t color='#FFFFFF'>UH1H Medevac</t>", {["UK3CB_TKA_B_UH1H_MED", "helispawn", 27] execVM "scripts\vehicles\spawnVeh.sqf";}, nil, 1.5, true, true, "", "spawned", 5, false, "", ""];
+_this addAction ["<t color='#FF4040'>UH1H Medevac</t>", {["UK3CB_TKA_B_UH1H_MED", "helispawn", 27] execVM "scripts\vehicles\spawnVeh.sqf";}, nil, 1.5, true, true, "", "spawned", 5, false, "", ""];
  
-_this addAction ["<t color='#FFFFFF'>Mi8 with rockets</t>", {["UK3CB_TKA_B_Mi8AMTSh", "helispawn", 27] execVM "scripts\vehicles\spawnVeh.sqf";}, nil, 1.5, true, true, "", "spawned", 5, false, "", ""];
+_this addAction ["<t color='#FF4040'>Mi8 with rockets</t>", {["UK3CB_TKA_B_Mi8AMTSh", "helispawn", 27] execVM "scripts\vehicles\spawnVeh.sqf";}, nil, 1.5, true, true, "", "spawned", 5, false, "", ""];
  
-_this addAction ["<t color='#FFFFFF'>Mi-24</t>", {["UK3CB_TKA_B_Mi_24V", "helispawn", 27] execVM "scripts\vehicles\spawnVeh.sqf";}, nil, 1.5, true, true, "", "spawned", 5, false, "", ""];
+_this addAction ["<t color='#FF4040'>Mi-24</t>", {["UK3CB_TKA_B_Mi_24V", "helispawn", 27] execVM "scripts\vehicles\spawnVeh.sqf";}, nil, 1.5, true, true, "", "spawned", 5, false, "", ""];
  
-_this addAction ["<t color='#FFFFFF'>Griffin with radar</t>", {["UK3CB_TKA_B_Bell412_Radar", "helispawn", 27] execVM "scripts\vehicles\spawnVeh.sqf";}, nil, 1.5, true, true, "", "spawned", 5, false, "", ""]; 
+_this addAction ["<t color='#FF4040'>Griffin with radar</t>", {["UK3CB_TKA_B_Bell412_Radar", "helispawn", 27] execVM "scripts\vehicles\spawnVeh.sqf";}, nil, 1.5, true, true, "", "spawned", 5, false, "", ""]; 
  
-_this addAction ["<t color='#FFFFFF'>Armed Griffin transport</t>", {["UK3CB_TKA_B_Bell412_Armed", "helispawn", 27] execVM "scripts\vehicles\spawnVeh.sqf";}, nil, 1.5, true, true, "", "spawned", 5, false, "", ""];
+_this addAction ["<t color='#FF4040'>Armed Griffin transport</t>", {["UK3CB_TKA_B_Bell412_Armed", "helispawn", 27] execVM "scripts\vehicles\spawnVeh.sqf";}, nil, 1.5, true, true, "", "spawned", 5, false, "", ""];
  
-_this addAction ["<t color='#FF6666'>Delete the vehicle</t>", {["helispawn", 10] execVM "scripts\vehicles\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];
+_this addAction ["<t color='#FFFFFF'>Delete the vehicle</t>", {["helispawn", 10] execVM "scripts\vehicles\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];
