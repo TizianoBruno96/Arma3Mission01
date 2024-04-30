@@ -1,4 +1,4 @@
-ùùùùùùùùùùùùùùùcomment "Remove existing items";
+comment "Remove existing items";
 removeAllWeapons _this;
 removeAllItems _this;
 removeAllAssignedItems _this;
