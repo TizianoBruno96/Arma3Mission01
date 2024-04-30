@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4489.5845,164.78864,7255.3584};
-		dir[]={-0.76151395,-0.64417899,0.071624048};
-		up[]={-0.64134848,0.76487476,0.060321912};
-		aside[]={0.093641534,-3.7252903e-009,0.99560601};
+		pos[]={4457.4565,137.41618,7269.2021};
+		dir[]={-0.66914839,-0.72379118,-0.16845584};
+		up[]={-0.70189482,0.69001633,-0.17670012};
+		aside[]={-0.24413083,2.7968781e-008,0.96974891};
 	};
 };
 binarizationWanted=0;
@@ -15899,7 +15899,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this addAction [""<t color='#FF0000'>Spawn a takistan arsenal</t>"", {[""C_supplyCrate_F"", ""arsenalSpawn"", 120, ""TK""] execVM ""scripts\spawnArsenal.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#0000FF'>Spawn an US arsenal</t>"", {[""C_supplyCrate_F"", ""arsenalSpawn"", 120, ""US""] execVM ""scripts\spawnArsenal.sqf"";}, [], 1.5, true, true, """", ""spawned"", 5, false, """", """"];" \n "" \n "this addAction [""<t color='#FFFFFF'>Delete the arsenal box</t>"", {[""arsenalSpawn"", 2] execVM ""scripts\vehicles\deleteVeh.sqf"";}, nil, 1.5, true, true, """", """", 5, false, """", """"];";
+						init="this execVM ""scripts\baseArsenalSpawn.sqf"";" \n "";
 					};
 					id=311;
 					type="Land_Laptop_02_unfolded_F";

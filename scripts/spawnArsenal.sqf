@@ -50,7 +50,7 @@ if (_faction == "US") then {
 };
 
 if (_faction == "RE") then {
-    if ((paramsArray select 5) == 1) then {
+    if ((paramsArray select 6) == 1) then {
         _ars execVM "loadouts\setRELoadouts.sqf";
     } else {
         hint "The Rebel arsenal is deactivated";
