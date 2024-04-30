@@ -1,3 +1,31 @@
+/**
+ * This script defines the actions for spawning and deleting transport airplanes in Arma 3.
+ * It adds actions to the current object (_this) for spawning different types of transport airplanes and deleting the spawned vehicle.
+ * The actions are displayed as clickable options in the game interface.
+ * The script sets variables for the tag name, icon texture, and icon color of the transport airplanes.
+ * The script uses the "spawnVeh.sqf" and "deleteVeh.sqf" scripts to handle the spawning and deletion of vehicles.
+ *
+ * @action Transport Airplanes
+ *     Displays a tag for the transport airplanes.
+ *     No action is performed when clicked.
+ *
+ * @action Transport Airplane Antonov AN2
+ *     Displays the name of the transport airplane (Antonov AN2) in white color.
+ *     When clicked, it executes the "spawnVeh.sqf" script to spawn the Antonov AN2 at the "jetspawn1" position with a delay of 206 seconds.
+ *
+ * @action Transport Airplane Cessna T41
+ *     Displays the name of the transport airplane (Cessna T41) in white color.
+ *     When clicked, it executes the "spawnVeh.sqf" script to spawn the Cessna T41 at the "jetspawn1" position with a delay of 206 seconds.
+ *
+ * @action Delete Vehicle
+ *     Displays the text "Delete Vehicle" in red color.
+ *     When clicked, it executes the "deleteVeh.sqf" script to delete the vehicle at the "jetspawn1" position with a delay of 10 seconds.
+ *
+ * @file spawnTransportAirplanes.sqf
+ * @author 343RedCobra
+ * @version 1.0
+ */
+
 //_this addAction ["<t color='#FF0000'>------Transport Airplanes------</t>", {}, [], 1.5, true, false, "", "spawned", 5, false, "", ""];
 
 _this setVariable ["tagName", "Transport Airplanes"];

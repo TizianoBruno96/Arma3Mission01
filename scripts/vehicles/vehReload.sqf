@@ -1,3 +1,24 @@
+/**
+ * This script is responsible for reloading, repairing, and refueling a vehicle.
+ * It iterates through the vehicle's turrets and reloads their magazines.
+ * It also repairs any damage to the vehicle and refuels it until the fuel level reaches 0.99.
+ * 
+ * Parameters:
+ * - _object: The vehicle object to be serviced.
+ * 
+ * Usage:
+ * - Call this script with the vehicle object as the parameter to service the vehicle.
+ * 
+ * Example:
+ * ```
+ * [_vehicle] execVM "scripts/vehicles/vehReload.sqf";
+ * ```
+ * 
+ * @file vehReload.sqf
+ * @author Xeno
+ * @version 1.0
+ */
+
 // by Xeno
 private ["_config","_count","_i","_magazines","_object","_type","_type_name"];
 

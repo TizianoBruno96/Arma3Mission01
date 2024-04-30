@@ -1,3 +1,32 @@
+/**
+ * FILEPATH: /c:/Users/Utente/Documents/Arma 3 - Other Profiles/Sgt%2eM%2e%20Red%20Cobra/mpmissions/Addestramento_Sahatra.juju_sahatra/scripts/unitSide.sqf
+ *
+ * This script is used to change the side of a player unit in Arma 3.
+ *
+ * @param _player The player unit to change the side of.
+ * @param _side The side to assign to the player unit. Valid values are "west", "east", "independent", or "civilian".
+ *
+ * @remarks
+ * - The script checks if the provided _player is a valid player unit of type "CAManBase". If not, it displays an error message.
+ * - The script checks if the provided _side is a valid side. If not, it displays an error message.
+ * - If both the _player and _side are valid, the script creates a new group for the player unit and assigns it to the specified side.
+ * - The script then selects the player unit and deselects any other selected units.
+ *
+ * @example
+ * // Usage:
+ * [player, side] execVM "unitSide.sqf";
+ *
+ * // AddAction example:
+ * player addAction ["Join BLUFOR", {player sideChat "Joining BLUFOR"; [player, west] execVM "unitSide.sqf";}, [], 0, false, true, "", "side player != west"];
+ * player addAction ["Join OPFOR", {player sideChat "Joining OPFOR"; [player, east] execVM "unitSide.sqf";}, [], 0, false, true, "", "side player != east"];
+ * player addAction ["Join Independent", {player sideChat "Joining Independent"; [player, independent] execVM "unitSide.sqf";}, [], 0, false, true, "", "side player != independent"];
+ * player addAction ["Join Civilian", {player sideChat "Joining Civilian"; [player, civilian] execVM "unitSide.sqf";}, [], 0, false, true, "", "side player != civilian"];
+ *
+ * @file unitSide.sqf
+ * @author 343RedCobra
+ * @version 1.0
+ */
+
 params ["_player", "_side"];
 
 if (!(_player isKindOf "CAManBase")) exitWith {
@@ -11,9 +40,3 @@ if (!(_side in [west, east, independent, civilian])) exitWith {
 [_player] joinSilent createGroup _side;
 selectNoPlayer;
 selectPlayer _player;
-
-//Usage: [player, side] execVM "unitSide.sqf";
-//AddAction example: player addAction ["Join BLUFOR", {player sideChat "Joining BLUFOR"; [player, west] execVM "unitSide.sqf";}, [], 0, false, true, "", "side player != west"];
-//AddAction example: player addAction ["Join OPFOR", {player sideChat "Joining OPFOR"; [player, east] execVM "unitSide.sqf";}, [], 0, false, true, "", "side player != east"];
-//AddAction example: player addAction ["Join Independent", {player sideChat "Joining Independent"; [player, independent] execVM "unitSide.sqf";}, [], 0, false, true, "", "side player != independent"];
-//AddAction example: player addAction ["Join Civilian", {player sideChat "Joining Civilian"; [player, civilian] execVM "unitSide.sqf";}, [], 0, false, true, "", "side player != civilian"];

@@ -1,3 +1,14 @@
+/**
+ * This script is executed on the server when a player joins the game.
+ * It performs various checks and actions based on the player's UID and variables.
+ *
+ * @param _this: ARRAY - The array containing the player object.
+ *
+ * @file initPlayerServer.sqf
+ * @author 343RedCobra
+ * @version 1.0
+ */
+ 
 _player = _this select 0;
 _uid = getPlayerUID _player;
 

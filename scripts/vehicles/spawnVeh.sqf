@@ -1,3 +1,15 @@
+/**
+ * Spawns a vehicle at a specified position with a given direction.
+ *
+ * @param _vehicle The vehicle to spawn.
+ * @param _marker The marker indicating the spawn position.
+ * @param _direction The direction angle of the spawned vehicle.
+ *
+ * @file spawnVeh.sqf
+ * @author 343RedCobra
+ * @version 1.0
+ */
+ 
 spawned = false;
 
 _vehicle = _this select 0; // Selects the vehicle passed as input

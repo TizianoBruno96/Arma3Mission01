@@ -1,3 +1,15 @@
+/**
+ * This script adds actions to the current object, allowing the player to spawn and delete combat jets.
+ * The actions include spawning different types of combat jets and deleting the spawned vehicle.
+ * The actions are displayed as clickable options in the player's interaction menu.
+ * The script sets variables for the tag name, icon texture, and icon color of the actions.
+ * The script uses an external script "spawnVeh.sqf" to handle the spawning of vehicles.
+ * The script uses an external script "deleteVeh.sqf" to handle the deletion of vehicles.
+ *
+ * @file spawnCombatJets.sqf
+ * @author 343RedCobra
+ * @version 1.0
+ */
 //_this addAction ["<t color='#FF0000'>------Combat Jets------</t>", {}, [], 1.5, true, false, "", "spawned", 5, false, "", ""];
 
 _this setVariable ["tagName", "Combat Jets"];

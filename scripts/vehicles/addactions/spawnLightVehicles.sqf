@@ -1,3 +1,17 @@
+/**
+ * This script adds actions to spawn and delete light vehicles in Arma 3.
+ * It sets the tag name, icon texture, and icon color for the actions.
+ * The actions allow the player to spawn different types of vehicles and delete them.
+ *
+ * Usage:
+ * - Execute this script to add the actions to the player's interaction menu.
+ * - The actions can be triggered by selecting them in the interaction menu.
+ * 
+ * @file spawnLightVehicles.sqf
+ * @author 343RedCobra
+ * @version 1.0
+ */
+
 //_this addAction ["<t color='#FF0000'>------Light Vehicles------</t>", {}, [], 1.5, true, false, "", "spawned", 5, false, "", ""];
 
 _this setVariable ["tagName", "Light Vehicles"];

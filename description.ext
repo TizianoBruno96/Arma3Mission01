@@ -1,3 +1,51 @@
+/**
+ * This file contains the configuration settings and parameters for the mission "Addestramento_Sahatra".
+ * It defines various properties such as the author, mission name, load screen, briefing, respawn settings, corpse and wreck management, player distance, and more.
+ * 
+ * @file description.ext
+ * @author Red Cobra
+ * @version 1.0.4
+ * 
+ * @property {string} author - The author of the mission.
+ * @property {string} onLoadName - The name displayed when the mission is loaded.
+ * @property {string} onLoadMission - The mission description displayed when the mission is loaded.
+ * @property {string} loadScreen - The path to the image used as the load screen.
+ * @property {number} onLoadMissionTime - The time in seconds for the mission to load.
+ * @property {number} onLoadIntroTime - The time in seconds for the intro to load.
+ * @property {string} briefingName - The name of the briefing.
+ * @property {number} corpseManagerMode - The mode for corpse management.
+ * @property {number} corpseLimit - The maximum number of corpses allowed.
+ * @property {number} corpseRemovalMinTime - The minimum time in seconds before a corpse is removed.
+ * @property {number} corpseRemovalMaxTime - The maximum time in seconds before a corpse is removed.
+ * @property {number} wreckManagerMode - The mode for wreck management.
+ * @property {number} wreckLimit - The maximum number of wrecks allowed.
+ * @property {number} minPlayerDistance - The minimum distance between players.
+ * 
+ * @class Header
+ * @description Contains the game type and player count information for the mission.
+ * @property {string} gameType - The game type of the mission.
+ * @property {number} minPlayers - The minimum number of players supported by the mission.
+ * @property {number} maxPlayers - The maximum number of players supported by the mission.
+ * 
+ * @class params
+ * @description Includes the parameters defined in the "scripts\params.hpp" file.
+ * 
+ * @class CfgDebriefing
+ * @description Contains debriefing messages for specific scenarios.
+ * 
+ * @class NOT_ALLOWED
+ * @description Debriefing message for when a player tries to join a reserved slot.
+ * @property {string} title - The title of the debriefing message.
+ * @property {string} description - The description of the debriefing message.
+ * @property {string} picture - The path to the image used for the debriefing message.
+ * 
+ * @include "loadouts\respawnInventory.hpp" - Includes the respawn inventory loadouts defined in the "loadouts\respawnInventory.hpp" file.
+ *
+ * @file description.ext
+ * @author 343RedCobra
+ * @version 1.0
+ */
+
 author			= "Red Cobra";
 onLoadName		= "Tra 343RedCobra v1.0.4";
 onLoadMission	= "Always follow the orders of your superiors!";

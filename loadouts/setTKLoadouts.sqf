@@ -1,3 +1,27 @@
+/**
+ * This script adds actions to the current selection that allow the player to execute different loadout scripts based on their role.
+ * The loadout scripts are located in the "loadouts\takistanArmy" directory.
+ * 
+ * Actions:
+ * - SquadLeader: Executes the "Caposquadra.sqf" script.
+ * - TeamLeader: Executes the "Capogruppo.sqf" script.
+ * - Rifleman: Executes the "Fuciliere.sqf" script.
+ * - Grenadier: Executes the "Granatiere.sqf" script.
+ * - Rifleman AC: Executes the "FuciliereAC.sqf" script.
+ * - Medic: Executes the "Medico.sqf" script.
+ * - Machine Gunner: Executes the "Mitragliere.sqf" script.
+ * - Sharpshooter: Executes the "Tiratore.sqf" script.
+ * - Explosives Specialist: Executes the "SpecialistaExp.sqf" script.
+ * - Anti-tank Specialist: Executes the "SpecialistaAC.sqf" script.
+ * - Anti-aircraft Specialist: Executes the "SpecialistaAA.sqf" script.
+ * - Repair Specialist: Executes the "SpecialistaRep.sqf" script.
+ * - Radio Operator: Executes the "OperatoreRad.sqf" script.
+ * - Drone Operator: Executes the "OperatoreDroni.sqf" script.
+ * - Sniper: Executes the "Cecchino.sqf" script.
+ * 
+ * The script also makes the arsenal indestructible and adds the ACE arsenal of the Takistanis.
+ */
+
 _this addAction["<t color='#FF0000' size='+1.5'>SquadLeader</t>",{player execVM "loadouts\takistanArmy\Caposquadra.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
 _this addAction["<t color='#FF0000' size='+1.5'>TeamLeader</t>",{player execVM "loadouts\takistanArmy\Capogruppo.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
 _this addAction["<t color='#FF0000' size='+1.5'>Rifleman</t>",{player execVM "loadouts\takistanArmy\Fuciliere.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];

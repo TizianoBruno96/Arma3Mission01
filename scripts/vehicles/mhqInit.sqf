@@ -1,3 +1,19 @@
+/*
+*	This script initializes the MHQ (Mobile Headquarters) vehicle.
+*	It disables damage for the MHQ and adds an action to teleport the player to the base.
+*	It also sets variables for the MHQ's tag name, icon texture, and icon color.
+*
+*	Parameters:
+*		- None
+*
+*	Returns:
+*		- None
+*
+* @file mhqInit.sqf
+* @author 343RedCobra
+* @version 1.0
+*/
+
 _this allowDamage false;
 
 _this addAction ["<t color='#FF0000'>Teleport to base</t>", {player setPos (getPos B_1)}, [], 1.5, true, true, "", "", 5, false, "", ""];

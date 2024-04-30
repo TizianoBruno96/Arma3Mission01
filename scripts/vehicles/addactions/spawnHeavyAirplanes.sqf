@@ -1,4 +1,21 @@
-//_this addAction ["<t color='#FF0000'>------Heavy Airplanes------</t>", {}, [], 1.5, true, false, "", "spawned", 5, false, "", ""];
+/*
+*	This script adds actions to the current object, allowing the player to spawn and delete heavy airplanes.
+*	The actions include spawning C130J transport, C130J cargo, and Douglas C-47 transport airplanes.
+*	The script also provides an option to delete the spawned vehicle.
+*
+*	Usage:
+*	- Execute this script on an object to add the actions.
+*
+*	Parameters:
+*	- None
+*
+*	Returns:
+*	- None
+*
+* @file spawnHeavyAirplanes.sqf
+* @author 343RedCobra
+* @version 1.0
+*/
 
 _this setVariable ["tagName", "Heavy Airplanes"];
 _this setVariable ["iconTexture", "\a3\ui_f\data\igui\cfg\simpletasks\types\Plane_ca.paa"];

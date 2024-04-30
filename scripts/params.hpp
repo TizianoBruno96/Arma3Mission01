@@ -1,3 +1,17 @@
+/**
+ * This file contains the definition of several classes that represent different parameters for a mission.
+ * These parameters include the daytime hour, weather, time acceleration, and view distance.
+ * 
+ * - `paramDaytimeHour`: Represents the parameter for selecting the hour of the day. It has a list of values ranging from 1 to 24, representing each hour of the day. The default value is 10.
+ * - `paramWeather`: Represents the parameter for selecting the weather. It has a list of values ranging from 0 to 5, representing different weather conditions. The default value is 0 (clear weather).
+ * - `paramTimeAcceleration`: Represents the parameter for selecting the time acceleration. It includes a default value of 1.
+ * - `paramViewDistance`: Represents the parameter for selecting the view distance. It includes minimum, maximum, and default values for the view distance.
+ *
+ * @file params.hpp
+ * @author 343RedCobra
+ * @version 1.0
+ */
+
 class paramDaytimeHour
 {//1
 	title = "Hour of the day:";

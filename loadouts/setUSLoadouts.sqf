@@ -1,3 +1,24 @@
+/** 
+ * This script adds actions to the current selection that allow the player to execute various loadout scripts for the US Army.
+ * The loadout scripts are executed when the corresponding action is selected.
+ * The actions are added using the addAction command.
+ * The actions have a blue color and a size of 1.5.
+ * The actions are set to be persistent and available to all players.
+ * The actions have a priority of 5 and are not hidden.
+ * The actions execute the specified loadout script when selected.
+ * 
+ * The script also sets the selection to be indestructible by disabling damage.
+ * 
+ * Additionally, the script adds the ACE arsenal of the US Army to the selection.
+ * The arsenal contains various weapons, attachments, magazines, and equipment.
+ * The arsenal is defined as an array of class names.
+ * The array is passed as an argument to the ACE_arsenal function, which adds the arsenal to the selection.
+ *
+ * @file setUSLoadouts.sqf
+ * @author 343RedCobra
+ * @version 1.0
+ */
+ 
 _this addAction["<t color='#0000FF' size='+1.5'>SquadLeader</t>",{player execVM "loadouts\usArmy\Caposquadra.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
 _this addAction["<t color='#0000FF' size='+1.5'>TeamLeader</t>",{player execVM "loadouts\usArmy\Capogruppo.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
 _this addAction["<t color='#0000FF' size='+1.5'>Rifleman</t>",{player execVM "loadouts\usArmy\Fuciliere.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];

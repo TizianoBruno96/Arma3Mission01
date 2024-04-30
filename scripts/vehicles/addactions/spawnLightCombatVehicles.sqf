@@ -1,3 +1,19 @@
+/**
+ * This script adds actions to spawn light combat vehicles in Arma 3.
+ * It defines a set of actions that allow the player to spawn different types of vehicles.
+ * The vehicles are spawned using the "spawnVeh.sqf" script.
+ * The script also sets variables for the tag name, icon texture, and icon color of the actions.
+ *
+ * Usage:
+ * - Execute this script to add the actions to the current object.
+ * - When the player selects one of the actions, the corresponding vehicle will be spawned.
+ * - The spawned vehicle can be deleted using the "deleteVeh.sqf" script.
+ *
+ * @file spawnLightCombatVehicles.sqf
+ * @author 343RedCobra
+ * @version 1.0
+ */
+
 //_this addAction ["<t color='#FF0000'>------Light Combat Vehicles------</t>", {}, [], 1.5, true, false, "", "spawned", 5, false, "", ""];
 
 _this setVariable ["tagName", "Light Combat Vehicles"];

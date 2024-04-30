@@ -1,3 +1,15 @@
+/**
+ * Spawns a drone vehicle at a specified marker position, deletes any existing objects in the area, and creates AI for the drone.
+ *
+ * @param _vehicle The input vehicle to spawn as a drone.
+ * @param _marker The marker position where the drone will be spawned.
+ * @param _direction The direction in which the drone will be facing.
+ *
+ * @file spawnDrones.sqf
+ * @author 343RedCobra
+ * @version 1.0
+ */
+ 
 spawned = false;
 
 _vehicle = _this select 0; // Select the input vehicle

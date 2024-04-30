@@ -1,11 +1,32 @@
-_vehicleType = _this select 0;
-_spawnRadius = 10; // Modify the radius in meters as you prefer
-_markerPos = getMarkerPos (_this select 1); // Select the marker position passed as input
-_vehicleDirection = _this select 2; // Select the direction passed as input
-_respawnDistance = _this select 3; // Select the distance from which to place the respawn
+/*
+*    Spawns a new vehicle at a specified marker position, deletes any existing vehicles within a given radius,
+*    attaches a respawn position to the vehicle, and adds a teleport action to the vehicle.
+*
+*    Parameters:
+*        _vehicleType: String - The type of vehicle to spawn.
+*        _markerPos: Array - The position of the marker where the vehicle should be spawned.
+*        _vehicleDirection: Number - The direction angle of the vehicle.
+*        _respawnDistance: Number - The distance from which to place the respawn position.
+*
+*    Returns:
+*        Nothing
+*
+*    Example Usage:
+*        ["B_MRAP_01_hmg_F", "marker1", 0, 50] spawn spawnMhqVeh;
+*
+* @file spawnMhqVeh.sqf
+* @author 343RedCobra
+* @version 1.0
+*/
+
+private _vehicleType = _this select 0; // Select the vehicle type passed as input
+private _spawnRadius = 10; // Modify the radius in meters as you prefer
+private _markerPos = getMarkerPos (_this select 1); // Select the marker position passed as input
+private _vehicleDirection = _this select 2; // Select the direction passed as input
+private _respawnDistance = _this select 3; // Select the distance from which to place the respawn
 
 // Find all objects in the specified radius
-_oldVehicles = nearestObjects [_markerPos, [], _spawnRadius];
+private _oldVehicles = nearestObjects [_markerPos, [], _spawnRadius];
 
 // Delete the found objects
 {
@@ -15,12 +36,12 @@ _oldVehicles = nearestObjects [_markerPos, [], _spawnRadius];
 sleep 0.1;
 
 // Create the new vehicle in the specified position
-_vehicle = createVehicle [_vehicleType, _markerPos, [], 0, "NONE"];
+private _vehicle = createVehicle [_vehicleType, _markerPos, [], 0, "NONE"];
 _vehicle setDir _vehicleDirection; // Modify the direction angle if necessary
 
 // Set the MHQ variable name
-_mhqName = format["mhq_%1", index];
-_vehiclePos = getPos _vehicle;
+private _mhqName = format["mhq_%1", index];
+private _vehiclePos = getPos _vehicle;
 _vehicle setVehicleVarName _mhqName;
 missionNamespace setVariable [_mhqName, true];
 

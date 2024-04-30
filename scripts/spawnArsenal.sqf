@@ -1,13 +1,26 @@
+/**
+ * Spawns an arsenal at a specified position with the given parameters.
+ *
+ * @param _arsenal The vehicle to be spawned as an arsenal.
+ * @param _spawnPos The position where the arsenal will be spawned.
+ * @param _direction The direction angle of the spawned arsenal.
+ * @param _faction The faction of the arsenal.
+ *
+ * @file spawnArsenal.sqf
+ * @author 343RedCobra
+ * @version 1.0
+ */
+
 spawned = false;
 
-_arsenal = _this select 0; // Selects the vehicle passed as input
-_spawnPos = getMarkerPos (_this select 1); // Selects the marker position passed as input
-_radius = 2; // Modify the radius in meters as you prefer
-_direction = _this select 2; // Selects the direction passed as input
-_faction = _this select 3; // Selects the faction passed as input
+private _arsenal = _this select 0; // Selects the vehicle passed as input
+private _spawnPos = getMarkerPos (_this select 1); // Selects the marker position passed as input
+private _radius = 2; // Modify the radius in meters as you prefer
+private _direction = _this select 2; // Selects the direction passed as input
+private _faction = _this select 3; // Selects the faction passed as input
 
 // Find all objects within the specified radius
-_oldArsenal = nearestObjects [_spawnPos, [], _radius];
+private _oldArsenal = nearestObjects [_spawnPos, [], _radius];
 
 // Delete the found objects
 {
@@ -19,7 +32,7 @@ _oldArsenal = nearestObjects [_spawnPos, [], _radius];
 sleep 0.1;
 
 // Create the new vehicle at the specified position
-_ars = createVehicle [_arsenal, _spawnPos, [], 0, "NONE"];
+private _ars = createVehicle [_arsenal, _spawnPos, [], 0, "NONE"];
 _ars setDir _direction; // Modify the direction angle if necessary
 
 // Add the presets and the ace arsenal based on the faction

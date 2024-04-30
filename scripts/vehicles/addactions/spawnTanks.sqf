@@ -1,3 +1,17 @@
+/**
+ * This script adds actions to spawn and delete tanks in Arma 3.
+ * It defines a set of actions for spawning different types of tanks and deleting a spawned tank.
+ * The actions are added to the current object (_this) as addAction commands.
+ * Each addAction command specifies the text, code to execute, and other parameters for the action.
+ * The actions are displayed as options in the player's action menu when interacting with the object.
+ * The spawned tanks are created using the "spawnVeh.sqf" script.
+ * The deleted tank is removed using the "deleteVeh.sqf" script.
+ *
+ * @file spawnTanks.sqf
+ * @author 343RedCobra
+ * @version 1.0
+ */
+
 //_this addAction ["<t color='#FF0000'>------Heavy Tanks------</t>", {}, [], 1.5, true, false, "", "spawned", 5, false, "", ""];
 
 _this setVariable ["tagName", "Heavy Tanks"];
