@@ -54,6 +54,6 @@ if ((paramsArray select 5) == 1) then {
 	_this addAction ["<t color='#4040FF'>M2A3 Bradley</t>", {["RHS_M2A3_BUSKIII", "jetspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 	
 	_this addAction ["<t color='#4040FF'>M6A2 AT Bradley</t>", {["RHS_M6", "jetspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
-}
+};
 
 _this addAction ["<t color='#FFFFFF'>Delete the vehicle</t>", {["vehspawn3", 10] execVM "scripts\vehicles\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];

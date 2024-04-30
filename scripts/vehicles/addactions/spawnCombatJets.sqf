@@ -32,6 +32,6 @@ if ((paramsArray select 5) == 1) then {
 	_this addAction ["<t color='#4040FF'>A-10D Thunderbolt II</t>", {["B_Plane_CAS_01_dynamicLoadout_F", "jetspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 	
 	_this addAction ["<t color='#4040FF'>F/A-181 Black Wasp II</t>", {["B_Plane_Fighter_01_F", "jetspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
-}
+};
 
 _this addAction ["<t color='#FFFFFF'>Delete Vehicle</t>", {["jetspawn2", 10] execVM "scripts\vehicles\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];

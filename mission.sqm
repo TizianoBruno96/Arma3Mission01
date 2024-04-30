@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1201;
+		nextID=1212;
 	};
 	class MarkerIDProvider
 	{
@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4358.3652,136.41209,7264.729};
-		dir[]={-0.63282114,-0.57829273,-0.51498753};
-		up[]={-0.4485513,0.81580436,-0.36503097};
-		aside[]={-0.63122767,-1.9723666e-007,0.77565426};
+		pos[]={4428.7051,150.86229,7232.061};
+		dir[]={0.83775216,-0.50497609,0.20807137};
+		up[]={0.49012339,0.86310375,0.12173206};
+		aside[]={0.241062,2.6127964e-007,-0.97057545};
 	};
 };
 binarizationWanted=0;
@@ -95,16 +95,13 @@ addons[]=
 	"A3_Weapons_F_Ammoboxes",
 	"ace_cargo",
 	"A3_Structures_F_Civ_Garbage",
-	"A3_Modules_F_Supports",
-	"rhsusf_c_m1a1",
-	"rhsusf_c_m1a2",
-	"ace_compat_rhs_usf3"
+	"A3_Modules_F_Supports"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=55;
+		items=52;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -462,27 +459,6 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item52
-		{
-			className="rhsusf_c_m1a1";
-			name="M1A1 Tanks";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item53
-		{
-			className="rhsusf_c_m1a2";
-			name="M1A2 Tanks";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item54
-		{
-			className="ace_compat_rhs_usf3";
-			name="ACE3 - RHS USAF Compatibility";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
 	};
 };
 dlcs[]=
@@ -494,8 +470,7 @@ dlcs[]=
 	"Kart",
 	"UK3CB_Factions",
 	"RHS_AFRF",
-	"RHS_SAF",
-	"RHS_USAF"
+	"RHS_SAF"
 };
 randomSeed=2661261;
 class ScenarioData
@@ -15340,7 +15315,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=77;
+		items=74;
 		class Item0
 		{
 			dataType="Logic";
@@ -53200,57 +53175,6 @@ class Mission
 				};
 				nAttributes=5;
 			};
-		};
-		class Item74
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={4349.5322,129.65575,7247.7612};
-				angles[]={-0,0.7309953,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				reportOwnPosition=1;
-			};
-			id=1198;
-			type="rhsusf_m1a1aimd_usarmy";
-		};
-		class Item75
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={4343.3569,129.65175,7253.1514};
-				angles[]={-0,1.1259145,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				reportOwnPosition=1;
-			};
-			id=1199;
-			type="rhsusf_m1a2sep1tuskid_usarmy";
-		};
-		class Item76
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={4340.4756,129.65234,7260.3223};
-				angles[]={-0,1.368028,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				reportOwnPosition=1;
-			};
-			id=1200;
-			type="rhsusf_m1a2sep2d_usarmy";
 		};
 	};
 	class Connections
