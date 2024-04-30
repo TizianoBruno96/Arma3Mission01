@@ -46,8 +46,8 @@
  * @version 1.0
  */
 
-author			= "Red Cobra";
-onLoadName		= "Tra 343RedCobra v1.0.4";
+author			= "343RedCobra";
+onLoadName		= "Training v2.0.0";
 onLoadMission	= "Always follow the orders of your superiors!";
 loadScreen = "images\training.jpg";
 onLoadMissionTime = 1;

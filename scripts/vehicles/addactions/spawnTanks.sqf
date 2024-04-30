@@ -12,18 +12,27 @@
  * @version 1.0
  */
 
-//_this addAction ["<t color='#FF0000'>------Heavy Tanks------</t>", {}, [], 1.5, true, false, "", "spawned", 5, false, "", ""];
+//_this addAction ["<t color='#FF0000'>------Heavy Tanks------</t>", {}, [], 1.5, true, false, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
 
 _this setVariable ["tagName", "Heavy Tanks"];
 _this setVariable ["iconTexture", "\a3\ui_f\data\igui\cfg\simpletasks\types\car_ca.paa"];
 _this setVariable ["iconColor", [0.9,0.4,0,4]];
 
-_this addAction ["<t color='#FF4040'>T34-85M Tank</t>", {["UK3CB_TKA_B_T34", "vehspawn4", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
+_this addAction ["<t color='#FF4040'>T34-85M Tank</t>", {["UK3CB_TKA_B_T34", "vehspawn4", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
 
-_this addAction ["<t color='#FF4040'>T55A Tank</t>", {["UK3CB_TKA_B_T55", "vehspawn4", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
+_this addAction ["<t color='#FF4040'>T55A Tank</t>", {["UK3CB_TKA_B_T55", "vehspawn4", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
 
-_this addAction ["<t color='#FF4040'>T72-AV Tank</t>", {["UK3CB_TKA_B_T72B", "vehspawn4", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
+_this addAction ["<t color='#FF4040'>T72-AV Tank</t>", {["UK3CB_TKA_B_T72B", "vehspawn4", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
 
-_this addAction ["<t color='#FF4040'>T72-B Tank</t>", {["UK3CB_TKA_B_T72BM", "vehspawn4", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
+_this addAction ["<t color='#FF4040'>T72-B Tank</t>", {["UK3CB_TKA_B_T72BM", "vehspawn4", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
+
+if ((paramsArray select 5) == 1) then {
+	_this addAction ["<t color='#4040FF'>Abrams tank</t>", {["rhsusf_m1a1aimd_usarmy", "jetspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
+	
+	_this addAction ["<t color='#4040FF'>Abrams tank TUSK I</t>", {["rhsusf_m1a2sep1tuskid_usarmy", "jetspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
+
+	_this addAction ["<t color='#4040FF'>Abrams tank TUSK II</t>", {["rhsusf_m1a2sep1tuskiid_usarmy", "jetspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
+}
+
 
 _this addAction ["<t color='#FFFFFF'>Delete Vehicle</t>", {["vehspawn4", 10] execVM "scripts\vehicles\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];

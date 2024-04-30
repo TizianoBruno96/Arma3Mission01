@@ -12,22 +12,38 @@
  * @version 1.0
  */
 
-//_this addAction ["<t color='#FF0000'>------Light Vehicles------</t>", {}, [], 1.5, true, false, "", "spawned", 5, false, "", ""];
+//_this addAction ["<t color='#FF0000'>------Light Vehicles------</t>", {}, [], 1.5, true, false, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
 
 _this setVariable ["tagName", "Light Vehicles"];
 _this setVariable ["iconTexture", "\a3\ui_f\data\igui\cfg\simpletasks\types\car_ca.paa"];
 _this setVariable ["iconColor", [0.9,0.4,0,4]];
 
-_this addAction ["<t color='#FF4040'>Yava Motorcycle</t>", {["UK3CB_TKA_B_YAVA", "vehspawn2", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
+_this addAction ["<t color='#FF4040'>Yava Motorcycle</t>", {["UK3CB_TKA_B_YAVA", "vehspawn2", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
 
-_this addAction ["<t color='#FF4040'>Open Hilux for Transport</t>", {["UK3CB_TKA_B_Hilux_Open", "vehspawn2", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
+_this addAction ["<t color='#FF4040'>Open Hilux for Transport</t>", {["UK3CB_TKA_B_Hilux_Open", "vehspawn2", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
 
-_this addAction ["<t color='#FF4040'>Closed Hilux for Transport</t>", {["UK3CB_TKA_B_Hilux_Closed", "vehspawn2", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
+_this addAction ["<t color='#FF4040'>Closed Hilux for Transport</t>", {["UK3CB_TKA_B_Hilux_Closed", "vehspawn2", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
 
-_this addAction ["<t color='#FF4040'>Hilux with Machine Gun</t>", {["UK3CB_TKA_B_Hilux_Dshkm", "vehspawn2", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
+_this addAction ["<t color='#FF4040'>Hilux with Machine Gun</t>", {["UK3CB_TKA_B_Hilux_Dshkm", "vehspawn2", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
 
-_this addAction ["<t color='#FF4040'>Hilux with Rocket Launcher</t>", {["UK3CB_TKA_B_Hilux_Spg9", "vehspawn2", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
+_this addAction ["<t color='#FF4040'>Hilux with Rocket Launcher</t>", {["UK3CB_TKA_B_Hilux_Spg9", "vehspawn2", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
 
-_this addAction ["<t color='#FF4040'>Hilux with Grenade Launcher</t>", {["UK3CB_TKA_B_Hilux_GMG", "vehspawn2", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned", 5, false, "", ""];
+_this addAction ["<t color='#FF4040'>Hilux with Grenade Launcher</t>", {["UK3CB_TKA_B_Hilux_GMG", "vehspawn2", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
+
+if ((paramsArray select 5) == 1) then {
+	_this addAction ["<t color='#4040FF'>Humvee with machine gun</t>", {["rhsusf_m1025_d_m2", "jetspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
+	
+	_this addAction ["<t color='#4040FF'>Humvee with grenade launcher</t>", {["rhsusf_m1025_d_Mk19", "jetspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
+
+	_this addAction ["<t color='#4040FF'>Humvee unarmed</t>", {["rhsusf_m1025_d", "jetspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
+	
+	_this addAction ["<t color='#4040FF'>Humvee unarmed open</t>", {["rhsusf_m998_d_4dr", "jetspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
+
+	_this addAction ["<t color='#4040FF'>M1240 with light machine gun</t>", {["rhsusf_m1240a1_m240_uik_usarmy_d", "jetspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
+
+	_this addAction ["<t color='#4040FF'>M1240 with heavy machine gun</t>", {["rhsusf_m1240a1_m2_usarmy_d", "jetspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
+	
+	_this addAction ["<t color='#4040FF'>M1237 with machine gun</t>", {["rhsusf_M1237_M2_usarmy_d", "jetspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
+}
 
 _this addAction ["<t color='#FFFFFF'>Delete Vehicle</t>", {["vehspawn2", 10] execVM "scripts\vehicles\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];

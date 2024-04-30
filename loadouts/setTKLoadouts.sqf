@@ -28,21 +28,21 @@
  * @version 1.0
  */
 
-_this addAction["<t color='#FF4040' size='+1.5'>SquadLeader</t>",{player execVM "loadouts\takistanArmy\Caposquadra.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
-_this addAction["<t color='#FF4040' size='+1.5'>TeamLeader</t>",{player execVM "loadouts\takistanArmy\Capogruppo.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
-_this addAction["<t color='#FF4040' size='+1.5'>Rifleman</t>",{player execVM "loadouts\takistanArmy\Fuciliere.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
-_this addAction["<t color='#FF4040' size='+1.5'>Grenadier</t>",{player execVM "loadouts\takistanArmy\Granatiere.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
-_this addAction["<t color='#FF4040' size='+1.5'>Rifleman AC</t>",{player execVM "loadouts\takistanArmy\FuciliereAC.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
-_this addAction["<t color='#FF4040' size='+1.5'>Medic</t>",{player execVM "loadouts\takistanArmy\Medico.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
-_this addAction["<t color='#FF4040' size='+1.5'>Machine Gunner</t>",{player execVM "loadouts\takistanArmy\Mitragliere.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
-_this addAction["<t color='#FF4040' size='+1.5'>Sharpshooter</t>",{player execVM "loadouts\takistanArmy\Tiratore.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
-_this addAction["<t color='#FF4040' size='+1.5'>Explosives Specialist</t>",{player execVM "loadouts\takistanArmy\SpecialistaExp.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
-_this addAction["<t color='#FF4040' size='+1.5'>Anti-tank Specialist</t>",{player execVM "loadouts\takistanArmy\SpecialistaAC.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
-_this addAction["<t color='#FF4040' size='+1.5'>Anti-aircraft Specialist</t>",{player execVM "loadouts\takistanArmy\SpecialistaAA.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
-_this addAction["<t color='#FF4040' size='+1.5'>Repair Specialist</t>",{player execVM "loadouts\takistanArmy\SpecialistaRep.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
-_this addAction["<t color='#FF4040' size='+1.5'>Radio Operator</t>",{player execVM "loadouts\takistanArmy\OperatoreRad.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
-_this addAction["<t color='#FF4040' size='+1.5'>Drone Operator</t>",{player execVM "loadouts\takistanArmy\OperatoreDroni.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
-_this addAction["<t color='#FF4040' size='+1.5'>Sniper</t>",{player execVM "loadouts\takistanArmy\Cecchino.sqf";}, nil, 1.5, true, true, "", "true", 5, false, "", ""];
+_this addAction["<t color='#FF4040' size='+1.5'>SquadLeader</t>",{player execVM "loadouts\takistanArmy\Caposquadra.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo EAST", 5, false, "", ""];
+_this addAction["<t color='#FF4040' size='+1.5'>TeamLeader</t>",{player execVM "loadouts\takistanArmy\Capogruppo.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo EAST", 5, false, "", ""];
+_this addAction["<t color='#FF4040' size='+1.5'>Rifleman</t>",{player execVM "loadouts\takistanArmy\Fuciliere.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo EAST", 5, false, "", ""];
+_this addAction["<t color='#FF4040' size='+1.5'>Grenadier</t>",{player execVM "loadouts\takistanArmy\Granatiere.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo EAST", 5, false, "", ""];
+_this addAction["<t color='#FF4040' size='+1.5'>Rifleman AC</t>",{player execVM "loadouts\takistanArmy\FuciliereAC.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo EAST", 5, false, "", ""];
+_this addAction["<t color='#FF4040' size='+1.5'>Medic</t>",{player execVM "loadouts\takistanArmy\Medico.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo EAST", 5, false, "", ""];
+_this addAction["<t color='#FF4040' size='+1.5'>Machine Gunner</t>",{player execVM "loadouts\takistanArmy\Mitragliere.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo EAST", 5, false, "", ""];
+_this addAction["<t color='#FF4040' size='+1.5'>Sharpshooter</t>",{player execVM "loadouts\takistanArmy\Tiratore.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo EAST", 5, false, "", ""];
+_this addAction["<t color='#FF4040' size='+1.5'>Explosives Specialist</t>",{player execVM "loadouts\takistanArmy\SpecialistaExp.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo EAST", 5, false, "", ""];
+_this addAction["<t color='#FF4040' size='+1.5'>Anti-tank Specialist</t>",{player execVM "loadouts\takistanArmy\SpecialistaAC.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo EAST", 5, false, "", ""];
+_this addAction["<t color='#FF4040' size='+1.5'>Anti-aircraft Specialist</t>",{player execVM "loadouts\takistanArmy\SpecialistaAA.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo EAST", 5, false, "", ""];
+_this addAction["<t color='#FF4040' size='+1.5'>Repair Specialist</t>",{player execVM "loadouts\takistanArmy\SpecialistaRep.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo EAST", 5, false, "", ""];
+_this addAction["<t color='#FF4040' size='+1.5'>Radio Operator</t>",{player execVM "loadouts\takistanArmy\OperatoreRad.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo EAST", 5, false, "", ""];
+_this addAction["<t color='#FF4040' size='+1.5'>Drone Operator</t>",{player execVM "loadouts\takistanArmy\OperatoreDroni.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo EAST", 5, false, "", ""];
+_this addAction["<t color='#FF4040' size='+1.5'>Sniper</t>",{player execVM "loadouts\takistanArmy\Cecchino.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo EAST", 5, false, "", ""];
 
 // make the arsenal indestructible
 _this allowDamage false;
