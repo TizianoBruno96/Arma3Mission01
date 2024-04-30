@@ -108,9 +108,9 @@ class CfgRespawnInventory {
 		linkedItems[] = {"UK3CB_TKA_B_V_GA_LITE_TAN","UK3CB_TKA_B_H_DES_MARPAT","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	}
 
-	// Granadier
+	// Grenadier
 	class EAST5 {
-		displayName = "Granadier";
+		displayName = "Grenadier";
 		role = "Assault";
 		
 		// Exported from Arsenal by Red Cobra
