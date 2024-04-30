@@ -27,7 +27,6 @@ comment "Add binoculars";
 _this addWeapon "Binocular";
 
 comment "Add items to containers";
-_this addItemToUniform "ACE_EarPlugs";
 _this addItemToUniform "ItemcTabHCam";
 for "_i" from 1 to 2 do {_this addItemToUniform "ACE_IR_Strobe_Item";};
 for "_i" from 1 to 4 do {_this addItemToUniform "ACE_splint";};
@@ -52,6 +51,7 @@ _this linkItem "ItemMap";
 _this linkItem "ItemCompass";
 _this linkItem "ItemWatch";
 _this linkItem "ItemRadio";
+_this linkItem "B_UavTerminal";
 
 comment "Setto tutti i tratti";
 _this setVariable ["ace_medical_medicclass", 0, true];

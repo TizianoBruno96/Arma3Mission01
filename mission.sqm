@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1139;
+		nextID=1140;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=42;
+		nextID=43;
 	};
 	class Camera
 	{
-		pos[]={4380.9941,134.01524,7273.2339};
-		dir[]={0.67356879,-0.71174514,-0.19953188};
-		up[]={0.68244213,0.70241934,-0.20215978};
-		aside[]={-0.28404164,-3.3038668e-007,-0.95885754};
+		pos[]={4377.2676,144.96162,7263.9575};
+		dir[]={0.82936788,-0.50923562,-0.23008601};
+		up[]={0.49073833,0.86059821,-0.13614096};
+		aside[]={-0.26733875,-8.7049557e-008,-0.96365708};
 	};
 };
 binarizationWanted=0;
@@ -95,26 +95,13 @@ addons[]=
 	"A3_Weapons_F_Ammoboxes",
 	"ace_cargo",
 	"A3_Structures_F_Civ_Garbage",
-	"A3_Modules_F_Supports",
-	"rhsusf_c_troops",
-	"cTab",
-	"ace_attach",
-	"rhsusf_c_weapons",
-	"A3_Weapons_F_Acc",
-	"ace_laserpointer",
-	"ace_compat_rhs_usf3",
-	"ace_vector",
-	"ace_optics",
-	"rhsusf_sounds",
-	"Blastcore_MainCore",
-	"acre_sys_prc77",
-	"re_rhsusf_fix_weapons"
+	"A3_Modules_F_Supports"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=64;
+		items=52;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -472,85 +459,6 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item52
-		{
-			className="rhsusf_c_troops";
-			name="RHSUSF Infantry & Equipment";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item53
-		{
-			className="cTab";
-			name="cTab";
-		};
-		class Item54
-		{
-			className="ace_attach";
-			name="ACE3 - Attach";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item55
-		{
-			className="rhsusf_c_weapons";
-			name="RHSUSF Weapons & Accessories";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item56
-		{
-			className="ace_laserpointer";
-			name="ACE3 - Laser Pointer";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item57
-		{
-			className="ace_compat_rhs_usf3";
-			name="ACE3 - RHS USAF Compatibility";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item58
-		{
-			className="ace_vector";
-			name="ACE3 - Vector";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item59
-		{
-			className="ace_optics";
-			name="ACE3 - Optics";
-			author="ACE-Team";
-			url="https://ace3.acemod.org/";
-		};
-		class Item60
-		{
-			className="rhsusf_sounds";
-			name="USF Sounds";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item61
-		{
-			className="Blastcore_MainCore";
-			name="Blastcore_MainCore";
-		};
-		class Item62
-		{
-			className="acre_sys_prc77";
-			name="ACRE2 - AN/PRC-77";
-			author="ACRE2Team";
-			url="https://github.com/IDI-Systems/acre2";
-		};
-		class Item63
-		{
-			className="re_rhsusf_fix_weapons";
-			name="RE: RHS USF Weapons Fix";
-			author="amartyn";
-		};
 	};
 };
 dlcs[]=
@@ -562,8 +470,7 @@ dlcs[]=
 	"Kart",
 	"UK3CB_Factions",
 	"RHS_AFRF",
-	"RHS_SAF",
-	"RHS_USAF"
+	"RHS_SAF"
 };
 randomSeed=2661261;
 class ScenarioData
@@ -579,7 +486,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -757,7 +664,7 @@ class CustomAttributes
 		};
 		nAttributes=3;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -15408,7 +15315,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=86;
+		items=71;
 		class Item0
 		{
 			dataType="Logic";
@@ -16056,7 +15963,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4466.8198,128.48639,7246.1504};
-						angles[]={-0,0.4157615,0};
+						angles[]={0,0.4157615,0};
 					};
 					side="Empty";
 					flags=4;
@@ -52947,3907 +52854,3106 @@ class Mission
 		};
 		class Item70
 		{
-			dataType="Group";
-			side="West";
-			class Entities
+			dataType="Object";
+			class PositionInfo
 			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4383.6582,128.08772,7272.7656};
-						angles[]={0,3.7574909,-0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_d";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=11;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ItemcTabHCam";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_IR_Strobe_Item";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_splint";
-										count=4;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=5;
-									};
-									class Item5
-									{
-										name="ACE_packingBandage";
-										count=6;
-									};
-									class Item6
-									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item7
-									{
-										name="ACE_EntrenchingTool";
-										count=1;
-									};
-									class Item8
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item9
-									{
-										name="ACE_epinephrine";
-										count=3;
-									};
-									class Item10
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_rifleman";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class ItemCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="ACE_bloodIV";
-										count=2;
-									};
-									class Item1
-									{
-										name="ACE_packingBandage";
-										count=20;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							headgear="rhsusf_lwh_helmet_marpatd_headset";
-						};
-					};
-					id=1098;
-					type="rhsusf_usmc_marpat_d_rifleman_light";
-				};
+				position[]={4416.7832,128.97871,7260.3789};
+				angles[]={-0,3.6779671,0};
 			};
+			side="Empty";
+			flags=4;
 			class Attributes
 			{
+				init="this execVM ""loadouts\setTKLoadouts.sqf"";" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setDraggable;" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setCarryable;";
 			};
-			id=1097;
-		};
-		class Item71
-		{
-			dataType="Group";
-			side="West";
-			class Entities
+			id=1139;
+			type="C_supplyCrate_F";
+			class CustomAttributes
 			{
-				items=1;
-				class Item0
+				class Attribute0
 				{
-					dataType="Object";
-					class PositionInfo
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
 					{
-						position[]={4389.4702,128.08772,7273.9478};
-						angles[]={0,3.7574842,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						description="Caposquadra";
-						class Inventory
+						class data
 						{
-							class primaryWeapon
-							{
-								name="rhs_weap_mk18_m320";
-								optics="rhsusf_acc_ACOG_RMR";
-								muzzle="rhsusf_acc_nt4_tan";
-								flashlight="acc_pointer_IR";
-								firemode="rhs_weap_mk18_m320:Single";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									ammoLeft=30;
-								};
-								class secondaryMuzzleMag
-								{
-									name="1Rnd_HE_Grenade_shell";
-									ammoLeft=1;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_glock17g4";
-								class primaryMuzzleMag
-								{
-									name="rhsusf_mag_17Rnd_9x19_JHP";
-									ammoLeft=17;
-								};
-							};
-							class binocular
-							{
-								name="ACE_VectorDay";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_d";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=11;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ItemcTabHCam";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_IR_Strobe_Item";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_splint";
-										count=4;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=5;
-									};
-									class Item5
-									{
-										name="ACE_packingBandage";
-										count=6;
-									};
-									class Item6
-									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item7
-									{
-										name="ACE_EntrenchingTool";
-										count=1;
-									};
-									class Item8
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item9
-									{
-										name="ACE_epinephrine";
-										count=3;
-									};
-									class Item10
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_rifleman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_PMAG";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="rhs_mag_M441_HE";
-										count=4;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="rhs_mag_m714_White";
-										count=4;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="SmokeShellPurple";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShellGreen";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShellRed";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhsusf_mag_17Rnd_9x19_FMJ";
-										count=4;
-										ammoLeft=17;
-									};
-								};
-								class ItemCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="ACE_bloodIV";
-										count=2;
-									};
-									class Item1
-									{
-										name="ItemcTab";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_packingBandage";
-										count=20;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							headgear="rhsusf_lwh_helmet_marpatd_headset";
+							singleType="BOOL";
+							value=0;
 						};
-					};
-					id=1100;
-					type="rhsusf_usmc_marpat_d_rifleman_light";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=2;
 					};
 				};
-			};
-			class Attributes
-			{
-			};
-			id=1099;
-		};
-		class Item72
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
+				class Attribute1
 				{
-					dataType="Object";
-					class PositionInfo
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
 					{
-						position[]={4390.6353,128.08772,7273.1748};
-						angles[]={0,3.7574842,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						description="CapoGruppo";
-						class Inventory
+						class data
 						{
-							class primaryWeapon
-							{
-								name="rhs_weap_mk18_m320";
-								optics="rhsusf_acc_ACOG_RMR";
-								muzzle="rhsusf_acc_nt4_tan";
-								flashlight="acc_pointer_IR";
-								firemode="rhs_weap_mk18_m320:Single";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									ammoLeft=30;
-								};
-								class secondaryMuzzleMag
-								{
-									name="1Rnd_HE_Grenade_shell";
-									ammoLeft=1;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_glock17g4";
-								class primaryMuzzleMag
-								{
-									name="rhsusf_mag_17Rnd_9x19_JHP";
-									ammoLeft=17;
-								};
-							};
-							class binocular
-							{
-								name="ACE_VectorDay";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_d";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=11;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ItemcTabHCam";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_IR_Strobe_Item";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_splint";
-										count=4;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=5;
-									};
-									class Item5
-									{
-										name="ACE_packingBandage";
-										count=6;
-									};
-									class Item6
-									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item7
-									{
-										name="ACE_EntrenchingTool";
-										count=1;
-									};
-									class Item8
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item9
-									{
-										name="ACE_epinephrine";
-										count=3;
-									};
-									class Item10
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_rifleman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_PMAG";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="rhs_mag_M441_HE";
-										count=4;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="rhs_mag_m714_White";
-										count=4;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="SmokeShellPurple";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShellGreen";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShellRed";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhsusf_mag_17Rnd_9x19_FMJ";
-										count=4;
-										ammoLeft=17;
-									};
-								};
-								class ItemCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="ACE_bloodIV";
-										count=2;
-									};
-									class Item1
-									{
-										name="ACE_packingBandage";
-										count=20;
-									};
-									class Item2
-									{
-										name="ACE_microDAGR";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							headgear="rhsusf_lwh_helmet_marpatd_headset";
+							singleType="STRING";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
-					};
-					id=1106;
-					type="rhsusf_usmc_marpat_d_rifleman_light";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=2;
 					};
 				};
-			};
-			class Attributes
-			{
-			};
-			id=1105;
-		};
-		class Item73
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
+				class Attribute2
 				{
-					dataType="Object";
-					class PositionInfo
+					property="ace_cookoff_enableAmmoCookoff";
+					expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+					class Value
 					{
-						position[]={4391.6992,128.08772,7271.9897};
-						angles[]={0,3.7574842,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						description="Granatiere";
-						class Inventory
+						class data
 						{
-							class primaryWeapon
-							{
-								name="rhs_weap_mk18_m320";
-								optics="rhsusf_acc_ACOG_RMR";
-								muzzle="rhsusf_acc_nt4_tan";
-								flashlight="acc_pointer_IR";
-								firemode="rhs_weap_mk18_m320:Single";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									ammoLeft=30;
-								};
-								class secondaryMuzzleMag
-								{
-									name="1Rnd_HE_Grenade_shell";
-									ammoLeft=1;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_glock17g4";
-								class primaryMuzzleMag
-								{
-									name="rhsusf_mag_17Rnd_9x19_JHP";
-									ammoLeft=17;
-								};
-							};
-							class binocular
-							{
-								name="Binocular";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_d";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=11;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ItemcTabHCam";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_IR_Strobe_Item";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_splint";
-										count=4;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=5;
-									};
-									class Item5
-									{
-										name="ACE_packingBandage";
-										count=6;
-									};
-									class Item6
-									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item7
-									{
-										name="ACE_EntrenchingTool";
-										count=1;
-									};
-									class Item8
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item9
-									{
-										name="ACE_epinephrine";
-										count=3;
-									};
-									class Item10
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_rifleman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_PMAG";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="rhs_mag_M441_HE";
-										count=4;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="rhs_mag_m714_White";
-										count=4;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="SmokeShellGreen";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShellRed";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="rhsusf_mag_17Rnd_9x19_FMJ";
-										count=4;
-										ammoLeft=17;
-									};
-								};
-								class ItemCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="ACE_bloodIV";
-										count=2;
-									};
-									class Item1
-									{
-										name="ACE_packingBandage";
-										count=20;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							headgear="rhsusf_lwh_helmet_marpatd_headset";
+							singleType="BOOL";
+							value=0;
 						};
-					};
-					id=1108;
-					type="rhsusf_usmc_marpat_d_rifleman_light";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=2;
 					};
 				};
-			};
-			class Attributes
-			{
-			};
-			id=1107;
-		};
-		class Item74
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
+				class Attribute3
 				{
-					dataType="Object";
-					class PositionInfo
+					property="ace_arsenal_attribute";
+					expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
+					class Value
 					{
-						position[]={4392.7549,128.08772,7270.874};
-						angles[]={0,3.7574842,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						description="Fuciliere";
-						class Inventory
+						class data
 						{
-							class primaryWeapon
+							singleType="ARRAY";
+							class value
 							{
-								name="rhs_weap_mk18";
-								optics="rhsusf_acc_ACOG_RMR";
-								muzzle="rhsusf_acc_nt4_tan";
-								flashlight="acc_pointer_IR";
-								underBarrel="rhsusf_acc_rvg_de";
-								firemode="rhs_weap_mk18:Single";
-								class primaryMuzzleMag
+								items=2;
+								class Item0
 								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									ammoLeft=30;
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=376;
+											class Item0
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_weap_ak74m";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_weap_ak74m_npz";
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_weap_ak74m_desert";
+												};
+											};
+											class Item3
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_weap_ak74m_desert_npz";
+												};
+											};
+											class Item4
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_weap_ak74m_gp25";
+												};
+											};
+											class Item5
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_weap_ak74m_gp25_npz";
+												};
+											};
+											class Item6
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_weap_ak74";
+												};
+											};
+											class Item7
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_weap_ak74_gp25";
+												};
+											};
+											class Item8
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_weap_ak74_3";
+												};
+											};
+											class Item9
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_weap_igla";
+												};
+											};
+											class Item10
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_weap_rshg2";
+												};
+											};
+											class Item11
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_weap_rpg7";
+												};
+											};
+											class Item12
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_weap_6p53";
+												};
+											};
+											class Item13
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_acc_2dpZenit";
+												};
+											};
+											class Item14
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_acc_perst1ik";
+												};
+											};
+											class Item15
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_acc_dtk";
+												};
+											};
+											class Item16
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_acc_dtk1983";
+												};
+											};
+											class Item17
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_acc_dtk1";
+												};
+											};
+											class Item18
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_acc_dtk2";
+												};
+											};
+											class Item19
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_acc_dtk3";
+												};
+											};
+											class Item20
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_acc_dtk4short";
+												};
+											};
+											class Item21
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_acc_ak5";
+												};
+											};
+											class Item22
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_acc_uuk";
+												};
+											};
+											class Item23
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_weap_aks74un";
+												};
+											};
+											class Item24
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_weap_pkm";
+												};
+											};
+											class Item25
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_weap_svdp";
+												};
+											};
+											class Item26
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_weap_svdp_wd";
+												};
+											};
+											class Item27
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_acc_pgs64_74u";
+												};
+											};
+											class Item28
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_acc_pgs64_74un";
+												};
+											};
+											class Item29
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_acc_pbs4";
+												};
+											};
+											class Item30
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_30Rnd_545x39_7N10_desert_AK";
+												};
+											};
+											class Item31
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_30Rnd_545x39_AK";
+												};
+											};
+											class Item32
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_30Rnd_545x39_AK_no_tracers";
+												};
+											};
+											class Item33
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_30Rnd_545x39_AK_green";
+												};
+											};
+											class Item34
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_30Rnd_545x39_7N22_plum_AK";
+												};
+											};
+											class Item35
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_30Rnd_545x39_7N22_desert_AK";
+												};
+											};
+											class Item36
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_30Rnd_545x39_7N10_2mag_AK";
+												};
+											};
+											class Item37
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_30Rnd_545x39_7N10_2mag_plum_AK";
+												};
+											};
+											class Item38
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_30Rnd_545x39_7N10_2mag_desert_AK";
+												};
+											};
+											class Item39
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_45Rnd_545X39_AK";
+												};
+											};
+											class Item40
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_mag_fold_stock";
+												};
+											};
+											class Item41
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_VOG25";
+												};
+											};
+											class Item42
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_VOG25P";
+												};
+											};
+											class Item43
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_VG40TB";
+												};
+											};
+											class Item44
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_VG40SZ";
+												};
+											};
+											class Item45
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_VG40OP_white";
+												};
+											};
+											class Item46
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_VG40OP_green";
+												};
+											};
+											class Item47
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_VG40OP_red";
+												};
+											};
+											class Item48
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_GRD40_White";
+												};
+											};
+											class Item49
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_GRD40_Green";
+												};
+											};
+											class Item50
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_GRD40_Red";
+												};
+											};
+											class Item51
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_VG40MD_White";
+												};
+											};
+											class Item52
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_VG40MD_Green";
+												};
+											};
+											class Item53
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_VG40MD_Red";
+												};
+											};
+											class Item54
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_GDM40";
+												};
+											};
+											class Item55
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_VG40MD";
+												};
+											};
+											class Item56
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_mag_9k38_rocket";
+												};
+											};
+											class Item57
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_rshg2_mag";
+												};
+											};
+											class Item58
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_rpg7_PG7VL_mag";
+												};
+											};
+											class Item59
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_rpg7_PG7V_mag";
+												};
+											};
+											class Item60
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_rpg7_PG7VM_mag";
+												};
+											};
+											class Item61
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_rpg7_PG7VS_mag";
+												};
+											};
+											class Item62
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_rpg7_PG7VR_mag";
+												};
+											};
+											class Item63
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_rpg7_OG7V_mag";
+												};
+											};
+											class Item64
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_rpg7_TBG7V_mag";
+												};
+											};
+											class Item65
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_rpg7_type69_airburst_mag";
+												};
+											};
+											class Item66
+											{
+												class data
+												{
+													singleType="STRING";
+													value="RPG7_F";
+												};
+											};
+											class Item67
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_18rnd_9x21mm_7N28";
+												};
+											};
+											class Item68
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_18rnd_9x21mm_7N29";
+												};
+											};
+											class Item69
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_18rnd_9x21mm_7BT3";
+												};
+											};
+											class Item70
+											{
+												class data
+												{
+													singleType="STRING";
+													value="150Rnd_762x54_Box";
+												};
+											};
+											class Item71
+											{
+												class data
+												{
+													singleType="STRING";
+													value="150Rnd_762x54_Box_Tracer";
+												};
+											};
+											class Item72
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_10Rnd_762x54mmR_7N1";
+												};
+											};
+											class Item73
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_10Rnd_762x54mmR_7N14";
+												};
+											};
+											class Item74
+											{
+												class data
+												{
+													singleType="STRING";
+													value="10Rnd_762x54_Mag";
+												};
+											};
+											class Item75
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_10Rnd_762x54_Tracer_mag";
+												};
+											};
+											class Item76
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Balaclava_DES";
+												};
+											};
+											class Item77
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Balaclava";
+												};
+											};
+											class Item78
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_balaclava";
+												};
+											};
+											class Item79
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_facewear_6m2";
+												};
+											};
+											class Item80
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_facewear_6m2_1";
+												};
+											};
+											class Item81
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Balaclava_Neck_Shemag";
+												};
+											};
+											class Item82
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Balaclava_Neck_Shemag_MEE";
+												};
+											};
+											class Item83
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Balaclava2_DES";
+												};
+											};
+											class Item84
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Ballistic_Black";
+												};
+											};
+											class Item85
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_aviator_brown_check";
+												};
+											};
+											class Item86
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_aviator_flora_alt";
+												};
+											};
+											class Item87
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_aviator_green_check";
+												};
+											};
+											class Item88
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_aviator_red_check";
+												};
+											};
+											class Item89
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_aviator_white_check";
+												};
+											};
+											class Item90
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_aviator_winter_flora_alt";
+												};
+											};
+											class Item91
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_aviator_winter";
+												};
+											};
+											class Item92
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Bandanna_aviator";
+												};
+											};
+											class Item93
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Bandanna_beast";
+												};
+											};
+											class Item94
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_brown_check";
+												};
+											};
+											class Item95
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Bandanna_BlueFlame1";
+												};
+											};
+											class Item96
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Bandanna_OrangeFlame1";
+												};
+											};
+											class Item97
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Bandanna_BlueFlame2";
+												};
+											};
+											class Item98
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Bandanna_RedFlame1";
+												};
+											};
+											class Item99
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_flora_alt";
+												};
+											};
+											class Item100
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_green_check";
+												};
+											};
+											class Item101
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Bandanna_khk";
+												};
+											};
+											class Item102
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Bandanna_tan";
+												};
+											};
+											class Item103
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Bandanna_blk";
+												};
+											};
+											class Item104
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Bandanna_shades";
+												};
+											};
+											class Item105
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_red_check";
+												};
+											};
+											class Item106
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_shades_brown_check";
+												};
+											};
+											class Item107
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_shades_flora_alt";
+												};
+											};
+											class Item108
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_shades_green_check";
+												};
+											};
+											class Item109
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_shades_red_check";
+												};
+											};
+											class Item110
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_shades_white_check";
+												};
+											};
+											class Item111
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_shades_winter_flora_alt";
+												};
+											};
+											class Item112
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_shades_winter";
+												};
+											};
+											class Item113
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_sport_brown_check";
+												};
+											};
+											class Item114
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_sport_flora_alt";
+												};
+											};
+											class Item115
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_sport_green_check";
+												};
+											};
+											class Item116
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_sport_red_check";
+												};
+											};
+											class Item117
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_sport_white_check";
+												};
+											};
+											class Item118
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_sport_winter_flora_alt";
+												};
+											};
+											class Item119
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_sport_winter";
+												};
+											};
+											class Item120
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Bandanna_sport";
+												};
+											};
+											class Item121
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Bandanna_CandySkull";
+												};
+											};
+											class Item122
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Bandanna_Skull1";
+												};
+											};
+											class Item123
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Bandanna_Syndikat1";
+												};
+											};
+											class Item124
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Bandanna_Skull2";
+												};
+											};
+											class Item125
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Bandanna_Vampire_01";
+												};
+											};
+											class Item126
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Bandanna_oli";
+												};
+											};
+											class Item127
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_winter_flora_alt";
+												};
+											};
+											class Item128
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_winter";
+												};
+											};
+											class Item129
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Bandanna_white_check";
+												};
+											};
+											class Item130
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Bandanna_Syndikat2";
+												};
+											};
+											class Item131
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Blindfold_01_white_F";
+												};
+											};
+											class Item132
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Blindfold_01_black_F";
+												};
+											};
+											class Item133
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Face_Wrap_01";
+												};
+											};
+											class Item134
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_KLR_BLK";
+												};
+											};
+											class Item135
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_KLR_Oli";
+												};
+											};
+											class Item136
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_KLR_TAN";
+												};
+											};
+											class Item137
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_KL_BLK";
+												};
+											};
+											class Item138
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_KL_Oli";
+												};
+											};
+											class Item139
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_KL_TAN";
+												};
+											};
+											class Item140
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Neck_Shemag_Oli";
+												};
+											};
+											class Item141
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Neck_Shemag_Tan";
+												};
+											};
+											class Item142
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Neck_Shemag";
+												};
+											};
+											class Item143
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Neck_Shemag_KLR_blk";
+												};
+											};
+											class Item144
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Neck_Shemag_KLR_tan";
+												};
+											};
+											class Item145
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Neck_Shemag_KL_blk";
+												};
+											};
+											class Item146
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Neck_Shemag_KL_tan";
+												};
+											};
+											class Item147
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Neck_Shemag_KR_blk";
+												};
+											};
+											class Item148
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_Neck_Shemag_KR_tan";
+												};
+											};
+											class Item149
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Lowprofile";
+												};
+											};
+											class Item150
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_googles_black";
+												};
+											};
+											class Item151
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Aviator";
+												};
+											};
+											class Item152
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_googles_clear";
+												};
+											};
+											class Item153
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_googles_orange";
+												};
+											};
+											class Item154
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_googles_yellow";
+												};
+											};
+											class Item155
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Shades_Blue";
+												};
+											};
+											class Item156
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Shades_Black";
+												};
+											};
+											class Item157
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Shades_Red";
+												};
+											};
+											class Item158
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Shades_Green";
+												};
+											};
+											class Item159
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Squares_Tinted";
+												};
+											};
+											class Item160
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Sport_Red";
+												};
+											};
+											class Item161
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Sport_Blackyellow";
+												};
+											};
+											class Item162
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Sport_BlackWhite";
+												};
+											};
+											class Item163
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Sport_Checkered";
+												};
+											};
+											class Item164
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Sport_Blackred";
+												};
+											};
+											class Item165
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Sport_Greenblack";
+												};
+											};
+											class Item166
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Lady_Blue";
+												};
+											};
+											class Item167
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Spectacles";
+												};
+											};
+											class Item168
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Squares";
+												};
+											};
+											class Item169
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Spectacles_Tinted";
+												};
+											};
+											class Item170
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Balaclava_Flecktarn";
+												};
+											};
+											class Item171
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Balaclava_Halloween_01";
+												};
+											};
+											class Item172
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Balaclava_Flames1";
+												};
+											};
+											class Item173
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Balaclava_blk";
+												};
+											};
+											class Item174
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Balaclava_lowprofile";
+												};
+											};
+											class Item175
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Balaclava_Scarecrow_01";
+												};
+											};
+											class Item176
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Balaclava_BlueStrips";
+												};
+											};
+											class Item177
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Balaclava_Skull1";
+												};
+											};
+											class Item178
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Balaclava_Tropentarn";
+												};
+											};
+											class Item179
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Balaclava_oli";
+												};
+											};
+											class Item180
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Respirator_white_F";
+												};
+											};
+											class Item181
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Respirator_blue_F";
+												};
+											};
+											class Item182
+											{
+												class data
+												{
+													singleType="STRING";
+													value="G_Respirator_yellow_F";
+												};
+											};
+											class Item183
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_KR_BLK";
+												};
+											};
+											class Item184
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_KR_Oli";
+												};
+											};
+											class Item185
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_G_KR_TAN";
+												};
+											};
+											class Item186
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_scarf";
+												};
+											};
+											class Item187
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhsusf_shemagh_grn";
+												};
+											};
+											class Item188
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhsusf_shemagh2_grn";
+												};
+											};
+											class Item189
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhsusf_shemagh_od";
+												};
+											};
+											class Item190
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhsusf_shemagh2_od";
+												};
+											};
+											class Item191
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhsusf_shemagh_tan";
+												};
+											};
+											class Item192
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhsusf_shemagh2_tan";
+												};
+											};
+											class Item193
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhsusf_shemagh_white";
+												};
+											};
+											class Item194
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhsusf_shemagh2_white";
+												};
+											};
+											class Item195
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhssaf_veil_Green";
+												};
+											};
+											class Item196
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_6m2_nvg";
+												};
+											};
+											class Item197
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_6m2_1_nvg";
+												};
+											};
+											class Item198
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_tr8_periscope";
+												};
+											};
+											class Item199
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_Yardage450";
+												};
+											};
+											class Item200
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Binocular";
+												};
+											};
+											class Item201
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ItemMap";
+												};
+											};
+											class Item202
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ItemCompass";
+												};
+											};
+											class Item203
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ItemWatch";
+												};
+											};
+											class Item204
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhssaf_mag_brd_m83_blue";
+												};
+											};
+											class Item205
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhssaf_mag_brd_m83_green";
+												};
+											};
+											class Item206
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhssaf_mag_brd_m83_orange";
+												};
+											};
+											class Item207
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhssaf_mag_brd_m83_red";
+												};
+											};
+											class Item208
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhssaf_mag_brd_m83_white";
+												};
+											};
+											class Item209
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhssaf_mag_brd_m83_yellow";
+												};
+											};
+											class Item210
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_grenade_m1939e_mag";
+												};
+											};
+											class Item211
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_grenade_m1939e_f_mag";
+												};
+											};
+											class Item212
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_30Rnd_545x39_7N6M_AK";
+												};
+											};
+											class Item213
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_B_H_DES_MARPAT";
+												};
+											};
+											class Item214
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_ADE_O_H_Turban_01_1";
+												};
+											};
+											class Item215
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_ADE_I_H_Turban_01_1";
+												};
+											};
+											class Item216
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_ADE_I_H_Turban_01_2";
+												};
+											};
+											class Item217
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_ADE_O_H_Turban_01_2";
+												};
+											};
+											class Item218
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_01_Blk";
+												};
+											};
+											class Item219
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_02_Blk";
+												};
+											};
+											class Item220
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_03_Blk";
+												};
+											};
+											class Item221
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_01_Blu";
+												};
+											};
+											class Item222
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_02_Blu";
+												};
+											};
+											class Item223
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_03_Blu";
+												};
+											};
+											class Item224
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_01_Oli";
+												};
+											};
+											class Item225
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_02_Oli";
+												};
+											};
+											class Item226
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_03_Oli";
+												};
+											};
+											class Item227
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_01_Red";
+												};
+											};
+											class Item228
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_02_Red";
+												};
+											};
+											class Item229
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_03_Red";
+												};
+											};
+											class Item230
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_01_Tan";
+												};
+											};
+											class Item231
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_02_Tan";
+												};
+											};
+											class Item232
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_03_Tan";
+												};
+											};
+											class Item233
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_01_Trq";
+												};
+											};
+											class Item234
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_02_Trq";
+												};
+											};
+											class Item235
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_03_Trq";
+												};
+											};
+											class Item236
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_01_Whi";
+												};
+											};
+											class Item237
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_02_Whi";
+												};
+											};
+											class Item238
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_03_Whi";
+												};
+											};
+											class Item239
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_01_Yel";
+												};
+											};
+											class Item240
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_02_Yel";
+												};
+											};
+											class Item241
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Facewrap_03_Yel";
+												};
+											};
+											class Item242
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_01_Blk";
+												};
+											};
+											class Item243
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_02_Blk";
+												};
+											};
+											class Item244
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_03_Blk";
+												};
+											};
+											class Item245
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_01_Blu";
+												};
+											};
+											class Item246
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_02_Blu";
+												};
+											};
+											class Item247
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_03_Blu";
+												};
+											};
+											class Item248
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_01_Oli";
+												};
+											};
+											class Item249
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_02_Oli";
+												};
+											};
+											class Item250
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_03_Oli";
+												};
+											};
+											class Item251
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_01_Red";
+												};
+											};
+											class Item252
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_02_Red";
+												};
+											};
+											class Item253
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_03_Red";
+												};
+											};
+											class Item254
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_01_Tan";
+												};
+											};
+											class Item255
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_02_Tan";
+												};
+											};
+											class Item256
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_03_Tan";
+												};
+											};
+											class Item257
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_01_Trq";
+												};
+											};
+											class Item258
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_02_Trq";
+												};
+											};
+											class Item259
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_03_Trq";
+												};
+											};
+											class Item260
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_01_Whi";
+												};
+											};
+											class Item261
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_02_Whi";
+												};
+											};
+											class Item262
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_03_Whi";
+												};
+											};
+											class Item263
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_01_Yel";
+												};
+											};
+											class Item264
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_02_Yel";
+												};
+											};
+											class Item265
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Turban_Neckwrap_03_Yel";
+												};
+											};
+											class Item266
+											{
+												class data
+												{
+													singleType="STRING";
+													value="H_Bandanna_cbr";
+												};
+											};
+											class Item267
+											{
+												class data
+												{
+													singleType="STRING";
+													value="H_Bandanna_khk";
+												};
+											};
+											class Item268
+											{
+												class data
+												{
+													singleType="STRING";
+													value="H_Bandanna_gry";
+												};
+											};
+											class Item269
+											{
+												class data
+												{
+													singleType="STRING";
+													value="H_Bandanna_sand";
+												};
+											};
+											class Item270
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Bandanna_Brown_Check";
+												};
+											};
+											class Item271
+											{
+												class data
+												{
+													singleType="STRING";
+													value="H_Bandanna_sgg";
+												};
+											};
+											class Item272
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Bandanna_MAR";
+												};
+											};
+											class Item273
+											{
+												class data
+												{
+													singleType="STRING";
+													value="H_HeadBandage_stained_F";
+												};
+											};
+											class Item274
+											{
+												class data
+												{
+													singleType="STRING";
+													value="H_HeadBandage_clean_F";
+												};
+											};
+											class Item275
+											{
+												class data
+												{
+													singleType="STRING";
+													value="H_HeadBandage_bloody_F";
+												};
+											};
+											class Item276
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_ADA_B_H_BoonieHat_TTC";
+												};
+											};
+											class Item277
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_ADA_B_H_BoonieHat_CC";
+												};
+											};
+											class Item278
+											{
+												class data
+												{
+													singleType="STRING";
+													value="H_Booniehat_khk_hs";
+												};
+											};
+											class Item279
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhssaf_bandana_digital_desert";
+												};
+											};
+											class Item280
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_KRG_B_H_Patrolcap_DIGI";
+												};
+											};
+											class Item281
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_KRG_B_H_BoonieHat_DIGI";
+												};
+											};
+											class Item282
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_H_zsh7a_mike_Des";
+												};
+											};
+											class Item283
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_H_zsh7a_mike_Des_alt";
+												};
+											};
+											class Item284
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_H_zsh7a_Des";
+												};
+											};
+											class Item285
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_H_zsh7a_Des_alt";
+												};
+											};
+											class Item286
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Crew_Helmet";
+												};
+											};
+											class Item287
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_H_Pilot_Helmet";
+												};
+											};
+											class Item288
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_B_U_CombatUniform_Shortsleeve_01_DES_MARPAT";
+												};
+											};
+											class Item289
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_B_U_CombatUniform_01_DES_MARPAT";
+												};
+											};
+											class Item290
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_B_U_CombatUniform_02_DES_MARPAT";
+												};
+											};
+											class Item291
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_B_U_CombatUniform_Shortsleeve_02_DES_MARPAT";
+												};
+											};
+											class Item292
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_B_U_CombatUniform_Ghillie_DES_MARPAT";
+												};
+											};
+											class Item293
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_I_U_CombatUniform_Ghillie_TKA_Brush";
+												};
+											};
+											class Item294
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_B_U_H_Pilot_DES";
+												};
+											};
+											class Item295
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_I_U_H_Pilot_01_DES";
+												};
+											};
+											class Item296
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_I_U_H_Pilot_02_DES";
+												};
+											};
+											class Item297
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_I_U_H_Pilot_03_DES";
+												};
+											};
+											class Item298
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_I_U_J_Pilot_Des";
+												};
+											};
+											class Item299
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_U_CombatUniform_01_Des_TKA_Brush";
+												};
+											};
+											class Item300
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_U_CombatUniform_02_Des_TKA_Brush";
+												};
+											};
+											class Item301
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_U_CombatUniform_03_Des_TKA_Brush";
+												};
+											};
+											class Item302
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_U_CrewUniform_02_ADPM";
+												};
+											};
+											class Item303
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_U_CrewUniform_03_ADPM";
+												};
+											};
+											class Item304
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_U_CrewUniform_01_ADPM";
+												};
+											};
+											class Item305
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_I_U_CrewUniform_01_KHK";
+												};
+											};
+											class Item306
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_I_U_CrewUniform_02_KHK";
+												};
+											};
+											class Item307
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_I_U_CrewUniform_03_KHK";
+												};
+											};
+											class Item308
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_U_CombatUniform_01_ADPM";
+												};
+											};
+											class Item309
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_U_CombatUniform_02_ADPM";
+												};
+											};
+											class Item310
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_U_CombatUniform_03_ADPM";
+												};
+											};
+											class Item311
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_V_6b23_ml_Oli_ADPM";
+												};
+											};
+											class Item312
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_V_6b23_ml_6sh92_vog_Oli_ADPM";
+												};
+											};
+											class Item313
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_V_6b23_ML_6sh92_radio_Oli_ADPM";
+												};
+											};
+											class Item314
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_U_CombatUniform_Ghillie_ADPM";
+												};
+											};
+											class Item315
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_B_V_GA_LITE_TAN";
+												};
+											};
+											class Item316
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_ANP_B_V_GA_HEAVY_TAN";
+												};
+											};
+											class Item317
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_B_V_GA_HEAVY_TAN";
+												};
+											};
+											class Item318
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_ANP_B_V_GA_LITE_TAN";
+												};
+											};
+											class Item319
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_B_V_GA_LITE_DES_MARPAT";
+												};
+											};
+											class Item320
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_B_V_GA_HEAVY_DES_MARPAT";
+												};
+											};
+											class Item321
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_H_Patrolcap_ADPM";
+												};
+											};
+											class Item322
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_O_H_Patrolcap_OFF_ADPM";
+												};
+											};
+											class Item323
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_B_H_Beret";
+												};
+											};
+											class Item324
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_B_B_RIF";
+												};
+											};
+											class Item325
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_TKA_B_B_RIF_Radio";
+												};
+											};
+											class Item326
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_ec200_sand_mag";
+												};
+											};
+											class Item327
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_ec200_mag";
+												};
+											};
+											class Item328
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_ec400_sand_mag";
+												};
+											};
+											class Item329
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_ec400_mag";
+												};
+											};
+											class Item330
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_ec75_sand_mag";
+												};
+											};
+											class Item331
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_ec75_mag";
+												};
+											};
+											class Item332
+											{
+												class data
+												{
+													singleType="STRING";
+													value="IEDLandBig_Remote_Mag";
+												};
+											};
+											class Item333
+											{
+												class data
+												{
+													singleType="STRING";
+													value="IEDUrbanBig_Remote_Mag";
+												};
+											};
+											class Item334
+											{
+												class data
+												{
+													singleType="STRING";
+													value="IEDLandSmall_Remote_Mag";
+												};
+											};
+											class Item335
+											{
+												class data
+												{
+													singleType="STRING";
+													value="IEDUrbanSmall_Remote_Mag";
+												};
+											};
+											class Item336
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_mine_a200_bz_mag";
+												};
+											};
+											class Item337
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_mine_a200_dz35_mag";
+												};
+											};
+											class Item338
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ATMine_Range_Mag";
+												};
+											};
+											class Item339
+											{
+												class data
+												{
+													singleType="STRING";
+													value="DemoCharge_Remote_Mag";
+												};
+											};
+											class Item340
+											{
+												class data
+												{
+													singleType="STRING";
+													value="SatchelCharge_Remote_Mag";
+												};
+											};
+											class Item341
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACRE_PRC117F";
+												};
+											};
+											class Item342
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACRE_PRC148";
+												};
+											};
+											class Item343
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACRE_PRC152";
+												};
+											};
+											class Item344
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACRE_PRC343";
+												};
+											};
+											class Item345
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACRE_PRC77";
+												};
+											};
+											class Item346
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_epinephrine";
+												};
+											};
+											class Item347
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_morphine";
+												};
+											};
+											class Item348
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_ATragMX";
+												};
+											};
+											class Item349
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_CableTie";
+												};
+											};
+											class Item350
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_DeadManSwitch";
+												};
+											};
+											class Item351
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_quikclot";
+												};
+											};
+											class Item352
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_packingBandage";
+												};
+											};
+											class Item353
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_fieldDressing";
+												};
+											};
+											class Item354
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_elasticBandage";
+												};
+											};
+											class Item355
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACRE_BF888S";
+												};
+											};
+											class Item356
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_splint";
+												};
+											};
+											class Item357
+											{
+												class data
+												{
+													singleType="STRING";
+													value="FSGm_ItemMedicBagMil";
+												};
+											};
+											class Item358
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_RangeCard";
+												};
+											};
+											class Item359
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_EarPlugs";
+												};
+											};
+											class Item360
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_MapTools";
+												};
+											};
+											class Item361
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_wirecutter";
+												};
+											};
+											class Item362
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_bloodIV_500";
+												};
+											};
+											class Item363
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_bloodIV_250";
+												};
+											};
+											class Item364
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_bloodIV";
+												};
+											};
+											class Item365
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_EntrenchingTool";
+												};
+											};
+											class Item366
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_plasmaIV";
+												};
+											};
+											class Item367
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_plasmaIV_250";
+												};
+											};
+											class Item368
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_plasmaIV_500";
+												};
+											};
+											class Item369
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_tourniquet";
+												};
+											};
+											class Item370
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_Flashlight_KSF1";
+												};
+											};
+											class Item371
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_DefusalKit";
+												};
+											};
+											class Item372
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_Kestrel4500";
+												};
+											};
+											class Item373
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ACE_surgicalKit";
+												};
+											};
+											class Item374
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ToolKit";
+												};
+											};
+											class Item375
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_tr8_periscope_pip";
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0;
+									};
 								};
 							};
-							class handgun
-							{
-								name="rhsusf_weap_glock17g4";
-								class primaryMuzzleMag
-								{
-									name="rhsusf_mag_17Rnd_9x19_JHP";
-									ammoLeft=17;
-								};
-							};
-							class binocular
-							{
-								name="Binocular";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_d";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=11;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ItemcTabHCam";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_IR_Strobe_Item";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_splint";
-										count=4;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=5;
-									};
-									class Item5
-									{
-										name="ACE_packingBandage";
-										count=6;
-									};
-									class Item6
-									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item7
-									{
-										name="ACE_EntrenchingTool";
-										count=1;
-									};
-									class Item8
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item9
-									{
-										name="ACE_epinephrine";
-										count=3;
-									};
-									class Item10
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_rifleman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_PMAG";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="HandGrenade";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=4;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="SmokeShellRed";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShellGreen";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhsusf_mag_17Rnd_9x19_FMJ";
-										count=4;
-										ammoLeft=17;
-									};
-								};
-								class ItemCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="ACE_bloodIV";
-										count=2;
-									};
-									class Item1
-									{
-										name="ACE_packingBandage";
-										count=20;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							headgear="rhsusf_lwh_helmet_marpatd_headset";
 						};
-					};
-					id=1112;
-					type="rhsusf_usmc_marpat_d_rifleman_light";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=2;
 					};
 				};
+				nAttributes=4;
 			};
-			class Attributes
-			{
-			};
-			id=1111;
-		};
-		class Item75
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4393.9707,128.08772,7269.6821};
-						angles[]={0,3.7574842,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						description="Fuciliere AC";
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_mk18";
-								optics="rhsusf_acc_ACOG_RMR";
-								muzzle="rhsusf_acc_nt4_tan";
-								flashlight="acc_pointer_IR";
-								underBarrel="rhsusf_acc_rvg_de";
-								firemode="rhs_weap_mk18:Single";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class secondaryWeapon
-							{
-								name="rhs_weap_M136";
-							};
-							class handgun
-							{
-								name="rhsusf_weap_glock17g4";
-								class primaryMuzzleMag
-								{
-									name="rhsusf_mag_17Rnd_9x19_JHP";
-									ammoLeft=17;
-								};
-							};
-							class binocular
-							{
-								name="Binocular";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_d";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=11;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ItemcTabHCam";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_IR_Strobe_Item";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_splint";
-										count=4;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=5;
-									};
-									class Item5
-									{
-										name="ACE_packingBandage";
-										count=6;
-									};
-									class Item6
-									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item7
-									{
-										name="ACE_EntrenchingTool";
-										count=1;
-									};
-									class Item8
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item9
-									{
-										name="ACE_epinephrine";
-										count=3;
-									};
-									class Item10
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_rifleman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_PMAG";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="HandGrenade";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=4;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="SmokeShellRed";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShellGreen";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhsusf_mag_17Rnd_9x19_FMJ";
-										count=4;
-										ammoLeft=17;
-									};
-								};
-								class ItemCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="ACE_bloodIV";
-										count=2;
-									};
-									class Item1
-									{
-										name="ACE_packingBandage";
-										count=20;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							headgear="rhsusf_lwh_helmet_marpatd_headset";
-						};
-					};
-					id=1114;
-					type="rhsusf_usmc_marpat_d_rifleman_light";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1113;
-		};
-		class Item76
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4394.4507,128.08772,7268.3721};
-						angles[]={0,3.7574842,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						description="Specialista AC";
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_mk18";
-								optics="rhsusf_acc_ACOG_RMR";
-								muzzle="rhsusf_acc_nt4_tan";
-								flashlight="acc_pointer_IR";
-								underBarrel="rhsusf_acc_rvg_de";
-								firemode="rhs_weap_mk18:Single";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class secondaryWeapon
-							{
-								name="rhs_weap_smaw";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_smaw_HEAA";
-									ammoLeft=1;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_glock17g4";
-								class primaryMuzzleMag
-								{
-									name="rhsusf_mag_17Rnd_9x19_JHP";
-									ammoLeft=17;
-								};
-							};
-							class binocular
-							{
-								name="Binocular";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_d";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=11;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ItemcTabHCam";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_IR_Strobe_Item";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_splint";
-										count=4;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=5;
-									};
-									class Item5
-									{
-										name="ACE_packingBandage";
-										count=6;
-									};
-									class Item6
-									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item7
-									{
-										name="ACE_EntrenchingTool";
-										count=1;
-									};
-									class Item8
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item9
-									{
-										name="ACE_epinephrine";
-										count=3;
-									};
-									class Item10
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_rifleman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_PMAG";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="HandGrenade";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=4;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="SmokeShellRed";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShellGreen";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhs_mag_smaw_HEDP";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item4
-									{
-										name="rhsusf_mag_17Rnd_9x19_FMJ";
-										count=4;
-										ammoLeft=17;
-									};
-								};
-								class ItemCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="ACE_bloodIV";
-										count=2;
-									};
-									class Item1
-									{
-										name="ACE_packingBandage";
-										count=20;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							headgear="rhsusf_lwh_helmet_marpatd_headset";
-						};
-					};
-					id=1116;
-					type="rhsusf_usmc_marpat_d_rifleman_light";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1115;
-		};
-		class Item77
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4395.0674,128.08772,7266.354};
-						angles[]={0,3.7574842,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						description="Specialista AA";
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_mk18";
-								optics="rhsusf_acc_ACOG_RMR";
-								muzzle="rhsusf_acc_nt4_tan";
-								flashlight="acc_pointer_IR";
-								underBarrel="rhsusf_acc_rvg_de";
-								firemode="rhs_weap_mk18:Single";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class secondaryWeapon
-							{
-								name="rhs_weap_fim92";
-								class primaryMuzzleMag
-								{
-									name="rhs_fim92_mag";
-									ammoLeft=1;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_glock17g4";
-								class primaryMuzzleMag
-								{
-									name="rhsusf_mag_17Rnd_9x19_JHP";
-									ammoLeft=17;
-								};
-							};
-							class binocular
-							{
-								name="Binocular";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_d";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=11;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ItemcTabHCam";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_IR_Strobe_Item";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_splint";
-										count=4;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=5;
-									};
-									class Item5
-									{
-										name="ACE_packingBandage";
-										count=6;
-									};
-									class Item6
-									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item7
-									{
-										name="ACE_EntrenchingTool";
-										count=1;
-									};
-									class Item8
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item9
-									{
-										name="ACE_epinephrine";
-										count=3;
-									};
-									class Item10
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_rifleman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_PMAG";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="HandGrenade";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=4;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="SmokeShellRed";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShellGreen";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhsusf_mag_17Rnd_9x19_FMJ";
-										count=4;
-										ammoLeft=17;
-									};
-									class Item4
-									{
-										name="rhs_fim92_mag";
-										count=1;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="ACE_bloodIV";
-										count=2;
-									};
-									class Item1
-									{
-										name="ACE_packingBandage";
-										count=20;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							headgear="rhsusf_lwh_helmet_marpatd_headset";
-						};
-					};
-					id=1118;
-					type="rhsusf_usmc_marpat_d_rifleman_light";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1117;
-		};
-		class Item78
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4390.0903,128.08772,7264.4707};
-						angles[]={0,3.7574842,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						description="Specialista Riparazioni";
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_mk18";
-								optics="rhsusf_acc_ACOG_RMR";
-								muzzle="rhsusf_acc_nt4_tan";
-								flashlight="acc_pointer_IR";
-								underBarrel="rhsusf_acc_rvg_de";
-								firemode="rhs_weap_mk18:Single";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_glock17g4";
-								class primaryMuzzleMag
-								{
-									name="rhsusf_mag_17Rnd_9x19_JHP";
-									ammoLeft=17;
-								};
-							};
-							class binocular
-							{
-								name="Binocular";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_d";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=11;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ItemcTabHCam";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_IR_Strobe_Item";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_splint";
-										count=4;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=5;
-									};
-									class Item5
-									{
-										name="ACE_packingBandage";
-										count=6;
-									};
-									class Item6
-									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item7
-									{
-										name="ACE_EntrenchingTool";
-										count=1;
-									};
-									class Item8
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item9
-									{
-										name="ACE_epinephrine";
-										count=3;
-									};
-									class Item10
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_rifleman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_PMAG";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="HandGrenade";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=4;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="SmokeShellRed";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShellGreen";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhsusf_mag_17Rnd_9x19_FMJ";
-										count=4;
-										ammoLeft=17;
-									};
-								};
-								class ItemCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="ACE_bloodIV";
-										count=2;
-									};
-									class Item1
-									{
-										name="ACE_packingBandage";
-										count=20;
-									};
-									class Item2
-									{
-										name="ACE_wirecutter";
-										count=1;
-									};
-									class Item3
-									{
-										name="ToolKit";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							headgear="rhsusf_lwh_helmet_marpatd_headset";
-						};
-					};
-					id=1122;
-					type="rhsusf_usmc_marpat_d_rifleman_light";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1121;
-		};
-		class Item79
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4390.3452,128.08772,7262.9658};
-						angles[]={0,3.7574842,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						description="Specialista Esplosivi";
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_mk18";
-								optics="rhsusf_acc_ACOG_RMR";
-								muzzle="rhsusf_acc_nt4_tan";
-								flashlight="acc_pointer_IR";
-								underBarrel="rhsusf_acc_rvg_de";
-								firemode="rhs_weap_mk18:Single";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_glock17g4";
-								class primaryMuzzleMag
-								{
-									name="rhsusf_mag_17Rnd_9x19_JHP";
-									ammoLeft=17;
-								};
-							};
-							class binocular
-							{
-								name="Binocular";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_d";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=11;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ItemcTabHCam";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_IR_Strobe_Item";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_splint";
-										count=4;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=5;
-									};
-									class Item5
-									{
-										name="ACE_packingBandage";
-										count=6;
-									};
-									class Item6
-									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item7
-									{
-										name="ACE_EntrenchingTool";
-										count=1;
-									};
-									class Item8
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item9
-									{
-										name="ACE_epinephrine";
-										count=3;
-									};
-									class Item10
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_rifleman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_PMAG";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="HandGrenade";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=4;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=6;
-									class Item0
-									{
-										name="SmokeShellRed";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShellGreen";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhsusf_mag_17Rnd_9x19_FMJ";
-										count=4;
-										ammoLeft=17;
-									};
-									class Item4
-									{
-										name="DemoCharge_Remote_Mag";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item5
-									{
-										name="APERSBoundingMine_Range_Mag";
-										count=3;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="ACE_bloodIV";
-										count=2;
-									};
-									class Item1
-									{
-										name="ACE_packingBandage";
-										count=20;
-									};
-									class Item2
-									{
-										name="ACE_Clacker";
-										count=1;
-									};
-									class Item3
-									{
-										name="ACE_DefusalKit";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							headgear="rhsusf_lwh_helmet_marpatd_headset";
-						};
-					};
-					id=1124;
-					type="rhsusf_usmc_marpat_d_rifleman_light";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1123;
-		};
-		class Item80
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4389.4492,128.08772,7266.1919};
-						angles[]={0,3.7574842,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						description="Medico";
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_mk18";
-								optics="rhsusf_acc_ACOG_RMR";
-								muzzle="rhsusf_acc_nt4_tan";
-								flashlight="acc_pointer_IR";
-								underBarrel="rhsusf_acc_rvg_de";
-								firemode="rhs_weap_mk18:Single";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_glock17g4";
-								class primaryMuzzleMag
-								{
-									name="rhsusf_mag_17Rnd_9x19_JHP";
-									ammoLeft=17;
-								};
-							};
-							class binocular
-							{
-								name="Binocular";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_d";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=11;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ItemcTabHCam";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_IR_Strobe_Item";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_splint";
-										count=4;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=5;
-									};
-									class Item5
-									{
-										name="ACE_packingBandage";
-										count=6;
-									};
-									class Item6
-									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item7
-									{
-										name="ACE_EntrenchingTool";
-										count=1;
-									};
-									class Item8
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item9
-									{
-										name="ACE_epinephrine";
-										count=3;
-									};
-									class Item10
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_rifleman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_PMAG";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="HandGrenade";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=4;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="SmokeShellRed";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShellGreen";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhsusf_mag_17Rnd_9x19_FMJ";
-										count=4;
-										ammoLeft=17;
-									};
-								};
-								class ItemCargo
-								{
-									items=9;
-									class Item0
-									{
-										name="ACE_bloodIV";
-										count=3;
-									};
-									class Item1
-									{
-										name="ACE_packingBandage";
-										count=30;
-									};
-									class Item2
-									{
-										name="FSGm_ItemMedicBagMil";
-										count=1;
-									};
-									class Item3
-									{
-										name="ACE_splint";
-										count=8;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=8;
-									};
-									class Item5
-									{
-										name="ACE_morphine";
-										count=15;
-									};
-									class Item6
-									{
-										name="ACE_epinephrine";
-										count=15;
-									};
-									class Item7
-									{
-										name="ACE_elasticBandage";
-										count=20;
-									};
-									class Item8
-									{
-										name="ACE_bloodIV_500";
-										count=7;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							headgear="rhsusf_lwh_helmet_marpatd_headset";
-						};
-					};
-					id=1126;
-					type="rhsusf_usmc_marpat_d_rifleman_light";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1125;
-		};
-		class Item81
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4388.2422,128.08772,7268.4629};
-						angles[]={0,3.7574842,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						description="Mitragliere";
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_mk18";
-								optics="rhsusf_acc_ACOG_RMR";
-								muzzle="rhsusf_acc_nt4_tan";
-								flashlight="acc_pointer_IR";
-								underBarrel="rhsusf_acc_rvg_de";
-								firemode="rhs_weap_mk18:Single";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_glock17g4";
-								class primaryMuzzleMag
-								{
-									name="rhsusf_mag_17Rnd_9x19_JHP";
-									ammoLeft=17;
-								};
-							};
-							class binocular
-							{
-								name="Binocular";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_d";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=11;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ItemcTabHCam";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_IR_Strobe_Item";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_splint";
-										count=4;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=5;
-									};
-									class Item5
-									{
-										name="ACE_packingBandage";
-										count=6;
-									};
-									class Item6
-									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item7
-									{
-										name="ACE_EntrenchingTool";
-										count=1;
-									};
-									class Item8
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item9
-									{
-										name="ACE_epinephrine";
-										count=3;
-									};
-									class Item10
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_rifleman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_PMAG";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="HandGrenade";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=4;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="SmokeShellRed";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShellGreen";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhsusf_mag_17Rnd_9x19_FMJ";
-										count=4;
-										ammoLeft=17;
-									};
-								};
-								class ItemCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="ACE_bloodIV";
-										count=2;
-									};
-									class Item1
-									{
-										name="ACE_packingBandage";
-										count=20;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							headgear="rhsusf_lwh_helmet_marpatd_headset";
-						};
-					};
-					id=1128;
-					type="rhsusf_usmc_marpat_d_rifleman_light";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1127;
-		};
-		class Item82
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4389.457,128.08772,7269.3447};
-						angles[]={0,3.7574842,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						description="Operatore Droni";
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_mk18";
-								optics="rhsusf_acc_ACOG_RMR";
-								muzzle="rhsusf_acc_nt4_tan";
-								flashlight="acc_pointer_IR";
-								underBarrel="rhsusf_acc_rvg_de";
-								firemode="rhs_weap_mk18:Single";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_glock17g4";
-								class primaryMuzzleMag
-								{
-									name="rhsusf_mag_17Rnd_9x19_JHP";
-									ammoLeft=17;
-								};
-							};
-							class binocular
-							{
-								name="Binocular";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_d";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=11;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ItemcTabHCam";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_IR_Strobe_Item";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_splint";
-										count=4;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=5;
-									};
-									class Item5
-									{
-										name="ACE_packingBandage";
-										count=6;
-									};
-									class Item6
-									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item7
-									{
-										name="ACE_EntrenchingTool";
-										count=1;
-									};
-									class Item8
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item9
-									{
-										name="ACE_epinephrine";
-										count=3;
-									};
-									class Item10
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_rifleman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_PMAG";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="HandGrenade";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhsusf_mag_17Rnd_9x19_FMJ";
-										count=2;
-										ammoLeft=17;
-									};
-								};
-								class ItemCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-									class Item1
-									{
-										name="ACE_packingBandage";
-										count=20;
-									};
-									class Item2
-									{
-										name="ACE_bloodIV_500";
-										count=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="B_Crocus_AP_Bag";
-								isBackpack=1;
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							headgear="rhsusf_lwh_helmet_marpatd_headset";
-						};
-					};
-					id=1130;
-					type="rhsusf_usmc_marpat_d_rifleman_light";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1129;
-		};
-		class Item83
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4388.437,128.08772,7270.7349};
-						angles[]={0,3.7574842,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						description="Operatore Radio";
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_mk18";
-								optics="rhsusf_acc_ACOG_RMR";
-								muzzle="rhsusf_acc_nt4_tan";
-								flashlight="acc_pointer_IR";
-								underBarrel="rhsusf_acc_rvg_de";
-								firemode="rhs_weap_mk18:Single";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_glock17g4";
-								class primaryMuzzleMag
-								{
-									name="rhsusf_mag_17Rnd_9x19_JHP";
-									ammoLeft=17;
-								};
-							};
-							class binocular
-							{
-								name="Binocular";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_d";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=11;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ItemcTabHCam";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_IR_Strobe_Item";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_splint";
-										count=4;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=5;
-									};
-									class Item5
-									{
-										name="ACE_packingBandage";
-										count=6;
-									};
-									class Item6
-									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item7
-									{
-										name="ACE_EntrenchingTool";
-										count=1;
-									};
-									class Item8
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item9
-									{
-										name="ACE_epinephrine";
-										count=3;
-									};
-									class Item10
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_rifleman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="rhs_mag_30Rnd_556x45_M855A1_PMAG";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="HandGrenade";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=4;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="SmokeShellRed";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShellGreen";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhsusf_mag_17Rnd_9x19_FMJ";
-										count=4;
-										ammoLeft=17;
-									};
-								};
-								class ItemCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="ACE_bloodIV";
-										count=2;
-									};
-									class Item1
-									{
-										name="ACE_packingBandage";
-										count=20;
-									};
-									class Item2
-									{
-										name="ACRE_PRC77";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							headgear="rhsusf_lwh_helmet_marpatd_headset";
-						};
-					};
-					id=1134;
-					type="rhsusf_usmc_marpat_d_rifleman_light";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1133;
-		};
-		class Item84
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4386.958,128.08772,7273.3271};
-						angles[]={0,3.7574842,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						description="Mitragliere";
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_m249_pip_L_para";
-								optics="rhsusf_acc_ACOG_RMR";
-								muzzle="rhsusf_acc_nt4_tan";
-								flashlight="acc_pointer_IR";
-								underBarrel="rhsusf_acc_grip4_bipod";
-								firemode="rhs_weap_m249_pip_L_para:FullAuto";
-								class primaryMuzzleMag
-								{
-									name="rhsusf_200Rnd_556x45_soft_pouch_ucp";
-									ammoLeft=200;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_glock17g4";
-								class primaryMuzzleMag
-								{
-									name="rhsusf_mag_17Rnd_9x19_JHP";
-									ammoLeft=17;
-								};
-							};
-							class binocular
-							{
-								name="Binocular";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_d";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=11;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ItemcTabHCam";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_IR_Strobe_Item";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_splint";
-										count=4;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=5;
-									};
-									class Item5
-									{
-										name="ACE_packingBandage";
-										count=6;
-									};
-									class Item6
-									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item7
-									{
-										name="ACE_EntrenchingTool";
-										count=1;
-									};
-									class Item8
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item9
-									{
-										name="ACE_epinephrine";
-										count=3;
-									};
-									class Item10
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_rifleman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="HandGrenade";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShell";
-										count=4;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="rhsusf_200Rnd_556x45_soft_pouch_coyote";
-										count=1;
-										ammoLeft=200;
-									};
-									class Item3
-									{
-										name="rhsusf_100Rnd_556x45_soft_pouch_coyote";
-										count=1;
-										ammoLeft=100;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="SmokeShellRed";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShellGreen";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhsusf_mag_17Rnd_9x19_FMJ";
-										count=4;
-										ammoLeft=17;
-									};
-									class Item4
-									{
-										name="rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote";
-										count=2;
-										ammoLeft=200;
-									};
-								};
-								class ItemCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="ACE_bloodIV";
-										count=2;
-									};
-									class Item1
-									{
-										name="ACE_packingBandage";
-										count=20;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							headgear="rhsusf_lwh_helmet_marpatd_headset";
-						};
-					};
-					id=1136;
-					type="rhsusf_usmc_marpat_d_rifleman_light";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1135;
-		};
-		class Item85
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4385.9697,128.08772,7274.688};
-						angles[]={0,3.7574842,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						description="Tiratore Scelto";
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_sr25_ec_d";
-								optics="rhsusf_acc_LEUPOLDMK4_2_mrds";
-								muzzle="rhsusf_acc_aac_762sdn6_silencer";
-								flashlight="acc_pointer_IR";
-								underBarrel="rhsusf_acc_harris_bipod";
-								firemode="rhs_weap_sr25_ec_d:Single";
-								class primaryMuzzleMag
-								{
-									name="rhsusf_20Rnd_762x51_SR25_m993_Mag";
-									ammoLeft=20;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_glock17g4";
-								class primaryMuzzleMag
-								{
-									name="rhsusf_mag_17Rnd_9x19_JHP";
-									ammoLeft=17;
-								};
-							};
-							class binocular
-							{
-								name="ACE_VectorDay";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_d";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=11;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ItemcTabHCam";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_IR_Strobe_Item";
-										count=2;
-									};
-									class Item3
-									{
-										name="ACE_splint";
-										count=4;
-									};
-									class Item4
-									{
-										name="ACE_tourniquet";
-										count=5;
-									};
-									class Item5
-									{
-										name="ACE_packingBandage";
-										count=6;
-									};
-									class Item6
-									{
-										name="ACE_MapTools";
-										count=1;
-									};
-									class Item7
-									{
-										name="ACE_EntrenchingTool";
-										count=1;
-									};
-									class Item8
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-									class Item9
-									{
-										name="ACE_epinephrine";
-										count=3;
-									};
-									class Item10
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_rifleman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="HandGrenade";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShell";
-										count=4;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="rhsusf_20Rnd_762x51_SR25_m993_Mag";
-										count=5;
-										ammoLeft=20;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACRE_PRC152";
-										count=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=6;
-									class Item0
-									{
-										name="SmokeShellRed";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="SmokeShellGreen";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SmokeShell";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhsusf_mag_17Rnd_9x19_FMJ";
-										count=4;
-										ammoLeft=17;
-									};
-									class Item4
-									{
-										name="rhsusf_20Rnd_762x51_SR25_m993_Mag";
-										count=6;
-										ammoLeft=20;
-									};
-									class Item5
-									{
-										name="APERSBoundingMine_Range_Mag";
-										count=1;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=6;
-									class Item0
-									{
-										name="ACE_bloodIV";
-										count=2;
-									};
-									class Item1
-									{
-										name="ACE_packingBandage";
-										count=20;
-									};
-									class Item2
-									{
-										name="ACE_SpottingScope";
-										count=1;
-									};
-									class Item3
-									{
-										name="ACE_ATragMX";
-										count=1;
-									};
-									class Item4
-									{
-										name="ACE_Kestrel4500";
-										count=1;
-									};
-									class Item5
-									{
-										name="ACE_microDAGR";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							headgear="rhsusf_lwh_helmet_marpatd_headset";
-						};
-					};
-					id=1138;
-					type="rhsusf_usmc_marpat_d_rifleman_light";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male10ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1137;
 		};
 	};
 	class Connections
