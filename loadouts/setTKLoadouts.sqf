@@ -47,6 +47,15 @@ _this addAction["<t color='#FF0000' size='+1.5'>Sniper</t>",{player execVM "load
 // make the arsenal indestructible
 _this allowDamage false;
 
+/*
+Script to copy the playable units loadout to the clipboard:
+AllPlayableUnitsItens = [];
+{AllPlayableUnitsItens = AllPlayableUnitsItens + [(headgear _x)] + [(goggles _x)] + (assignedItems _x) + (backpackitems _x)+ [(backpack _x)] + (uniformItems _x) + [(uniform _x)] + (vestItems _x) + [(vest _x)] + (magazines _x) + (weapons _x) + (primaryWeaponItems _x)+ (primaryWeaponMagazine _x) + (handgunMagazine _x) + (handgunItems _x) + (secondaryWeaponItems _x) + (secondaryWeaponMagazine _x)} forEach (playableUnits + switchableUnits);
+AllPlayableUnitsItens = AllPlayableUnitsItens select {count _x > 0};
+AllPlayableUnitsItens = AllPlayableUnitsItens arrayIntersect AllPlayableUnitsItens;
+copyToClipboard str AllPlayableUnitsItens;
+*/
+
 // Add the ACE arsenal of the Takistanis
 [_this, ["rhs_weap_ak74m",
 		"rhs_weap_ak74m_npz",
