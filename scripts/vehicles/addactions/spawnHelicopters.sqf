@@ -57,4 +57,10 @@ if ((paramsArray select 5) == 1) then {
 	_this addAction ["<t color='#4040FF'>CH 47F</t>", {["RHS_CH_47F_light", "helispawn", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 };
 
+if ((paramsArray select 6) == 1) then {
+	_this addAction ["<t color='#40FF40'>UH-1H</t>", {["UK3CB_MEC_C_UH1H", "vehspawn4", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+	
+	_this addAction ["<t color='#40FF40'>Mi-8</t>", {["UK3CB_TKC_C_Mi8AMT", "vehspawn4", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+};
+
 _this addAction ["<t color='#FFFFFF'>Delete the vehicle</t>", {["helispawn", 10] execVM "scripts\vehicles\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];

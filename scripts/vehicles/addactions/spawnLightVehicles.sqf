@@ -46,4 +46,34 @@ if ((paramsArray select 5) == 1) then {
 	_this addAction ["<t color='#4040FF'>M1237 with machine gun</t>", {["rhsusf_M1237_M2_usarmy_d", "vehspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 };
 
-_this addAction ["<t color='#FFFFFF'>Delete Vehicle</t>", {["vehspawn2", 10] execVM "scripts\vehicles\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];
+if ((paramsArray select 6) == 1) then {
+	_this addAction ["<t color='#40FF40'>Yava Motorcycle</t>", {["UK3CB_TKM_I_TT650", "vehspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+	
+	_this addAction ["<t color='#40FF40'>Unarmed Datsun</t>", {["UK3CB_TKM_I_Datsun_Open", "vehspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+
+	_this addAction ["<t color='#40FF40'>Datsun with PKM</t>", {["UK3CB_TKM_I_Datsun_Pkm", "vehspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+
+	_this addAction ["<t color='#40FF40'>Open Hilux</t>", {["UK3CB_TKM_I_Hilux_Open", "vehspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+
+	_this addAction ["<t color='#40FF40'>Open Hilux with PKM</t>", {["UK3CB_TKM_I_Hilux_Pkm", "vehspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+	
+	_this addAction ["<t color='#40FF40'>Open Hilux with SPG9</t>", {["UK3CB_TKM_I_Hilux_Spg9", "vehspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+
+	_this addAction ["<t color='#40FF40'>Open Hilux with mortar</t>", {["UK3CB_TKM_I_Hilux_Mortar", "vehspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+
+	_this addAction ["<t color='#40FF40'>Open Hilux with rocket artillery</t>", {["UK3CB_TKM_I_Hilux_Rocket_Arty", "vehspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+	
+	_this addAction ["<t color='#40FF40'>UAZ Closed</t>", {["UK3CB_TKM_I_UAZ_Closed", "vehspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+
+	_this addAction ["<t color='#40FF40'>UAZ with SPG9</t>", {["UK3CB_TKM_I_UAZ_SPG9", "vehspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+
+	_this addAction ["<t color='#40FF40'>UAZ with DSHKM</t>", {["UK3CB_TKM_I_UAZ_Dshkm", "vehspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+
+	_this addAction ["<t color='#40FF40'>Unarmed Land Rover</t>", {["UK3CB_TKM_I_LR_Open", "vehspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+
+	_this addAction ["<t color='#40FF40'>Land Rover with HMG</t>", {["UK3CB_TKM_I_LR_SF_M2", "vehspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+
+	_this addAction ["<t color='#40FF40'>Land Rover with SPG9</t>", {["UK3CB_TKM_I_LR_SPG9", "vehspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+};
+
+_this addAction ["<t color='#FFFFFF'>Delete Vehicle</t>", {["vehspawn4", 10] execVM "scripts\vehicles\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];

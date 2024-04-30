@@ -50,5 +50,19 @@ if ((paramsArray select 5) == 1) then {
 	_this addAction ["<t color='#4040FF'>Fuel Hemmt</t>", {["rhsusf_M978A4_BKIT_usarmy_d", "vehspawn1", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 };
 
+if ((paramsArray select 6) == 1) then {
+	_this addAction ["<t color='#40FF40'>Unarmed Transport Praga</t>", {["UK3CB_TKM_I_V3S_Closed", "vehspawn1", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+	
+	_this addAction ["<t color='#40FF40'>AA Praga</t>", {["UK3CB_TKM_I_V3S_Zu23", "vehspawn1", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+
+	_this addAction ["<t color='#40FF40'>Ammo Praga</t>", {["UK3CB_TKM_I_V3S_Reammo", "vehspawn1", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+	
+	_this addAction ["<t color='#40FF40'>Repair Praga</t>", {["UK3CB_TKM_I_V3S_Repair", "vehspawn1", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+
+	_this addAction ["<t color='#40FF40'>Medical Praga</t>", {["UK3CB_TKM_I_V3S_Recovery", "vehspawn1", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+	
+	_this addAction ["<t color='#40FF40'>Fuel Praga</t>", {["UK3CB_TKM_I_V3S_Refuel", "vehspawn1", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+};
+
 
 _this addAction ["<t color='#FFFFFF'>Delete Vehicle</t>", {["vehspawn1", 10] execVM "scripts\vehicles\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];
