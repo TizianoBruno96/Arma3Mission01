@@ -13,8 +13,8 @@ private _flagVarName = vehicleVarName _this; // Get the variable name of the fla
 // Check if the flag variable name is "B_1"
 if (_flagVarName == "B_1") then {
     // Add actions to teleport to MHQ1 and MHQ2
-    _this addAction ["<t color='#0000FF'>Teleport to MHQ1</t>", {player setPos (getPos r_1)}, [], 1.5, true, true, "", "", 5, false, "", ""];
-    _this addAction ["<t color='#0000FF'>Teleport to MHQ2</t>", {player setPos (getPos r_2)}, [], 1.5, true, true, "", "", 5, false, "", ""];
+    _this addAction ["<t color='#4040FF'>Teleport to MHQ1</t>", {player setPos (getPos r_1)}, [], 1.5, true, true, "", "", 5, false, "", ""];
+    _this addAction ["<t color='#4040FF'>Teleport to MHQ2</t>", {player setPos (getPos r_2)}, [], 1.5, true, true, "", "", 5, false, "", ""];
 };
 
 private _locations = [
@@ -26,11 +26,11 @@ private _locations = [
 ];
 
 private _actions = [
-    ["<t color='#FF0000'>Teleport to base</t>", {player setPos (getPos B_1)}, 1],
-    ["<t color='#FF0000'>Teleport to hangar 1</t>", {player setPos (getPos B_2)}, 2],
-    ["<t color='#FF0000'>Teleport to hangar 2</t>", {player setPos (getPos B_3)}, 3],
-    ["<t color='#FF0000'>Teleport to the airport</t>", {player setPos (getPos B_4)}, 4],
-    ["<t color='#FF0000'>Teleport to the vehicle zone</t>", {player setPos (getPos B_5)}, 5]
+    ["<t color='#FF4040' size='+1.5'>Teleport to base</t>", {player setPos (getPos B_1)}, 1],
+    ["<t color='#FF4040' size='+1.5'>Teleport to hangar 1</t>", {player setPos (getPos B_2)}, 2],
+    ["<t color='#FF4040' size='+1.5'>Teleport to hangar 2</t>", {player setPos (getPos B_3)}, 3],
+    ["<t color='#FF4040' size='+1.5'>Teleport to the airport</t>", {player setPos (getPos B_4)}, 4],
+    ["<t color='#FF4040' size='+1.5'>Teleport to the vehicle zone</t>", {player setPos (getPos B_5)}, 5]
 ];
 
 {

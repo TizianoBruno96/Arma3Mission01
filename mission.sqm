@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4523.4976,133.78641,7148.6069};
-		dir[]={-0.59487444,-0.40439066,0.69469351};
-		up[]={-0.26302806,0.9145838,0.30716309};
-		aside[]={0.7595697,1.4103716e-007,0.65043002};
+		pos[]={4466.7744,149.41599,7270.5195};
+		dir[]={-0.56833977,-0.63836133,-0.5191316};
+		up[]={-0.47133699,0.76973122,-0.430527};
+		aside[]={-0.67442304,-1.2200326e-007,0.73835176};
 	};
 };
 binarizationWanted=0;
@@ -482,11 +482,13 @@ class ScenarioData
 	class Header
 	{
 		gameType="Coop";
+		minPlayers=1;
+		maxPlayers=86;
 	};
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -664,7 +666,7 @@ class CustomAttributes
 		};
 		nAttributes=3;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
