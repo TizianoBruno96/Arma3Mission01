@@ -32,6 +32,7 @@ if ((side _player) isEqualTo INDEPENDENT) then {
 		_group = createGroup [(side _player), true];
 		_unit = _group createUnit [_unitName, _spawnPos, [], 0, "NONE"];
 		_unit execVM _loadout;
+		addSwitchableUnit _unit;
 		[_unit] joinSilent _player;
 	} else {
 		hintSilent "You have too many AI units in your group!";
