@@ -13,8 +13,8 @@ private _flagVarName = vehicleVarName _this; // Get the variable name of the fla
 // Check if the flag variable name is "B_1"
 if (_flagVarName == "B_1") then {
     // Add actions to teleport to MHQ1 and MHQ2
-    _this addAction ["<t color='#4040FF' size='+1.5'>Teleport to MHQ1</t>", {cutText ["Teleporting...", "BLACK OUT"]; sleep 2; player setPos (getPos r_1); sleep 2; cutText ["Teleporting...", "BLACK IN"];}, [], 1.5, true, true, "", "", 5, false, "", ""];
-    _this addAction ["<t color='#4040FF' size='+1.5'>Teleport to MHQ2</t>", {cutText ["Teleporting...", "BLACK OUT"]; sleep 2; player setPos (getPos r_2); sleep 2; cutText ["Teleporting...", "BLACK IN"];}, [], 1.5, true, true, "", "", 5, false, "", ""];
+    _this addAction ["<t color='#4040FF' size='+1.5'>Teleport to MHQ1</t>", {cutText ["Teleporting...", "BLACK OUT"]; sleep 1; player setPos (getPos r_1); sleep 1; cutText ["Teleporting...", "BLACK IN"];}, [], 1.5, true, true, "", "", 5, false, "", ""];
+    _this addAction ["<t color='#4040FF' size='+1.5'>Teleport to MHQ2</t>", {cutText ["Teleporting...", "BLACK OUT"]; sleep 1; player setPos (getPos r_2); sleep 1; cutText ["Teleporting...", "BLACK IN"];}, [], 1.5, true, true, "", "", 5, false, "", ""];
 };
 
 private _locations = [
@@ -26,11 +26,11 @@ private _locations = [
 ];
 
 private _actions = [
-    ["<t color='#FF4040' size='+1.5'>Teleport to base</t>", {cutText ["Teleporting...", "BLACK OUT"]; sleep 2; player setPos (getPos B_1); sleep 2; cutText ["Teleporting...", "BLACK IN"];}, 1],
-    ["<t color='#FF4040' size='+1.5'>Teleport to hangar 1</t>", {cutText ["Teleporting...", "BLACK OUT"]; sleep 2; player setPos (getPos B_2); sleep 2; cutText ["Teleporting...", "BLACK IN"];}, 2],
-    ["<t color='#FF4040' size='+1.5'>Teleport to hangar 2</t>", {cutText ["Teleporting...", "BLACK OUT"]; sleep 2; player setPos (getPos B_3); sleep 2; cutText ["Teleporting...", "BLACK IN"];}, 3],
-    ["<t color='#FF4040' size='+1.5'>Teleport to the airport</t>", {cutText ["Teleporting...", "BLACK OUT"]; sleep 2; player setPos (getPos B_4); sleep 2; cutText ["Teleporting...", "BLACK IN"];}, 4],
-    ["<t color='#FF4040' size='+1.5'>Teleport to the vehicle zone</t>", {cutText ["Teleporting...", "BLACK OUT"]; sleep 2; player setPos (getPos B_5); sleep 2; cutText ["Teleporting...", "BLACK IN"];}, 5]
+    ["<t color='#FF4040' size='+1.5'>Teleport to base</t>", {cutText ["Teleporting...", "BLACK OUT"]; sleep 1; player setPos (getPos B_1); sleep 1; cutText ["Teleporting...", "BLACK IN"];}, 1],
+    ["<t color='#FF4040' size='+1.5'>Teleport to hangar 1</t>", {cutText ["Teleporting...", "BLACK OUT"]; sleep 1; player setPos (getPos B_2); sleep 1; cutText ["Teleporting...", "BLACK IN"];}, 2],
+    ["<t color='#FF4040' size='+1.5'>Teleport to hangar 2</t>", {cutText ["Teleporting...", "BLACK OUT"]; sleep 1; player setPos (getPos B_3); sleep 1; cutText ["Teleporting...", "BLACK IN"];}, 3],
+    ["<t color='#FF4040' size='+1.5'>Teleport to the airport</t>", {cutText ["Teleporting...", "BLACK OUT"]; sleep 1; player setPos (getPos B_4); sleep 1; cutText ["Teleporting...", "BLACK IN"];}, 4],
+    ["<t color='#FF4040' size='+1.5'>Teleport to the vehicle zone</t>", {cutText ["Teleporting...", "BLACK OUT"]; sleep 1; player setPos (getPos B_5); sleep 1; cutText ["Teleporting...", "BLACK IN"];}, 5]
 ];
 
 {
