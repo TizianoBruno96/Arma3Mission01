@@ -1,44 +1,60 @@
+/**
+ * This file contains the configuration for the respawn inventory in Arma 3 mission "Addestramento_Sahatra.juju_sahatra".
+ * It defines different roles and their loadouts for the players.
+ * 
+ * The CfgRoles class defines various roles such as Command, Assault, Support, Specialist, SupportSpecialist, and Special.
+ * Each role has a display name and an icon associated with it.
+ * 
+ * The CfgRespawnInventory class defines the loadouts for each role.
+ * Each role has a displayName, role, uniformClass, backpack, weapons, magazines, items, and linkedItems.
+ * These properties define the loadout items for each role, including uniforms, weapons, magazines, items, and linked items.
+ *
+ * @file respawnInventory.hpp
+ * @author 343RedCobra
+ * @version 1.0
+ */
+
 class CfgRoles
 {
-	class Comando
+	class Command
 	{
-		displayName = "Comando";
+		displayName = "Command";
 		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\sergeant_gs.paa";
 	}
-	class Assalto
+	class Assault
 	{
-		displayName = "Assalto";
+		displayName = "Assault";
 		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\sergeant_gs.paa";
 	}
-	class Supporto
+	class Support
 	{
-		displayName = "Supporto";
+		displayName = "Support";
 		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\sergeant_gs.paa";
 	}
-	class Specialista
+	class Specialist
 	{
-		displayName = "Specialista";
+		displayName = "Specialist";
 		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\sergeant_gs.paa";
 	}
-	class SpecialistaSupporto
+	class SupportSpecialist
 	{
-		displayName = "Specialista Supporto";
+		displayName = "Support Specialist";
 		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\sergeant_gs.paa";
 	}
-	class Speciale
+	class Special
 	{
-		displayName = "Speciale";
+		displayName = "Special";
 		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\sergeant_gs.paa";
 	}
 };
 
 class CfgRespawnInventory {
 	
-	// Caposquadra
+	// Squad Leader
 	class EAST1
 	{
 		displayName = "SL";
-		role = "Comando";
+		role = "Command";
 		
 		// Exported from Arsenal by Red Cobra
 		uniformClass = "UK3CB_TKA_B_U_CombatUniform_01_DES_MARPAT";
@@ -49,11 +65,11 @@ class CfgRespawnInventory {
 		linkedItems[] = {"UK3CB_TKA_B_V_GA_LITE_TAN","UK3CB_TKA_B_H_DES_MARPAT","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
 
-	// Capogruppo
+	// Team Leader
 	class EAST2
 	{
 		displayName = "TL";
-		role = "Comando";
+		role = "Command";
 		
 		// Exported from Arsenal by Red Cobra
 		uniformClass = "UK3CB_TKA_B_U_CombatUniform_01_DES_MARPAT";
@@ -64,10 +80,10 @@ class CfgRespawnInventory {
 		linkedItems[] = {"UK3CB_TKA_B_V_GA_LITE_TAN","UK3CB_TKA_B_H_DES_MARPAT","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
 
-	// Fuciliere
+	// Rifleman
 	class EAST3 {
-		displayName = "Fuciliere";
-		role = "Assalto";
+		displayName = "Rifleman";
+		role = "Assault";
 		
 		// Exported from Arsenal by Red Cobra
 		uniformClass = "UK3CB_TKA_B_U_CombatUniform_01_DES_MARPAT";
@@ -78,10 +94,10 @@ class CfgRespawnInventory {
 		linkedItems[] = {"UK3CB_TKA_B_V_GA_LITE_TAN","UK3CB_TKA_B_H_DES_MARPAT","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	} 
 
-	// Fuciliere Anticarro
+	// AC Rifleman
 	class EAST4 {
-		displayName = "Fuciliere Anticarro";
-		role = "Supporto";
+		displayName = "AC Rifleman";
+		role = "Support";
 		
 		// Exported from Arsenal by Red Cobra
 		uniformClass = "UK3CB_TKA_B_U_CombatUniform_02_DES_MARPAT";
@@ -92,10 +108,10 @@ class CfgRespawnInventory {
 		linkedItems[] = {"UK3CB_TKA_B_V_GA_LITE_TAN","UK3CB_TKA_B_H_DES_MARPAT","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	}
 
-	// Granatiere
+	// Granadier
 	class EAST5 {
-		displayName = "Granatiere";
-		role = "Assalto";
+		displayName = "Granadier";
+		role = "Assault";
 		
 		// Exported from Arsenal by Red Cobra
 		uniformClass = "UK3CB_TKA_B_U_CombatUniform_01_DES_MARPAT";
@@ -106,10 +122,10 @@ class CfgRespawnInventory {
 		linkedItems[] = {"UK3CB_TKA_B_V_GA_LITE_TAN","UK3CB_TKA_B_H_DES_MARPAT","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	}
 
-	// Mitragliere
+	// Machine Gunner
 	class EAST6 {
-		displayName = "Mitragliere";
-		role = "Assalto";
+		displayName = "Machine Gunner";
+		role = "Assault";
 		
 		// Exported from Arsenal by Red Cobra
 		uniformClass = "UK3CB_TKA_B_U_CombatUniform_Shortsleeve_01_DES_MARPAT";
@@ -120,10 +136,10 @@ class CfgRespawnInventory {
 		linkedItems[] = {"UK3CB_TKA_B_V_GA_LITE_TAN","UK3CB_H_ACH_CC","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	}
 
-	// Tiratore scelto
+	// Marksman
 	class EAST7 {
-		displayName = "Tiratore scelto";
-		role = "Supporto";
+		displayName = "Marksman";
+		role = "Support";
 		
 		// Exported from Arsenal by Red Cobra
 		uniformClass = "UK3CB_TKA_B_U_CombatUniform_Shortsleeve_01_DES_MARPAT";
@@ -134,10 +150,10 @@ class CfgRespawnInventory {
 		linkedItems[] = {"UK3CB_TKA_B_V_GA_LITE_TAN","UK3CB_TKA_B_H_DES_MARPAT","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	}
 	
-	// Medico
+	// Medic
 	class EAST8 {
-		displayName = "Medico";
-		role = "Supporto";
+		displayName = "Medic";
+		role = "Support";
 		
 		// Exported from Arsenal by Red Cobra
 		uniformClass = "UK3CB_TKA_B_U_CombatUniform_Shortsleeve_02_DES_MARPAT";
@@ -148,10 +164,10 @@ class CfgRespawnInventory {
 		linkedItems[] = {"UK3CB_TKA_B_V_GA_LITE_TAN","UK3CB_TKA_B_H_DES_MARPAT","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	}
 	
-	// Operatore Droni
+	// Drone Operator
 	class EAST9 {
-		displayName = "Operatore Droni";
-		role = "SpecialistaSupporto";
+		displayName = "Drone Operator";
+		role = "SupportSpecialist";
 		
 		// Exported from Arsenal by Red Cobra
 		uniformClass = "UK3CB_TKA_B_U_CombatUniform_01_DES_MARPAT";
@@ -162,10 +178,10 @@ class CfgRespawnInventory {
 		linkedItems[] = {"UK3CB_TKA_B_V_GA_LITE_TAN","UK3CB_TKA_B_H_DES_MARPAT","ItemMap","ItemCompass","ItemWatch","ItemRadio","O_UavTerminal"};
 	}
 	
-	// Operatore Radio
+	// Radio Operator
 	class EAST10 {
-		displayName = "Operatore Radio";
-		role = "Comando";
+		displayName = "Radio Operator";
+		role = "Command";
 		
 		// Exported from Arsenal by Red Cobra
 		uniformClass = "UK3CB_TKA_B_U_CombatUniform_01_DES_MARPAT";
@@ -176,10 +192,10 @@ class CfgRespawnInventory {
 		linkedItems[] = {"UK3CB_TKA_B_V_GA_LITE_TAN","UK3CB_TKA_B_H_DES_MARPAT","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	}
 	
-	// Specialista Antiaereo
+	// AA Specialist
 	class EAST11 {
-		displayName = "Specialista Antiaereo";
-		role = "Specialista";
+		displayName = "AA Specialist";
+		role = "Specialist";
 		
 		// Exported from Arsenal by Red Cobra
 		uniformClass = "UK3CB_TKA_B_U_CombatUniform_01_DES_MARPAT";
@@ -190,10 +206,10 @@ class CfgRespawnInventory {
 		linkedItems[] = {"UK3CB_TKA_B_V_GA_LITE_TAN","UK3CB_TKA_B_H_DES_MARPAT","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	}
 	
-	// Specialista Anticarro
+	// AC Specialist
 	class EAST12 {
-		displayName = "Specialista Anticarro";
-		role = "Specialista";
+		displayName = "AC Specialist";
+		role = "Specialist";
 		
 		// Exported from Arsenal by Red Cobra
 		uniformClass = "UK3CB_TKA_B_U_CombatUniform_Shortsleeve_01_DES_MARPAT";
@@ -204,10 +220,10 @@ class CfgRespawnInventory {
 		linkedItems[] = {"UK3CB_TKA_B_V_GA_LITE_TAN","UK3CB_TKA_B_H_DES_MARPAT","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	}
 	
-	// Specialista Esplosivi
+	// Explosives Specialist
 	class EAST13 {
-		displayName = "Specialista Esplosivi";
-		role = "SpecialistaSupporto";
+		displayName = "Explosives Specialist";
+		role = "SupportSpecialist";
 		
 		// Exported from Arsenal by Red Cobra
 		uniformClass = "UK3CB_TKA_B_U_CombatUniform_02_DES_MARPAT";
@@ -218,10 +234,10 @@ class CfgRespawnInventory {
 		linkedItems[] = {"UK3CB_TKA_B_V_GA_LITE_TAN","UK3CB_TKA_B_H_DES_MARPAT","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	}
 	
-	// Specialista Riparazioni
+	// Repair Specialist
 	class EAST14 {
-		displayName = "Specialista Riparazioni";
-		role = "SpecialistaSupporto";
+		displayName = "Repair Specialist";
+		role = "SupportSpecialist";
 		
 		// Exported from Arsenal by Red Cobra
 		uniformClass = "UK3CB_TKA_B_U_CombatUniform_Shortsleeve_02_DES_MARPAT";
@@ -234,8 +250,8 @@ class CfgRespawnInventory {
 	
 	// Pilota Di jet
 	class EAST15 {
-		displayName = "Pilota Di jet";
-		role = "Speciale";
+		displayName = "Jet Pilot";
+		role = "Special";
 		
 		// Exported from Arsenal by Red Cobra
 		uniformClass = "UK3CB_TKA_O_U_J_Pilot_Digi";
@@ -249,7 +265,7 @@ class CfgRespawnInventory {
 	// Zeus
 	class CIV1 {
 		displayName = "Zeus";
-		role = "Speciale";
+		role = "Special";
 		
 		// Exported from Arsenal by Red Cobra
 		uniformClass = "UK3CB_CHC_B_U_CAN_01";
