@@ -1,3 +1,13 @@
+/**
+ * Spawns a unit and adds it to the player's group if there are less than 3 AI units in the group.
+ *
+ * @param {String} _unitName - The name of the unit to spawn.
+ * @param {String} _spawnPos - The marker name indicating the position where the unit should be spawned.
+ * @param {Number} _direction - The direction the unit should face upon spawning.
+ * @param {Object} _player - The player object, used to determine if the player has too many AI units in their group.
+ * @param {String} _loadout - The file path to the loadout script for the unit.
+ */
+
 params ["_unitName", "_spawnPos", "_direction", "_player", "_loadout"];
 
 _unitName = _this select 0;
@@ -13,7 +23,7 @@ _AINumber = 0;
 	};
 } forEach units group _player;
 
-if (_AINumber < 3) then {
+if (_AINumber < (paramsArray select 4)) then {
 	_group = createGroup [(side _player), true];
 	_unit = _group createUnit [_unitName, _spawnPos, [], 0, "NONE"];
 	_unit execVM _loadout;
@@ -21,4 +31,3 @@ if (_AINumber < 3) then {
 } else {
 	hintSilent "You have too many AI units in your group!";
 };
-
