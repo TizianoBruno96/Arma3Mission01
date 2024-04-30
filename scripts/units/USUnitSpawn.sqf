@@ -9,13 +9,12 @@
  *
  * @file TKUnitSpawn.sqf
  * @author 343RedCobra
- * @version 1.1
+ * @version 1.0
  */
 
 params ["_unitName", "_spawnPos", "_direction", "_player", "_loadout"];
 
-systemChat format ["Side of player: %1", (side _player)];
-if ((side _player) isEqualTo EAST) then {
+if ((side _player) isEqualTo WEST) then {
 	_unitName = _this select 0;
 	_spawnPos = getMarkerPos(_this select 1);
 	_direction = _this select 2;
@@ -38,5 +37,6 @@ if ((side _player) isEqualTo EAST) then {
 		hintSilent "You have too many AI units in your group!";
 	};
 } else {
-	hintSilent "You must change to OPFOR to spawn AI units!";
+	hintSilent "You must change to BLUFOR to spawn AI units!";
 };
+

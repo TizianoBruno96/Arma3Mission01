@@ -8,7 +8,7 @@
  *
  * @file spawnArsenal.sqf
  * @author 343RedCobra
- * @version 1.0
+ * @version 1.1
  */
 
 spawned = false;
@@ -38,9 +38,18 @@ _ars setDir _direction; // Modify the direction angle if necessary
 // Add the presets and the ace arsenal based on the faction
 if (_faction == "TK") then {
     _ars execVM "loadouts\setTKLoadouts.sqf";
-}; if (_faction == "US") then {
-    _ars execVM "loadouts\setUSLoadouts.sqf";
-}; if (_faction == "RE") then {
+}; 
+
+if (_faction == "US") then {
+    if ((paramsArray select 5) == 1) then {
+        _ars execVM "loadouts\setUSLoadouts.sqf";
+    } else {
+        hint "The US arsenal is deactivated";
+        deleteVehicle _ars;
+    };
+}; 
+
+if (_faction == "RE") then {
     _ars execVM "loadouts\setRELoadouts.sqf";
 };
 

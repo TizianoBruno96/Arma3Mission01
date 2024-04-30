@@ -9,7 +9,7 @@
  *
  * @file params.hpp
  * @author 343RedCobra
- * @version 1.0
+ * @version 1.1
  */
 
 class paramDaytimeHour
@@ -44,4 +44,20 @@ class maxAI
 	values[] = {0,3,5,10,15,20,30,50,9999};
 	texts[] = {"None","3","5","10","15","20","30","50","Unlimited"};
 	default = 3;
+};
+
+class unlockBLUFOR
+{//5
+	title = "Unlock BLUFOR:";
+	values[] = {0,1};
+	texts[] = {"No","Yes"};
+	default = 0;
+};
+
+class enableSpectators 
+{//6
+	title = "Enable Spectators:";
+	values[] = {0,1};
+	texts[] = {"No","Yes"};
+	default = 0;
 };
