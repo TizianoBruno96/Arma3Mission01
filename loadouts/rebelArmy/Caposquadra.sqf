@@ -9,47 +9,17 @@ removeHeadgear _this;
 removeGoggles _this;
 
 comment "Add weapons";
-_this addWeapon "rhs_weap_mk18_m320";
-_this addPrimaryWeaponItem "rhsusf_acc_nt4_tan";
-_this addPrimaryWeaponItem "acc_pointer_IR";
-_this addPrimaryWeaponItem "rhsusf_acc_ACOG_RMR";
-_this addPrimaryWeaponItem "rhs_mag_30Rnd_556x45_M855A1_Stanag";
-_this addPrimaryWeaponItem "1Rnd_HE_Grenade_shell";
-_this addWeapon "rhsusf_weap_glock17g4";
-_this addHandgunItem "rhsusf_mag_17Rnd_9x19_JHP";
+_this addWeapon "rhs_weap_akm";
+_this addPrimaryWeaponItem "rhs_acc_dtkakm";
+_this addPrimaryWeaponItem "rhs_30Rnd_762x39mm";
 
 comment "Add containers";
-_this forceAddUniform "rhs_uniform_FROG01_d";
-_this addVest "rhsusf_spc_rifleman";
-_this addBackpack "rhsusf_assault_eagleaiii_coy";
+_this forceAddUniform "UK3CB_TKM_I_U_01";
+_this addVest "UK3CB_V_Invisible";
 
 comment "Add binoculars";
-_this addWeapon "ACE_VectorDay";
-
-comment "Add items to containers";
-_this addItemToUniform "ACE_EarPlugs";
-_this addItemToUniform "ItemcTabHCam";
-for "_i" from 1 to 2 do {_this addItemToUniform "ACE_IR_Strobe_Item";};
-for "_i" from 1 to 4 do {_this addItemToUniform "ACE_splint";};
-for "_i" from 1 to 5 do {_this addItemToUniform "ACE_tourniquet";};
-for "_i" from 1 to 6 do {_this addItemToUniform "ACE_packingBandage";};
-_this addItemToUniform "ACE_MapTools";
-_this addItemToUniform "ACE_EntrenchingTool";
-_this addItemToUniform "ACE_Flashlight_XL50";
-for "_i" from 1 to 3 do {_this addItemToUniform "ACE_epinephrine";};
-for "_i" from 1 to 3 do {_this addItemToUniform "ACE_morphine";};
-_this addItemToVest "ACRE_PRC152";
-for "_i" from 1 to 9 do {_this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_PMAG";};
-for "_i" from 1 to 4 do {_this addItemToVest "rhs_mag_M441_HE";};
-for "_i" from 1 to 4 do {_this addItemToVest "rhs_mag_m714_White";};
-for "_i" from 1 to 2 do {_this addItemToBackpack "ACE_bloodIV";};
-_this addItemToBackpack "ItemcTab";
-for "_i" from 1 to 20 do {_this addItemToBackpack "ACE_packingBandage";};
-for "_i" from 1 to 2 do {_this addItemToBackpack "SmokeShellPurple";};
-_this addItemToBackpack "SmokeShellGreen";
-_this addItemToBackpack "SmokeShellRed";
-for "_i" from 1 to 4 do {_this addItemToBackpack "rhsusf_mag_17Rnd_9x19_FMJ";};
-_this addHeadgear "rhsusf_lwh_helmet_marpatd_headset";
+_this addWeapon "Binocular";
+_this addHeadgear "UK3CB_TKM_I_H_Turban_01_1";
 
 comment "Add items";
 _this linkItem "ItemMap";
