@@ -47,7 +47,7 @@ if((paramsArray select 5) == 1 && (paramsArray select 4) > 0) then {
 	_this addAction ["<t color='#4040FF' size='+1.5'>Explosive Specialist</t>", {["rhsusf_usmc_marpat_d_rifleman_light", "unitSpawn", 315, player, "loadouts\usArmy\SpecialistaExp.sqf"] execVM "scripts\units\USUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
 	_this addAction ["<t color='#4040FF' size='+1.5'>AC Specialist</t>", {["rhsusf_usmc_marpat_d_rifleman_light", "unitSpawn", 315, player, "loadouts\usArmy\SpecialistaAC.sqf"] execVM "scripts\units\USUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
 	_this addAction ["<t color='#4040FF' size='+1.5'>AA Specialist</t>", {["rhsusf_usmc_marpat_d_rifleman_light", "unitSpawn", 315, player, "loadouts\usArmy\SpecialistaAA.sqf"] execVM "scripts\units\USUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
-	_this addAction ["<t color='#4040FF' size='+1.5'>Repair Specialist</t>", {["rhsusf_usmc_marpat_d_rifleman_light", "unitSpawn", 315, player, "loadouts\usArmy\SpecialistaRep.sqf"] execVM "scripts\units\USUnitSpawn.sqf";}, nil, 1.5, true, true, "side player isEqualTo WEST", "", 5, false, "", ""];
+	_this addAction ["<t color='#4040FF' size='+1.5'>Repair Specialist</t>", {["rhsusf_usmc_marpat_d_rifleman_light", "unitSpawn", 315, player, "loadouts\usArmy\SpecialistaRep.sqf"] execVM "scripts\units\USUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
 };
 
 if ((paramsArray select 4) > 0) then {
