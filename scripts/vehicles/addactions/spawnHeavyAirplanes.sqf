@@ -36,7 +36,7 @@ if ((paramsArray select 5) == 1) then {
 };
 
 if ((paramsArray select 6) == 1) then {
-	_this addAction ["<t color='#40FF40'>Douglas DC-3 transport</t>", {["UK3CB_TKC_C_DC3", "vehspawn4", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+	_this addAction ["<t color='#40FF40'>Douglas DC-3 transport</t>", {["UK3CB_TKC_C_DC3", "jetspawn3", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
 };
 
 _this addAction ["<t color='#FFFFFF'>Delete the vehicle</t>", {["jetspawn3", 10] execVM "scripts\vehicles\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];

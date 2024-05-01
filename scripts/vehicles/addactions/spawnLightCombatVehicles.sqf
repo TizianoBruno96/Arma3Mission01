@@ -57,19 +57,19 @@ if ((paramsArray select 5) == 1) then {
 };
 
 if ((paramsArray select 6) == 1) then {
-	_this addAction ["<t color='#40FF40'>BTR-40 Transport</t>", {["UK3CB_TKM_I_BTR40_MG", "vehspawn4", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+	_this addAction ["<t color='#40FF40'>BTR-40 Transport</t>", {["UK3CB_TKM_I_BTR40_MG", "vehspawn3", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
 	
-	_this addAction ["<t color='#40FF40'>BRDM2</t>", {["UK3CB_TKM_I_BRDM2", "vehspawn4", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+	_this addAction ["<t color='#40FF40'>BRDM2</t>", {["UK3CB_TKM_I_BRDM2", "vehspawn3", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
 
-	_this addAction ["<t color='#40FF40'>BRDM2 with ATGM</t>", {["UK3CB_TKM_I_BRDM2_ATGM", "vehspawn4", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+	_this addAction ["<t color='#40FF40'>BRDM2 with ATGM</t>", {["UK3CB_TKM_I_BRDM2_ATGM", "vehspawn3", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
 	
-	_this addAction ["<t color='#40FF40'>MT-LB</t>", {["UK3CB_TKM_I_MTLB_BMP", "vehspawn4", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+	_this addAction ["<t color='#40FF40'>MT-LB</t>", {["UK3CB_TKM_I_MTLB_BMP", "vehspawn3", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
 
-	_this addAction ["<t color='#40FF40'>MT-LB Medevac</t>", {["UK3CB_TKM_I_MTLB_AMB", "vehspawn4", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+	_this addAction ["<t color='#40FF40'>MT-LB Medevac</t>", {["UK3CB_TKM_I_MTLB_AMB", "vehspawn3", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
 	
-	_this addAction ["<t color='#40FF40'>MT-LB AA</t>", {["UK3CB_TKM_I_MTLB_ZU23", "vehspawn4", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+	_this addAction ["<t color='#40FF40'>MT-LB AA</t>", {["UK3CB_TKM_I_MTLB_ZU23", "vehspawn3", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
 
-	_this addAction ["<t color='#40FF40'>BMP-1</t>", {["UK3CB_TKM_I_BMP1", "vehspawn4", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+	_this addAction ["<t color='#40FF40'>BMP-1</t>", {["UK3CB_TKM_I_BMP1", "vehspawn3", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
 };
 
 _this addAction ["<t color='#FFFFFF'>Delete the vehicle</t>", {["vehspawn3", 10] execVM "scripts\vehicles\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];
