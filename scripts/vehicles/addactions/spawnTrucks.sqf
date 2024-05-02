@@ -36,6 +36,7 @@ _this addAction ["<t color='#FF4040'>Artillery Ural</t>", {["UK3CB_TKA_B_BM21", 
 
 _this addAction ["<t color='#FF4040'>Anti-Aircraft Ural</t>", {["UK3CB_TKA_B_Ural_Zu23", "vehspawn1", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
 
+// Adding the actions for the US side
 if ((paramsArray select 5) == 1) then {
 	_this addAction ["<t color='#4040FF'>Unarmed Transport</t>", {["rhsusf_M1078A1P2_D_fmtv_usarmy", "vehspawn1", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 	
@@ -50,6 +51,7 @@ if ((paramsArray select 5) == 1) then {
 	_this addAction ["<t color='#4040FF'>Fuel Hemmt</t>", {["rhsusf_M978A4_BKIT_usarmy_d", "vehspawn1", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 };
 
+// Adding the actions for the Rebel side
 if ((paramsArray select 6) == 1) then {
 	_this addAction ["<t color='#40FF40'>Unarmed Transport Praga</t>", {["UK3CB_TKM_I_V3S_Closed", "vehspawn1", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
 	

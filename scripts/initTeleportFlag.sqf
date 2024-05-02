@@ -17,6 +17,7 @@ if (_flagVarName == "B_1") then {
     _this addAction ["<t color='#4040FF' size='+1.5'>Teleport to MHQ2</t>", {cutText ["Teleporting...", "BLACK OUT"]; sleep 1; player setPos (getPos r_2); sleep 1; cutText ["Teleporting...", "BLACK IN"];}, [], 1.5, true, true, "", "", 5, false, "", ""];
 };
 
+// Define locations and actions
 private _locations = [
     ["B_1", 1],
     ["B_2", 2],

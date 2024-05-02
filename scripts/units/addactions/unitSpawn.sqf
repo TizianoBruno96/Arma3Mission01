@@ -22,6 +22,7 @@ _this setVariable ["tagName", "Units Recruitment"];
 _this setVariable ["iconTexture", "\a3\ui_f\data\igui\cfg\simpletasks\types\meet_ca.paa"];
 _this setVariable ["iconColor", [0.0,0.1,0.6,1]];
 
+// If the number of maximum troops is greater than 0, add the actions to spawn the OPFOR units.
 if ((paramsArray select 4) > 0) then {
 	_this addAction ["<t color='#FF4040' size='+1.5'>---------Takistan Army---------</t>", {}, nil, 1.5, true, true, "", "side player isEqualTo EAST", 5, false, "", ""];
 	_this addAction ["<t color='#FF4040' size='+1.5'>Rifleman</t>", {["UK3CB_TKA_B_RIF_1", "unitSpawn", 315, player, "loadouts\takistanArmy\Fuciliere.sqf"] execVM "scripts\units\TKUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo EAST", 5, false, "", ""];
@@ -36,6 +37,7 @@ if ((paramsArray select 4) > 0) then {
 	_this addAction ["<t color='#FF4040' size='+1.5'>Repair Specialist</t>", {["UK3CB_TKA_B_RIF_1", "unitSpawn", 315, player, "loadouts\takistanArmy\SpecialistaRep.sqf"] execVM "scripts\units\TKUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo EAST", 5, false, "", ""];
 };
 
+// If the number of maximum troops is greater than 0 and BLUFOR are enabled from the mission parameters, add the actions to spawn the BLUFOR units.
 if((paramsArray select 5) == 1 && (paramsArray select 4) > 0) then {
 	_this addAction ["<t color='#4040FF' size='+1.5'>---------US Army---------</t>", {}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
 	_this addAction ["<t color='#4040FF' size='+1.5'>Rifleman</t>", {["rhsusf_usmc_marpat_d_rifleman_light", "unitSpawn", 315, player, "loadouts\usArmy\Fuciliere.sqf"] execVM "scripts\units\USUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
@@ -50,6 +52,7 @@ if((paramsArray select 5) == 1 && (paramsArray select 4) > 0) then {
 	_this addAction ["<t color='#4040FF' size='+1.5'>Repair Specialist</t>", {["rhsusf_usmc_marpat_d_rifleman_light", "unitSpawn", 315, player, "loadouts\usArmy\SpecialistaRep.sqf"] execVM "scripts\units\USUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
 };
 
+// If the number of maximum troops is greater than 0 and INDFOR are enabled from the mission parameters, add the actions to spawn the INDFOR units.
 if((paramsArray select 6) == 1 && (paramsArray select 4) > 0) then {
 	_this addAction ["<t color='#40FF40' size='+1.5'>---------Rebel Army---------</t>", {}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
 	_this addAction ["<t color='#40FF40' size='+1.5'>Rifleman</t>", {["UK3CB_TKM_I_RIF_1", "unitSpawn", 315, player, "loadouts\rebelArmy\Fuciliere.sqf"] execVM "scripts\units\REUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
@@ -64,6 +67,7 @@ if((paramsArray select 6) == 1 && (paramsArray select 4) > 0) then {
 	_this addAction ["<t color='#40FF40' size='+1.5'>Repair Specialist</t>", {["UK3CB_TKM_I_RIF_1", "unitSpawn", 315, player, "loadouts\rebelArmy\SpecialistaRep.sqf"] execVM "scripts\units\REUnitSpawn.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo INDEPENDENT", 5, false, "", ""];
 };
 
+// Add the action to delete all AI units in a squad.
 if ((paramsArray select 4) > 0) then {
 	_this addAction ["<t color='#FFFFFF' size='+1.5'>Delete AI Units</t>", {player execVM "scripts\units\AIUnitDel.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];
 };

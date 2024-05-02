@@ -26,6 +26,7 @@ _this addAction ["<t color='#FF4040'>T72-AV Tank</t>", {["UK3CB_TKA_B_T72B", "ve
 
 _this addAction ["<t color='#FF4040'>T72-B Tank</t>", {["UK3CB_TKA_B_T72BM", "vehspawn4", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
 
+// Adding the actions for the US side
 if ((paramsArray select 5) == 1) then {
 	_this addAction ["<t color='#4040FF'>Abrams tank</t>", {["rhsusf_m1a1aimd_usarmy", "vehspawn4", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 	
@@ -34,6 +35,7 @@ if ((paramsArray select 5) == 1) then {
 	_this addAction ["<t color='#4040FF'>Abrams tank TUSK II</t>", {["rhsusf_m1a2sep1tuskiid_usarmy", "vehspawn4", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 };
 
+// Adding the actions for the Rebel side
 if ((paramsArray select 6) == 1) then {
 	_this addAction ["<t color='#40FF40'>T34-85M Tank</t>", {["UK3CB_TKM_I_T34", "vehspawn4", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
 	

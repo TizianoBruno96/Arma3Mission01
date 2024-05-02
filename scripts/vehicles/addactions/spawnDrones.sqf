@@ -20,11 +20,13 @@ _this setVariable ["iconColor", [0.9,0.4,0,4]];
 _this addAction ["<t color='#FF4040'>Crocus Drone AT</t>", {["O_Crocus_AT", "dronespawn", 200] execVM "scripts\vehicles\spawnDrones.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
 _this addAction ["<t color='#FF4040'>Crocus Drone AP</t>", {["O_Crocus_AP", "dronespawn", 200] execVM "scripts\vehicles\spawnDrones.sqf";}, nil, 1.5, true, true, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
 
+// Adding the actions for the US side
 if ((paramsArray select 5) == 1) then {
 	_this addAction ["<t color='#4040FF'>Crocus Drone AT</t>", {["B_Crocus_AT", "dronespawn", 200] execVM "scripts\vehicles\spawnDrones.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 	_this addAction ["<t color='#4040FF'>Crocus Drone AP</t>", {["B_Crocus_AP", "dronespawn", 200] execVM "scripts\vehicles\spawnDrones.sqf";}, nil, 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 };
 
+// Adding the actions for the Rebel side
 if ((paramsArray select 6) == 1) then {
 	_this addAction ["<t color='#40FF40'>Crocus Drone AT</t>", {["I_Crocus_AT", "dronespawn", 200] execVM "scripts\vehicles\spawnDrones.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
 	_this addAction ["<t color='#40FF40'>Crocus Drone AP</t>", {["I_Crocus_AP", "dronespawn", 200] execVM "scripts\vehicles\spawnDrones.sqf";}, nil, 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];

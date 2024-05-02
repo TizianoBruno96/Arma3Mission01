@@ -36,6 +36,7 @@ _this addAction ["<t color='#FF4040'>Transport Airplane Antonov AN2</t>", {["UK3
 
 _this addAction ["<t color='#FF4040'>Transport Airplane Cessna T41</t>", {["UK3CB_TKA_B_Cessna_T41", "jetspawn1", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
 
+// Adding the actions for the Rebel side
 if ((paramsArray select 6) == 1) then {
 	_this addAction ["<t color='#40FF40'>Transport Airplane Antonov AN2</t>", {["UK3CB_MEC_C_Antonov_An2", "jetspawn1", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
 	

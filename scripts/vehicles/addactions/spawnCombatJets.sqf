@@ -24,6 +24,7 @@ _this addAction ["<t color='#FF4040'>Aero L-39 Albatross Anti-Tank</t>", {["UK3C
 
 _this addAction ["<t color='#FF4040'>Su-25SM Anti-Tank</t>", {["UK3CB_TKA_B_Su25SM", "jetspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
 
+// Adding the actions for the US side
 if ((paramsArray select 5) == 1) then {
 	_this addAction ["<t color='#4040FF'>F-22A</t>", {["rhsusf_f22", "jetspawn2", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 	

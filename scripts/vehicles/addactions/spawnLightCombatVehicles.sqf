@@ -36,6 +36,7 @@ _this addAction ["<t color='#FF4040'>BMP1</t>", {["UK3CB_TKA_B_BMP1", "vehspawn3
 
 _this addAction ["<t color='#FF4040'>BMP2</t>", {["UK3CB_TKA_B_BMP2", "vehspawn3", 26] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
 
+// Adding the actions for the US side
 if ((paramsArray select 5) == 1) then {
 	_this addAction ["<t color='#4040FF'>Stryker with machine gun</t>", {["rhsusf_stryker_m1126_m2_d", "vehspawn3", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 	
@@ -56,6 +57,7 @@ if ((paramsArray select 5) == 1) then {
 	_this addAction ["<t color='#4040FF'>M6A2 AT Bradley</t>", {["RHS_M6", "vehspawn3", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 };
 
+// Adding the actions for the Rebel side
 if ((paramsArray select 6) == 1) then {
 	_this addAction ["<t color='#40FF40'>BTR-40 Transport</t>", {["UK3CB_TKM_I_BTR40_MG", "vehspawn3", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
 	

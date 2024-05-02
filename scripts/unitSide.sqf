@@ -27,16 +27,22 @@
  * @version 1.0
  */
 
+// Define the parameters for the script
 params ["_player", "_side"];
 
+// Check if the provided _player is a valid player unit
 if (!(_player isKindOf "CAManBase")) exitWith {
 	systemChat format ["Error: %1 is not a valid player unit", _player];
 };
 
+// Check if the provided _side is a valid side
 if (!(_side in [west, east, independent, civilian])) exitWith {
 	systemChat format ["Error: %1 is not a valid side", _side];
 };
 
+// Create a new group for the player unit and assign it to the specified side
 [_player] joinSilent createGroup _side;
+
+// Select the player unit and deselect any other selected units
 selectNoPlayer;
 selectPlayer _player;

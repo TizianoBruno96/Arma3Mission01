@@ -37,6 +37,7 @@ _this addAction ["<t color='#FF4040'>Griffin with radar</t>", {["UK3CB_TKA_B_Bel
  
 _this addAction ["<t color='#FF4040'>Armed Griffin transport</t>", {["UK3CB_TKA_B_Bell412_Armed", "helispawn", 27] execVM "scripts\vehicles\spawnVeh.sqf";}, nil, 1.5, true, true, "", "spawned && (side player isEqualTo EAST)", 5, false, "", ""];
  
+ // Adding the actions for the US side
 if ((paramsArray select 5) == 1) then {
 	_this addAction ["<t color='#4040FF'>AH64D Apache</t>", {["RHS_AH64D_wd", "helispawn", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 	
@@ -57,6 +58,7 @@ if ((paramsArray select 5) == 1) then {
 	_this addAction ["<t color='#4040FF'>CH 47F</t>", {["RHS_CH_47F_light", "helispawn", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 };
 
+// Adding the actions for the Rebel side
 if ((paramsArray select 6) == 1) then {
 	_this addAction ["<t color='#40FF40'>UH-1H</t>", {["UK3CB_MEC_C_UH1H", "helispawn", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
 	
