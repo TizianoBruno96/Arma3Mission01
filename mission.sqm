@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1290;
+		nextID=1292;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=46;
+		nextID=47;
 	};
 	class Camera
 	{
-		pos[]={4424.2271,144.70041,7245.2163};
-		dir[]={0.82978964,-0.46018234,0.31579548};
-		up[]={0.43010631,0.88781357,0.16368674};
-		aside[]={0.35569352,-1.4482066e-007,-0.93462956};
+		pos[]={4461.5698,131.45398,7247.0557};
+		dir[]={-0.88243651,-0.45576143,0.11656565};
+		up[]={-0.45183644,0.89010191,0.059685439};
+		aside[]={0.13095763,-3.7252903e-009,0.99138808};
 	};
 };
 binarizationWanted=0;
@@ -15403,7 +15403,7 @@ class Mission
 			name="Vehicle Spawn Script";
 			class Entities
 			{
-				items=18;
+				items=20;
 				class Item0
 				{
 					dataType="Object";
@@ -16028,9 +16028,78 @@ class Mission
 						nAttributes=1;
 					};
 				};
+				class Item18
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4457.3784,128.48639,7246.6689};
+						angles[]={-0,1.3925765,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=1290;
+					type="FoldTable";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item19
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4457.3618,129.01585,7246.6201};
+						angles[]={0,4.7338738,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+						init="this execVM ""scripts\units\addactions\enemySpawn.sqf"";";
+						name="t_11";
+					};
+					id=1291;
+					type="Land_Laptop_02_unfolded_F";
+					atlOffset=0.80000305;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
 			};
 			id=17;
-			atlOffset=0.5741272;
+			atlOffset=0.54353333;
 		};
 		class Item2
 		{

@@ -68,7 +68,7 @@ _this setUnitTrait ["explosiveSpecialist ", 0];
 _this setUnitTrait ["UAVHacker  ", 0];
 
 comment "Setto il side del giocatore";
-if(side player != west) then {
+if(side _this != west) then {
 	[_this] join createGroup west;
 	selectNoPlayer;
 	selectPlayer _this;
