@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1292;
+		nextID=1297;
 	};
 	class MarkerIDProvider
 	{
@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4461.5698,131.45398,7247.0557};
-		dir[]={-0.88243651,-0.45576143,0.11656565};
-		up[]={-0.45183644,0.89010191,0.059685439};
-		aside[]={0.13095763,-3.7252903e-009,0.99138808};
+		pos[]={6626.8105,44.590866,3215.5757};
+		dir[]={-0.44564444,-0.81099421,0.37906393};
+		up[]={-0.61774629,0.5850541,0.52545327};
+		aside[]={0.6479125,1.4901161e-008,0.76171476};
 	};
 };
 binarizationWanted=0;
@@ -15317,7 +15317,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=74;
+		items=75;
 		class Item0
 		{
 			dataType="Logic";
@@ -16033,8 +16033,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4457.3784,128.48639,7246.6689};
-						angles[]={-0,1.3925765,0};
+						position[]={6620.2349,35.277901,3217.7778};
+						angles[]={6.2731905,1.2065248,0};
 					};
 					side="Empty";
 					flags=4;
@@ -16042,7 +16042,7 @@ class Mission
 					{
 						disableSimulation=1;
 					};
-					id=1290;
+					id=1292;
 					type="FoldTable";
 					class CustomAttributes
 					{
@@ -16067,8 +16067,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4457.3618,129.01585,7246.6201};
-						angles[]={0,4.7338738,0};
+						position[]={6620.1592,35.807766,3217.7832};
+						angles[]={6.2731905,4.2550516,0};
 					};
 					side="Empty";
 					class Attributes
@@ -16076,9 +16076,9 @@ class Mission
 						init="this execVM ""scripts\units\addactions\enemySpawn.sqf"";";
 						name="t_11";
 					};
-					id=1291;
+					id=1293;
 					type="Land_Laptop_02_unfolded_F";
-					atlOffset=0.80000305;
+					atlOffset=0.80008698;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16099,7 +16099,7 @@ class Mission
 				};
 			};
 			id=17;
-			atlOffset=0.54353333;
+			atlOffset=-78.987961;
 		};
 		class Item2
 		{
@@ -53245,6 +53245,41 @@ class Mission
 					};
 				};
 				nAttributes=5;
+			};
+		};
+		class Item74
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6624.3857,38.866112,3219.4751};
+				angles[]={0,5.2167888,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this execVM ""scripts\initTeleportFlag.sqf""";
+				name="B_6";
+			};
+			id=1296;
+			type="FlagCarrierTakistan_EP1";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};

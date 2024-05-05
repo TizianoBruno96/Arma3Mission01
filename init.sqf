@@ -30,7 +30,7 @@
 spawned = true;
 index = 1;
 
-terminals = [t_1, t_2, t_3, t_4, t_5, t_6, t_7, t_8, t_9, t_10, MHQ_1, MHQ_2];
+terminals = [t_1, t_2, t_3, t_4, t_5, t_6, t_7, t_8, t_9, t_10, t_11, MHQ_1, MHQ_2];
 
 onEachFrame {
 	{
