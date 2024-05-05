@@ -37,6 +37,7 @@ _this addItemToUniform "ACE_EntrenchingTool";
 _this addItemToUniform "ACE_Flashlight_XL50";
 for "_i" from 1 to 3 do {_this addItemToUniform "ACE_epinephrine";};
 for "_i" from 1 to 3 do {_this addItemToUniform "ACE_morphine";};
+for "_i" from 1 to 2 do {_this addItemToUniform "ACE_EarPlugs";};
 _this addItemToVest "ACRE_PRC152";
 for "_i" from 1 to 20 do {_this addItemToVest "ACE_packingBandage";};
 _this addItemToVest "ACE_bloodIV_500";

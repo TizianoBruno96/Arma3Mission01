@@ -27,7 +27,6 @@ comment "Add binoculars";
 _this addWeapon "ACE_VectorDay";
 
 comment "Add items to containers";
-_this addItemToUniform "ACE_EarPlugs";
 _this addItemToUniform "ItemcTabHCam";
 for "_i" from 1 to 2 do {_this addItemToUniform "ACE_IR_Strobe_Item";};
 for "_i" from 1 to 4 do {_this addItemToUniform "ACE_splint";};
@@ -38,6 +37,7 @@ _this addItemToUniform "ACE_EntrenchingTool";
 _this addItemToUniform "ACE_Flashlight_XL50";
 for "_i" from 1 to 3 do {_this addItemToUniform "ACE_epinephrine";};
 for "_i" from 1 to 3 do {_this addItemToUniform "ACE_morphine";};
+for "_i" from 1 to 2 do {_this addItemToUniform "ACE_EarPlugs";};
 _this addItemToVest "ACRE_PRC152";
 for "_i" from 1 to 9 do {_this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_PMAG";};
 for "_i" from 1 to 4 do {_this addItemToVest "rhs_mag_M441_HE";};
