@@ -41,11 +41,11 @@ _this allowDamage false;
 
 /*
 Script to copy the playable units loadout to the clipboard:
-AllPlayableUnitsItens = [];
-{AllPlayableUnitsItens = AllPlayableUnitsItens + [(headgear _x)] + [(goggles _x)] + (assignedItems _x) + (backpackitems _x)+ [(backpack _x)] + (uniformItems _x) + [(uniform _x)] + (vestItems _x) + [(vest _x)] + (magazines _x) + (weapons _x) + (primaryWeaponItems _x)+ (primaryWeaponMagazine _x) + (handgunMagazine _x) + (handgunItems _x) + (secondaryWeaponItems _x) + (secondaryWeaponMagazine _x)} forEach (playableUnits + switchableUnits);
-AllPlayableUnitsItens = AllPlayableUnitsItens select {count _x > 0};
-AllPlayableUnitsItens = AllPlayableUnitsItens arrayIntersect AllPlayableUnitsItens;
-copyToClipboard str AllPlayableUnitsItens;
+AllPlayableUnitsItems = [];
+{AllPlayableUnitsItems = AllPlayableUnitsItems + [(headgear _x)] + [(goggles _x)] + (assignedItems _x) + (backpackitems _x)+ [(backpack _x)] + (uniformItems _x) + [(uniform _x)] + (vestItems _x) + [(vest _x)] + (magazines _x) + (weapons _x) + (primaryWeaponItems _x)+ (primaryWeaponMagazine _x) + (handgunMagazine _x) + (handgunItems _x) + (secondaryWeaponItems _x) + (secondaryWeaponMagazine _x)} forEach (playableUnits + switchableUnits);
+AllPlayableUnitsItems = AllPlayableUnitsItems select {count _x > 0};
+AllPlayableUnitsItems = AllPlayableUnitsItems arrayIntersect AllPlayableUnitsItems;
+copyToClipboard str AllPlayableUnitsItems;
 */
 // Add the ACE arsenal of the Rebel Army
 [_this, ["rhsusf_lwh_helmet_marpatd_headset",
