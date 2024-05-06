@@ -29,16 +29,16 @@ _this addAction ["<t color='#FF4040'>Douglas C-47 transport</t>", {["UK3CB_TKA_B
 
 // Adding the actions for the US side
 if ((paramsArray select 5) == 1) then {
-	_this addAction ["<t color='#4040FF'>Unarmed Osprey transport</t>", {["UK3CB_B_Osprey_USMC_D", "jetspawn3", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
+	_this addAction ["<t color='#4040FF'>Unarmed Osprey transport</t>", {["UK3CB_B_Osprey_USMC_D", "jetspawn3", 118] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 	
-	_this addAction ["<t color='#4040FF'>Armed Osprey transport</t>", {["UK3CB_B_Osprey_IDWS_HMG_USMC_D", "jetspawn3", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
+	_this addAction ["<t color='#4040FF'>Armed Osprey transport</t>", {["UK3CB_B_Osprey_IDWS_HMG_USMC_D", "jetspawn3", 118] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 
-	_this addAction ["<t color='#4040FF'>C130J transport</t>", {["RHS_C130J", "jetspawn3", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
+	_this addAction ["<t color='#4040FF'>C130J transport</t>", {["RHS_C130J", "jetspawn3", 118] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo WEST)", 5, false, "", ""];
 };
 
 // Adding the actions for the Rebel side
 if ((paramsArray select 6) == 1) then {
-	_this addAction ["<t color='#40FF40'>Douglas DC-3 transport</t>", {["UK3CB_TKC_C_DC3", "jetspawn3", 206] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
+	_this addAction ["<t color='#40FF40'>Douglas DC-3 transport</t>", {["UK3CB_TKC_C_DC3", "jetspawn3", 118] execVM "scripts\vehicles\spawnVeh.sqf";}, [], 1.5, true, true, "", "spawned && (side player isEqualTo INDEPENDENT)", 5, false, "", ""];
 };
 
 _this addAction ["<t color='#FFFFFF'>Delete the vehicle</t>", {["jetspawn3", 10] execVM "scripts\vehicles\deleteVeh.sqf";}, nil, 1.5, true, true, "", "", 5, false, "", ""];
