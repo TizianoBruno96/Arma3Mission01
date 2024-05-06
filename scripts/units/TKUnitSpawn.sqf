@@ -14,7 +14,6 @@
 
 params ["_unitName", "_spawnPos", "_direction", "_player", "_loadout"];
 
-systemChat format ["Side of player: %1", (side _player)];
 if ((side _player) isEqualTo EAST) then {
 	_unitName = _this select 0;
 	_spawnPos = getMarkerPos(_this select 1);
