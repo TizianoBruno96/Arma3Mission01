@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4459.1387,131.20648,7272.7871};
-		dir[]={0.73374069,-0.62012726,-0.27762139};
-		up[]={0.58000106,0.78450048,-0.21945211};
-		aside[]={-0.35388324,1.648441e-007,-0.93529409};
+		pos[]={4493.3477,151.40477,7261.4312};
+		dir[]={-0.67134321,-0.65322912,0.35014063};
+		up[]={-0.579189,0.75715756,0.30207726};
+		aside[]={0.46243736,1.8172432e-007,0.88665694};
 	};
 };
 binarizationWanted=0;
@@ -37192,7 +37192,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this execVM ""loadouts\setTKLoadouts.sqf"";" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setDraggable;" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setCarryable;";
+				init="this execVM ""loadouts\setTKLoadouts.sqf"";" \n "this execVM ""loadouts\setRELoadouts.sqf"";" \n "this execVM ""loadouts\setUSLoadouts.sqf"";" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setDraggable;" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setCarryable;";
 			};
 			id=1025;
 			type="C_supplyCrate_F";
@@ -40295,7 +40295,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this execVM ""loadouts\setTKLoadouts.sqf"";" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setDraggable;" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setCarryable;";
+				init="this execVM ""loadouts\setTKLoadouts.sqf"";" \n "this execVM ""loadouts\setRELoadouts.sqf"";" \n "this execVM ""loadouts\setUSLoadouts.sqf"";" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setDraggable;" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setCarryable;";
 			};
 			id=1030;
 			type="C_supplyCrate_F";
@@ -43398,7 +43398,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this execVM ""loadouts\setTKLoadouts.sqf"";" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setDraggable;" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setCarryable;";
+				init="this execVM ""loadouts\setTKLoadouts.sqf"";" \n "this execVM ""loadouts\setRELoadouts.sqf"";" \n "this execVM ""loadouts\setUSLoadouts.sqf"";" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setDraggable;" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setCarryable;";
 			};
 			id=1031;
 			type="C_supplyCrate_F";
@@ -46501,7 +46501,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this execVM ""loadouts\setTKLoadouts.sqf"";" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setDraggable;" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setCarryable;";
+				init="this execVM ""loadouts\setTKLoadouts.sqf"";" \n "this execVM ""loadouts\setRELoadouts.sqf"";" \n "this execVM ""loadouts\setUSLoadouts.sqf"";" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setDraggable;" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setCarryable;";
 			};
 			id=1032;
 			type="C_supplyCrate_F";
@@ -49604,7 +49604,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this execVM ""loadouts\setTKLoadouts.sqf"";" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setDraggable;" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setCarryable;";
+				init="this execVM ""loadouts\setTKLoadouts.sqf"";" \n "this execVM ""loadouts\setRELoadouts.sqf"";" \n "this execVM ""loadouts\setUSLoadouts.sqf"";" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setDraggable;" \n "[this, false, [0, 0, 0], 0] call ace_dragging_fnc_setCarryable;";
 			};
 			id=1033;
 			type="C_supplyCrate_F";

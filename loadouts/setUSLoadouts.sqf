@@ -33,7 +33,6 @@ _this addAction["<t color='#4040FF' size='+1.5'>Anti-aircraft Specialist</t>",{p
 _this addAction["<t color='#4040FF' size='+1.5'>Repair Specialist</t>",{player execVM "loadouts\usArmy\SpecialistaRep.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
 _this addAction["<t color='#4040FF' size='+1.5'>Radio Operator</t>",{player execVM "loadouts\usArmy\OperatoreRad.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
 _this addAction["<t color='#4040FF' size='+1.5'>Drone Operator</t>",{player execVM "loadouts\usArmy\OperatoreDroni.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
-_this addAction["<t color='#4040FF' size='+1.5'>Sniper</t>",{player execVM "loadouts\usArmy\Cecchino.sqf";}, nil, 1.5, true, true, "", "side player isEqualTo WEST", 5, false, "", ""];
 
 // make the arsenal indestructible
 _this allowDamage false;
